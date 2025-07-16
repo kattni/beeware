@@ -2,13 +2,6 @@
 site_name: BeeWare Tutorial
 site_url: https://docs.beeware.org/
 
-docs_dir:
-  docs
-
-exclude_docs:
-  toga
-  overrides
-
 not_in_nav: |
   /index.md
 

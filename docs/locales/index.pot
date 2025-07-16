@@ -14,7 +14,7 @@ msgstr ""
 
 #: docs/index.md%2Bheadingthing:1
 msgid "Welcome to the BeeWare Tutorial!"
-msgstr "SPANISH TRANSLATION"
+msgstr ""
 
 #: docs/index.md%2Bp:3
 msgid "**Write Python. Run Anywhere.**"
