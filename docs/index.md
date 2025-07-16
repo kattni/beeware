@@ -1,4 +1,4 @@
-# Welcome to the BeeWare Tutorial!
+# Welcome to the BeeWare!
 
 **Write Python. Run Anywhere.**
 
