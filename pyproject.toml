@@ -69,6 +69,7 @@ docs = [
     "mkdocs-autorefs",
     "pymdown-extensions",
     "mkdocs-macros-plugin",
+    "mkdocs-literate-nav",
 ]
 
 [tool.codespell]
