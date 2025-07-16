@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-15 18:53-0400\n"
-"PO-Revision-Date: 2025-07-16 00:53+0000\n"
+"PO-Revision-Date: 2025-07-16 01:22+0000\n"
 "Last-Translator: Kattni <kattni@kattni.com>\n"
 "Language-Team: index (generated) <https://hosted.weblate.org/projects/"
 "tutorial-test-mkdocs/tutorial-index-component/index/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: docs/index.md%2Bheading
 msgid "Welcome to the BeeWare Tutorial!"
-msgstr "Bienvenue dans le didacticiel BeeWare!"
+msgstr ""
 
 #: docs/index.md%2Bp
 msgid "**Write Python. Run Anywhere.**"
