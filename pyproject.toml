@@ -70,6 +70,8 @@ docs = [
     "pymdown-extensions",
     "mkdocs-macros-plugin",
     "mkdocs-literate-nav",
+    "codespell",
+    "symspellpy",
 ]
 
 [tool.codespell]
