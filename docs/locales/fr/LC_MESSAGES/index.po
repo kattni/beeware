@@ -18,7 +18,7 @@ msgstr "FRENCH TRANSLATION."
 
 #: docs/index.md%2Bp:3
 msgid "**Write Python. Run Anywhere.**"
-msgstr ""
+msgstr "**MORE FRENCH.**"
 
 #: docs/index.md%2Bp:5
 msgid ""
