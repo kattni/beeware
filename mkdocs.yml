@@ -47,9 +47,12 @@ extra:
   alternate:
     - name: English
       lang: en
-    - name: Deutsch
-      link: de
-      lang: de
+    - name: Français
+      link: /fr/
+      lang: fr
+    - name: Español
+      link: /es/
+      lang: es
 
 plugins:
   - search
@@ -67,6 +70,3 @@ plugins:
             dictionaries: [clear]
       known_words: spelling_wordlist
       ignore_code: yes
-  - mdpo:
-      locale_dir: ../locales
-      lc_messages: true

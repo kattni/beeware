@@ -13,7 +13,7 @@ original_translation
 
 /// note | "Translations are available"
 
-If you're not comfortable with English, translations of this tutorial are available in [Deutsch](https://docs.beeware.org/de), [Español](https://docs.beeware.org/es), [Français](https://docs.beeware.org/fr), [Italiano](https://docs.beeware.org/it), [Português](https://docs.beeware.org/pt), [中文(简体)](https://docs.beeware.org/zh-cn), and [中文(繁體)](https://docs.beeware.org/zh-tw).
+If you're not comfortable with English, translations of this tutorial are available in [Deutsch](https://docs.beeware.org/de), [Español](https://docs.beeware.org/es), [Français](https://docs.beeware.org/fr), [Italiano](https://docs.beeware.org/it), [Português<!-- codespell:ignore -->](https://docs.beeware.org/pt), [中文(简体)](https://docs.beeware.org/zh-cn), and [中文(繁體)](https://docs.beeware.org/zh-tw).
 ///
 
 
