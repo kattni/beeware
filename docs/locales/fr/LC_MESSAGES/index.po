@@ -16,11 +16,11 @@ msgstr ""
 
 #: docs/index.md%2Bheading
 msgid "Welcome to the BeeWare Tutorial!"
-msgstr "Bienvenue dans le didacticiel BeeWare"
+msgstr "Bienvenue dans le didacticiel BeeWare!"
 
 #: docs/index.md%2Bp
 msgid "**Write Python. Run Anywhere.**"
-msgstr ""
+msgstr "Bienvenue dans le didacticiel BeeWare!"
 
 #: docs/index.md%2Bp
 msgid ""
