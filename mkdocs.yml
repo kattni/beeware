@@ -14,6 +14,11 @@ theme:
     - navigation.path
     - content.code.copy
     - navigation.indexes
+  validation:
+    links:
+      absolute_links: relative_to_docs
+      anchors: warn
+      unrecognized_links: warn
   palette:
     # Palette toggle for light mode
     - scheme: default
@@ -58,7 +63,12 @@ extra:
       lang: es
 
 plugins:
-  - search
+  - search:
+      prebuild_index: true
+      lang:
+        - en
+        - es
+        - fr
   - autorefs
   - include-markdown
   - literate-nav:
