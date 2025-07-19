@@ -20,6 +20,10 @@ build:
     pre_build:
 #      - tox -e docs-lint
       - find . -ls
+      - python -m mkdocs build --clean --site-dir $READTHEDOCS_OUTPUT/html --config-file mkdocs.yml
+    build:
+      html:
+        - python -m mkdocs build --site-dir $READTHEDOCS_OUTPUT/html --config-file mkdocs.yml
     post_build:
       - find . -ls
       - cat ./build/lib/locales/fr/LC_MESSAGES/index.po
