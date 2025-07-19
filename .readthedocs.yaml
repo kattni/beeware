@@ -8,12 +8,13 @@ version: 2
 # Set the version of Python and other tools you might need
 build:
   os: ubuntu-22.04
+  apt_packages:
+    - libmd4c-dev
   tools:
     # Docs are always built on Python 3.12. See also the tox config.
     python: "3.12"
   jobs:
     pre_install:
-      - bash ./scripts/pre_install.sh
       - pip install mkdocs-material
 #    pre_build:
 #      - tox -e docs-lint

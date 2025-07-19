@@ -3,6 +3,6 @@ cd md4c
 cmake -B build
 cmake --build build
 cd build
-sudo cmake --install .
+cmake --install .
 cd ../..
 rm -rf md4c
