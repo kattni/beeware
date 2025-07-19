@@ -7,6 +7,7 @@ not_in_nav: |
 
 theme:
   name: material
+  language: en
   features:
     - content.tabs.link
     - toc.follow
@@ -33,6 +34,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.blocks.admonition
   - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.snippets
   - pymdownx.blocks.tab:
       alternate_style: true
   - toc:
@@ -70,3 +73,6 @@ plugins:
             dictionaries: [clear]
       known_words: spelling_wordlist
       ignore_code: yes
+  - mdpo:
+      locale_dir: ../locales
+      lc_messages: true

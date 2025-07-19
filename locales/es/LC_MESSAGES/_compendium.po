@@ -1,0 +1,75 @@
+#
+msgid ""
+msgstr ""
+
+msgid "Permanent link"
+msgstr ""
+
+msgid ":::"
+msgstr ""
+
+msgid ":::::: {.tabs} ::: {.group-tab} macOS"
+msgstr ""
+
+msgid "::: {.group-tab} Linux"
+msgstr ""
+
+msgid "::: {.group-tab} Windows"
+msgstr ""
+
+msgid "Next steps"
+msgstr ""
+
+msgid "::: ::::::"
+msgstr ""
+
+msgid "This should open a GUI window:"
+msgstr ""
+
+msgid "::::::: {.tabs} ::: {.group-tab} macOS"
+msgstr ""
+
+msgid ":::: {.group-tab} Linux"
+msgstr ""
+
+msgid ":::: {.group-tab} Windows"
+msgstr ""
+
+msgid ":::::::: {.tabs} ::: {.group-tab} macOS"
+msgstr ""
+
+msgid "Then modify the `say_hello()` callback so it looks like this:"
+msgstr ""
+
+msgid ""
+"When you enter a name and press the button, you should see a dialog that "
+"looks something like:"
+msgstr ""
+
+msgid "::: {.group-tab} Android"
+msgstr ""
+
+msgid ""
+"You can't run an Android app in developer mode - use the instructions for "
+"your chosen desktop platform. :::"
+msgstr ""
+
+msgid "::: {.group-tab} iOS"
+msgstr ""
+
+msgid ""
+"You can't run an iOS app in developer mode - use the instructions for your "
+"chosen desktop platform. ::: ::::::::"
+msgstr ""
+
+msgid "::: ::::::::"
+msgstr ""
+
+msgid "///"
+msgstr ""
+
+#~ msgid "Tutorial 5"
+#~ msgstr ""
+
+#~ msgid "Tutorial"
+#~ msgstr ""

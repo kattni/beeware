@@ -14,6 +14,7 @@ original_translation
 /// note | "Translations are available"
 
 If you're not comfortable with English, translations of this tutorial are available in [Deutsch](https://docs.beeware.org/de), [Español](https://docs.beeware.org/es), [Français](https://docs.beeware.org/fr), [Italiano](https://docs.beeware.org/it), [Português<!-- codespell:ignore -->](https://docs.beeware.org/pt), [中文(简体)](https://docs.beeware.org/zh-cn), and [中文(繁體)](https://docs.beeware.org/zh-tw).
+
 ///
 
 
@@ -29,6 +30,7 @@ than no translation at all.
 If you'd like the help improve the translation, get in touch! We have a
 `#translations` channel in [Discord](https://beeware.org/bee/chat/).
 Introduce yourself there and we will add you to the translation team.
+
 ///
 
 
@@ -43,6 +45,7 @@ machine translation, or not translated at all.
 If you'd like the help improve the translation, get in touch! We have a
 `#translations` channel in [Discord](https://beeware.org/bee/chat/).
 Introduce yourself there and we will add you to the translation team.
+
 ///
 
 
