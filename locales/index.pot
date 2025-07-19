@@ -13,7 +13,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.15.6\n"
 
 #: docs/index.md:1
-msgid "Welcome to the BeeWare!"
+msgid "Welcome to BeeWare!"
 msgstr ""
 
 #: docs/index.md:3
