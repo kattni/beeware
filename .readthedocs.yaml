@@ -10,7 +10,7 @@ build:
   os: ubuntu-22.04
   apt_packages:
     - libmd4c-dev
-    - libmd4c-html0
+    - libmd4c-html0-dev
   tools:
     # Docs are always built on Python 3.12. See also the tox config.
     python: "3.12"
