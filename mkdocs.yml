@@ -47,7 +47,15 @@ extra:
   "not_supported": ^&#x274C;^
   "beta": ○
   "stable": ●
-
+  alternate:
+    - name: English
+      lang: en
+    - name: Français
+      link: /fr/
+      lang: fr
+    - name: Español
+      link: /es/
+      lang: es
 
 plugins:
   - search
@@ -69,5 +77,5 @@ plugins:
       locale_dir: ../locales
       lc_messages: true
       languages:
-        - en
         - fr
+        - es
