@@ -76,4 +76,6 @@ plugins:
   - mdpo:
       locale_dir: ../locales
       lc_messages: true
-  - mkdocstrings
+  - mkdocstrings:
+      handlers:
+        - python
