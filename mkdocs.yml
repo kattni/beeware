@@ -77,5 +77,6 @@ plugins:
       locale_dir: ../locales
       lc_messages: true
       languages:
+        - en
         - es
         - fr
