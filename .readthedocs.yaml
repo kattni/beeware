@@ -22,7 +22,7 @@ build:
       - find . -ls
     post_build:
       - find . -ls
-      - cat ./build/lib/locales/fr/LC_MESSAGES/index.md.po
+      - cat ./build/lib/locales/fr/LC_MESSAGES/index.po
       - cat ./_readthedocs/html/fr/index.html
 
 # Build documentation in the docs/ directory with Sphinx
