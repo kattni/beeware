@@ -230,3 +230,31 @@ msgid ""
 "File C:\\...\\beeware-tutorial\\beeware-venv\\Scripts\\activate.ps1 cannot "
 "be loaded because running scripts is disabled on this system. "
 msgstr ""
+
+#~ msgid "  macOS"
+#~ msgstr ""
+
+#~ msgid " Linux"
+#~ msgstr ""
+
+#~ msgid " Windows"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you're on Windows, you can get the official installer from [the Python "
+#~ "website](https://www.python.org/downloads). You can use any stable version "
+#~ "of Python from 3.9 to 3.13. We'd also advise avoiding alphas, betas, and "
+#~ "release candidates unless you *really* know what you're doing. ::: "
+#~ msgstr ""
+
+#~ msgid " Alternative Python distributions"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "After installing these tools, you should ensure you restart any terminal "
+#~ "sessions. Windows will only expose newly installed tools terminals started "
+#~ "*after* the install has completed. ::: "
+#~ msgstr ""
+
+#~ msgid " Alternative virtual environments"
+#~ msgstr ""
