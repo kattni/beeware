@@ -18,10 +18,12 @@ interpreter that the `helloworld` directory defines a module.
 `python -m helloworld`, the `__main__.py` file is where Python will
 start executing. The contents of `__main__.py` is relatively simple:
 
-    from helloworld.app import main
+```python
+from helloworld.app import main
 
-    if __name__ == "__main__":
-        main().main_loop()
+if __name__ == "__main__":
+    main().main_loop()
+```
 
 This file does two things:
 
@@ -328,6 +330,6 @@ terminal where you ran `briefcase dev`.
 We\'ve now got an application that does something a little more
 interesting. But it only runs on our own computer. Let\'s package this
 application for distribution. In
-`Tutorial 3 <tutorial-3>`{.interpreted-text role="doc"}, we\'ll wrap our
+[Tutorial 3](tutorial-3.md), we\'ll wrap our
 application up as a standalone installer that we could send to a friend,
 a customer, or upload to an App Store.

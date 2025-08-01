@@ -12,7 +12,7 @@ and have the application Just Work.
 Briefcase can be used to package your application for distribution in
 this way.
 
-## Creating your application scaffold
+## Creating your application scaffold {: #someid }
 
 Since this is the first time we\'re packaging our application, we need
 to create some configuration files and other scaffolding to support the

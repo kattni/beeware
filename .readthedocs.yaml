@@ -8,9 +8,6 @@ version: 2
 # Set the version of Python and other tools you might need
 build:
   os: ubuntu-22.04
-  apt_packages:
-    - libmd4c-dev
-    - libmd4c-html0-dev
   tools:
     # Docs are always built on Python 3.12. See also the tox config.
     python: "3.12"
@@ -19,12 +16,11 @@ build:
       - pip install mkdocs-material
 #    pre_build:
 #      - tox -e docs-lint
-    post_build:
-      - find . -ls
-      - cat ./build/lib/locales/fr/LC_MESSAGES/index.po
-      - cat ./_readthedocs/html/fr/index.html
+    build:
+      html:
+        - mkdocs build -f docs/locales/fr/mkdocs.fr.yml
 
-# Build documentation in the docs/ directory with Sphinx
+# Build documentation in the docs/ directory with MkDocs
 mkdocs:
  configuration: mkdocs.yml
 

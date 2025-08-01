@@ -1,10 +1,9 @@
-#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-19 16:59-0400\n"
+"POT-Creation-Date: 2025-07-31 17:25-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +16,35 @@ msgstr ""
 msgid "Tutorial 7 - Get this (third)-party started"
 msgstr ""
 
+#: docs/tutorial/tutorial-7.md:3
+msgid ""
+"So far, the app we\\'ve built has only used our own code, plus the code "
+"provided by BeeWare. However, in a real-world app, you\\'ll likely want to "
+"use a third-party library, downloaded from the Python Package Index (PyPI)."
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:8
+msgid "Let\\'s modify our app to include a third-party library."
+msgstr ""
+
 #: docs/tutorial/tutorial-7.md:10
 msgid "Adding a package"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:12
+msgid ""
+"Let\\'s modify our application to say a little bit more than just \\"
+"\"Hi, there!\\\"."
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:15
+msgid ""
+"To generate some more interesting text for the dialog, we\\'re going to use "
+"a library called [Faker]{1} . Faker is a Python package that generates fake "
+"content, including names and text blocks. The names and words in the text "
+"block are generated from an arbitrary list of words provided by Faker. We\\"
+"'re going to use Faker to construct a fake message, as if someone is "
+"responding to the user."
 msgstr ""
 
 #: docs/tutorial/tutorial-7.md:23
@@ -27,34 +53,345 @@ msgid ""
 "`app.py` to import `faker`:"
 msgstr ""
 
+#: docs/tutorial/tutorial-7.md:28
+msgid "Then modify the `say_hello()` callback so it looks like this:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:39
+msgid ""
+"Let\\'s run our updated app in Briefcase developer mode to check that our "
+"change has worked."
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:42
+msgctxt "docs/tutorial/tutorial-7.md:42"
+msgid ":::::::: {.tabs} ::: {.group-tab} macOS"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:63
+msgctxt "docs/tutorial/tutorial-7.md:63"
+msgid ":::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:65
+msgctxt "docs/tutorial/tutorial-7.md:65"
+msgid "::: {.group-tab} Linux"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:85
+msgctxt "docs/tutorial/tutorial-7.md:85"
+msgid ":::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:87
+msgctxt "docs/tutorial/tutorial-7.md:87"
+msgid "::: {.group-tab} Windows"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:107
+msgctxt "docs/tutorial/tutorial-7.md:107"
+msgid ":::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:109
+msgctxt "docs/tutorial/tutorial-7.md:109"
+msgid "::: {.group-tab} Android"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:112
+msgctxt "docs/tutorial/tutorial-7.md:112"
+msgid ""
+"You can\\'t run an Android app in developer mode - use the instructions for "
+"your chosen desktop platform. :::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:116
+msgctxt "docs/tutorial/tutorial-7.md:116"
+msgid "::: {.group-tab} iOS"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:119
+msgctxt "docs/tutorial/tutorial-7.md:119"
+msgid ""
+"You can\\'t run an iOS app in developer mode - use the instructions for your "
+"chosen desktop platform. ::: ::::::::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:124
+msgid ""
+"What happened? We\\'ve added `faker` to our *code*, but we haven\\'t added "
+"it to our development virtual environment. We can fix this by installing "
+"`faker` with `pip`, and then re-running `briefcase dev`:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:128
+msgctxt "docs/tutorial/tutorial-7.md:128"
+msgid ":::::::: {.tabs} ::: {.group-tab} macOS"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:137
+msgctxt "docs/tutorial/tutorial-7.md:137"
+msgid ""
+"When you enter a name and press the button, you should see a dialog that "
+"looks something like:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:140
+msgid "![Hello World Tutorial 7 dialog, on macOS]{1}{.align-center} :::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:143
+msgctxt "docs/tutorial/tutorial-7.md:143"
+msgid "::: {.group-tab} Linux"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:151
+msgctxt "docs/tutorial/tutorial-7.md:151"
+msgid ""
+"When you enter a name and press the button, you should see a dialog that "
+"looks something like:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:154
+msgid "![Hello World Tutorial 7 dialog, on Linux]{1}{.align-center} :::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:157
+msgctxt "docs/tutorial/tutorial-7.md:157"
+msgid "::: {.group-tab} Windows"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:165
+msgctxt "docs/tutorial/tutorial-7.md:165"
+msgid ""
+"When you enter a name and press the button, you should see a dialog that "
+"looks something like:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:168
+msgid "![Hello World Tutorial 7 dialog, on Windows]{1}{.align-center} :::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:171
+msgctxt "docs/tutorial/tutorial-7.md:171"
+msgid "::: {.group-tab} Android"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:174
+msgctxt "docs/tutorial/tutorial-7.md:174"
+msgid ""
+"You can\\'t run an Android app in developer mode - use the instructions for "
+"your chosen desktop platform. :::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:178
+msgctxt "docs/tutorial/tutorial-7.md:178"
+msgid "::: {.group-tab} iOS"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:181
+msgctxt "docs/tutorial/tutorial-7.md:181"
+msgid ""
+"You can\\'t run an iOS app in developer mode - use the instructions for your "
+"chosen desktop platform. ::: ::::::::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:186
+msgid ""
+"We\\'ve now got a working app, using a third party library, running in "
+"development mode!"
+msgstr ""
+
 #: docs/tutorial/tutorial-7.md:189
 msgid "Running the updated app"
 msgstr ""
 
-#: docs/tutorial/tutorial-7.md:199 docs/tutorial/tutorial-7.md:237
-#: docs/tutorial/tutorial-7.md:292 docs/tutorial/tutorial-7.md:330
-#: docs/tutorial/tutorial-7.md:405
+#: docs/tutorial/tutorial-7.md:191
+msgid ""
+"Let\\'s get this updated application code packaged as a standalone app. "
+"Since we\\'ve made code changes, we need to follow the same steps as in `"
+"Tutorial 4 <tutorial-4>`{.interpreted-text role=\"doc\"}:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:195
+msgctxt "docs/tutorial/tutorial-7.md:195"
+msgid ":::::::: {.tabs} ::: {.group-tab} macOS"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:199
+msgctxt "docs/tutorial/tutorial-7.md:199"
 msgid "Update the code in the packaged app:"
 msgstr ""
 
-#: docs/tutorial/tutorial-7.md:210 docs/tutorial/tutorial-7.md:248
-#: docs/tutorial/tutorial-7.md:303 docs/tutorial/tutorial-7.md:341
-#: docs/tutorial/tutorial-7.md:416
+#: docs/tutorial/tutorial-7.md:210
+msgctxt "docs/tutorial/tutorial-7.md:210"
 msgid "Rebuild the app:"
 msgstr ""
 
-#: docs/tutorial/tutorial-7.md:219 docs/tutorial/tutorial-7.md:262
-#: docs/tutorial/tutorial-7.md:312
+#: docs/tutorial/tutorial-7.md:219
+msgctxt "docs/tutorial/tutorial-7.md:219"
 msgid "And finally, run the app:"
 msgstr ""
 
-#: docs/tutorial/tutorial-7.md:351 docs/tutorial/tutorial-7.md:426
+#: docs/tutorial/tutorial-7.md:228
+msgctxt "docs/tutorial/tutorial-7.md:228"
+msgid ""
+"However, when the app runs, you\\'ll see an error in the console, plus a "
+"crash dialog:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:231
+msgid "![Hello World Tutorial 7 app crash, on macOS]{1}{.align-center} :::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:234
+msgctxt "docs/tutorial/tutorial-7.md:234"
+msgid "::: {.group-tab} Linux"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:237
+msgctxt "docs/tutorial/tutorial-7.md:237"
+msgid "Update the code in the packaged app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:248
+msgctxt "docs/tutorial/tutorial-7.md:248"
+msgid "Rebuild the app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:262
+msgctxt "docs/tutorial/tutorial-7.md:262"
+msgid "And finally, run the app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:271
+msgctxt "docs/tutorial/tutorial-7.md:271"
+msgid "However, when the app runs, you\\'ll see an error in the console:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:287
+msgctxt "docs/tutorial/tutorial-7.md:287"
+msgid ":::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:289
+msgctxt "docs/tutorial/tutorial-7.md:289"
+msgid "::: {.group-tab} Windows"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:292
+msgctxt "docs/tutorial/tutorial-7.md:292"
+msgid "Update the code in the packaged app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:303
+msgctxt "docs/tutorial/tutorial-7.md:303"
+msgid "Rebuild the app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:312
+msgctxt "docs/tutorial/tutorial-7.md:312"
+msgid "And finally, run the app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:321
+msgctxt "docs/tutorial/tutorial-7.md:321"
+msgid ""
+"However, when the app runs, you\\'ll see an error in the console, plus a "
+"crash dialog:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:324
+msgid "![Hello World Tutorial 7 app crash, on Windows]{1}{.align-center} :::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:327
+msgctxt "docs/tutorial/tutorial-7.md:327"
+msgid "::: {.group-tab} Android"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:330
+msgctxt "docs/tutorial/tutorial-7.md:330"
+msgid "Update the code in the packaged app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:341
+msgctxt "docs/tutorial/tutorial-7.md:341"
+msgid "Rebuild the app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:351
+msgctxt "docs/tutorial/tutorial-7.md:351"
 msgid "And finally, run the app (selecting a simulator when prompted):"
 msgstr ""
 
-#: docs/tutorial/tutorial-7.md:469
+#: docs/tutorial/tutorial-7.md:360
+msgctxt "docs/tutorial/tutorial-7.md:360"
+msgid "However, when the app runs, you\\'ll see an error in the console:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:400
+msgctxt "docs/tutorial/tutorial-7.md:400"
+msgid ":::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:402
+msgctxt "docs/tutorial/tutorial-7.md:402"
+msgid "::: {.group-tab} iOS"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:405
+msgctxt "docs/tutorial/tutorial-7.md:405"
+msgid "Update the code in the packaged app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:416
+msgctxt "docs/tutorial/tutorial-7.md:416"
+msgid "Rebuild the app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:426
+msgctxt "docs/tutorial/tutorial-7.md:426"
+msgid "And finally, run the app (selecting a simulator when prompted):"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:436
+msgid "However, when the app runs, you\\'ll see an error in the console"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:448
+msgctxt "docs/tutorial/tutorial-7.md:448"
+msgid "::: ::::::::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:451
 msgid ""
-"So - we need to tell Briefcase that our app has an external dependency."
+"Once again, the app has failed to start because `faker` has not been "
+"installed -but why? Haven\\'t we already installed `faker`?"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:454
+msgid ""
+"We have - but only in the development environment. Your development "
+"environment is entirely local to your machine - and is only enabled when you "
+"explicitly activate it. Although Briefcase has a development mode, the main "
+"reason you\\'d use Briefcase is to package up your code so you can give it "
+"to someone else."
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:460
+msgid ""
+"The only way to guarantee that someone else will have a Python environment "
+"that contains everything it needs is to build a completely isolated Python "
+"environment. This means there\\'s a completely isolated Python install, and "
+"a completely isolated set of dependencies. This is what Briefcase is "
+"building when you run `briefcase build` - an isolated Python environment. "
+"This also explains why `faker` isn\\'t installed - it has been installed in "
+"your *development* environment, but not in the packaged app."
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:469
+msgid "So - we need to tell Briefcase that our app has an external dependency."
 msgstr ""
 
 #: docs/tutorial/tutorial-7.md:471
@@ -76,13 +413,20 @@ msgstr ""
 
 #: docs/tutorial/tutorial-7.md:488
 msgid ""
-"The `requires` option describes the dependencies of our application. It is a"
-" list of strings, specifying libraries (and, optionally, versions) of "
+"The `requires` option describes the dependencies of our application. It is a "
+"list of strings, specifying libraries (and, optionally, versions) of "
 "libraries that you want to be included with your app."
 msgstr ""
 
 #: docs/tutorial/tutorial-7.md:492
 msgid "Modify the `requires` setting so that it reads:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:498
+msgid ""
+"By adding this setting, we\\'re telling Briefcase \\\"when you build my app, "
+"run `pip install faker` into the application bundle\\\". Anything that would "
+"be legal input to `pip install` can be used here - so, you could specify:"
 msgstr ""
 
 #: docs/tutorial/tutorial-7.md:503
@@ -95,16 +439,100 @@ msgstr ""
 
 #: docs/tutorial/tutorial-7.md:505
 msgid ""
-"A path to a git repository (e.g., "
-"`\"git+https://github.com/joke2k/faker/\"`); or"
+"A path to a git repository (e.g., `\"git+https://github.com/joke2k/faker/\""
+"`); or"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:507
+msgid ""
+"A local file path (However - be warned: if you give your code to someone "
+"else, this path probably won\\'t exist on their machine!)"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:510
+msgid ""
+"Further down in `pyproject.toml`, you\\'ll notice other sections that are "
+"operating system dependent, like `[tool.briefcase.app.helloworld.macOS]` and "
+"`[tool.briefcase.app.helloworld.windows]`. These sections *also* have a "
+"`requires` setting. These settings allow you to define additional platform-"
+"specific dependencies - so, for example, if you need a platform-specific "
+"library to handle some aspect of your app, you can specify that library in "
+"the platform-specific `requires` section, and that setting will only be used "
+"for that platform. You will notice that the `toga` libraries are all "
+"specified in the platform-specific `requires` section - this is because the "
+"libraries needed to display a user interface are platform specific."
 msgstr ""
 
 #: docs/tutorial/tutorial-7.md:522
 msgid ""
-"In our case, we want `faker` to be installed on all platforms, so we use the"
-" app-level `requires` setting. The app-level dependencies will always be "
-"installed; the platform-specific dependencies are installed *in addition* to"
-" the app-level ones."
+"In our case, we want `faker` to be installed on all platforms, so we use the "
+"app-level `requires` setting. The app-level dependencies will always be "
+"installed; the platform-specific dependencies are installed *in addition* to "
+"the app-level ones."
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:527
+msgid ""
+"Now that we\\'ve told Briefcase about our additional requirements, we can "
+"try packaging our app again. Ensure that you\\'ve saved your changes to "
+"`pyproject.toml`, and then update your app again - this time, passing in the "
+"`-r` flag. This tells Briefcase to update requirements in the packaged app:"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:533
+msgctxt "docs/tutorial/tutorial-7.md:533"
+msgid ":::::::: {.tabs} ::: {.group-tab} macOS"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:555
+msgctxt "docs/tutorial/tutorial-7.md:555"
+msgid ":::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:557
+msgctxt "docs/tutorial/tutorial-7.md:557"
+msgid "::: {.group-tab} Linux"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:584
+msgctxt "docs/tutorial/tutorial-7.md:584"
+msgid ":::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:586
+msgctxt "docs/tutorial/tutorial-7.md:586"
+msgid "::: {.group-tab} Windows"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:607
+msgctxt "docs/tutorial/tutorial-7.md:607"
+msgid ":::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:609
+msgctxt "docs/tutorial/tutorial-7.md:609"
+msgid "::: {.group-tab} Android"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:626
+msgctxt "docs/tutorial/tutorial-7.md:626"
+msgid ":::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:628
+msgctxt "docs/tutorial/tutorial-7.md:628"
+msgid "::: {.group-tab} iOS"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:650
+msgctxt "docs/tutorial/tutorial-7.md:650"
+msgid "::: ::::::::"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:653
+msgid ""
+"Once you\\'ve updated, you can run `briefcase build` and `briefcase run` - "
+"and you should see your packaged app, with the new dialog behavior."
 msgstr ""
 
 #: docs/tutorial/tutorial-7.md:657
@@ -118,416 +546,74 @@ msgstr ""
 msgid "Third-Party Python Packages for Mobile and Web"
 msgstr ""
 
-msgid ""
-"So far, the app we've built has only used our own code, plus the code "
-"provided by BeeWare. However, in a real-world app, you'll likely want to use"
-" a third-party library, downloaded from the Python Package Index (PyPI)."
-msgstr ""
-
-msgid "Let's modify our app to include a third-party library."
-msgstr ""
-
-msgid ""
-"Let's modify our application to say a little bit more than just \"Hi, "
-"there!\"."
-msgstr ""
-
-msgid ""
-"To generate some more interesting text for the dialog, we're going to use a "
-"library called [Faker](https://faker.readthedocs.io/en/stable/) . Faker is a"
-" Python package that generates fake content, including names and text "
-"blocks. The names and words in the text block are generated from an "
-"arbitrary list of words provided by Faker. We're going to use Faker to "
-"construct a fake message, as if someone is responding to the user."
-msgstr ""
-
-msgid ""
-"Let's run our updated app in Briefcase developer mode to check that our "
-"change has worked."
-msgstr ""
-
-msgid ""
-"What happened? We've added `faker` to our *code*, but we haven't added it to"
-" our development virtual environment. We can fix this by installing `faker` "
-"with `pip`, and then re-running `briefcase dev`:"
-msgstr ""
-
-msgid ""
-"![Hello World Tutorial 7 dialog, on "
-"macOS](images/macOS/tutorial-7.png){.align-center} :::"
-msgstr ""
-
-msgid ""
-"![Hello World Tutorial 7 dialog, on "
-"Linux](images/linux/tutorial-7.png){.align-center} :::"
-msgstr ""
-
-msgid ""
-"![Hello World Tutorial 7 dialog, on "
-"Windows](images/windows/tutorial-7.png){.align-center} :::"
-msgstr ""
-
-msgid ""
-"We've now got a working app, using a third party library, running in "
-"development mode!"
-msgstr ""
-
-msgid ""
-"Let's get this updated application code packaged as a standalone app. Since "
-"we've made code changes, we need to follow the same steps as in `Tutorial 4 "
-"<tutorial-4>`{.interpreted-text role=\"doc\"}:"
-msgstr ""
-
-msgid ""
-"However, when the app runs, you'll see an error in the console, plus a crash"
-" dialog:"
-msgstr ""
-
-msgid ""
-"![Hello World Tutorial 7 app crash, on "
-"macOS](images/macOS/tutorial-7-crash.png){.align-center} :::"
-msgstr ""
-
-msgid "However, when the app runs, you'll see an error in the console:"
-msgstr ""
-
-msgid ""
-"![Hello World Tutorial 7 app crash, on "
-"Windows](images/windows/tutorial-7-crash.png){.align-center} :::"
-msgstr ""
-
-msgid "However, when the app runs, you'll see an error in the console"
-msgstr ""
-
-msgid ""
-"Once again, the app has failed to start because `faker` has not been "
-"installed -but why? Haven't we already installed `faker`?"
-msgstr ""
-
-msgid ""
-"We have - but only in the development environment. Your development "
-"environment is entirely local to your machine - and is only enabled when you"
-" explicitly activate it. Although Briefcase has a development mode, the main"
-" reason you'd use Briefcase is to package up your code so you can give it to"
-" someone else."
-msgstr ""
-
-msgid ""
-"The only way to guarantee that someone else will have a Python environment "
-"that contains everything it needs is to build a completely isolated Python "
-"environment. This means there's a completely isolated Python install, and a "
-"completely isolated set of dependencies. This is what Briefcase is building "
-"when you run `briefcase build` - an isolated Python environment. This also "
-"explains why `faker` isn't installed - it has been installed in your "
-"*development* environment, but not in the packaged app."
-msgstr ""
-
-msgid ""
-"By adding this setting, we're telling Briefcase \"when you build my app, run"
-" `pip install faker` into the application bundle\". Anything that would be "
-"legal input to `pip install` can be used here - so, you could specify:"
-msgstr ""
-
-msgid ""
-"A local file path (However - be warned: if you give your code to someone "
-"else, this path probably won't exist on their machine!)"
-msgstr ""
-
-msgid ""
-"Further down in `pyproject.toml`, you'll notice other sections that are "
-"operating system dependent, like `[tool.briefcase.app.helloworld.macOS]` and"
-" `[tool.briefcase.app.helloworld.windows]`. These sections *also* have a "
-"`requires` setting. These settings allow you to define additional platform-"
-"specific dependencies - so, for example, if you need a platform-specific "
-"library to handle some aspect of your app, you can specify that library in "
-"the platform-specific `requires` section, and that setting will only be used"
-" for that platform. You will notice that the `toga` libraries are all "
-"specified in the platform-specific `requires` section - this is because the "
-"libraries needed to display a user interface are platform specific."
-msgstr ""
-
-msgid ""
-"Now that we've told Briefcase about our additional requirements, we can try "
-"packaging our app again. Ensure that you've saved your changes to "
-"`pyproject.toml`, and then update your app again - this time, passing in the"
-" `-r` flag. This tells Briefcase to update requirements in the packaged app:"
-msgstr ""
-
-msgid ""
-"Once you've updated, you can run `briefcase build` and `briefcase run` - and"
-" you should see your packaged app, with the new dialog behavior."
-msgstr ""
-
+#: docs/tutorial/tutorial-7.md:664
 msgid ""
 "Faker is just one example of a third-party Python package - a collection of "
-"code that isn't part what Python provides out of the box. These third-party "
-"packages are most commonly distributed using the [Python Package Index "
-"(PyPI)](https://pypi.org), and installed into your local virtual "
-"environment. We've been using `pip` in this tutorial, but there are other "
+"code that isn\\'t part what Python provides out of the box. These third-"
+"party packages are most commonly distributed using the "
+"[Python Package Index (PyPI)]{1}, and installed into your local virtual "
+"environment. We\\'ve been using `pip` in this tutorial, but there are other "
 "options."
 msgstr ""
 
+#: docs/tutorial/tutorial-7.md:671
 msgid ""
 "On desktop platforms (macOS, Windows, Linux), essentially any package on "
 "PyPI package can be installed into your virtual environment, or added to "
-"your app's requirements. However, when building an app for mobile or web "
-"platforms, [your options are slightly "
-"limited](https://briefcase.beeware.org/en/latest/about/faq.html#can-i-use-"
-"third-party-python-packages-in-my-app)."
+"your app\\'s requirements. However, when building an app for mobile or web "
+"platforms, [your options are slightly limited]{1}."
 msgstr ""
 
+#: docs/tutorial/tutorial-7.md:677
 msgid ""
-"In short; any *pure Python* package (i.e. any package created from a project"
-" written *only* in Python) can be used without difficulty. Some packages, "
+"In short; any *pure Python* package (i.e. any package created from a project "
+"written *only* in Python) can be used without difficulty. Some packages, "
 "though, are created from projects that contain both Python and other "
-"languages (e.g. C, C++, Rust, etc). Code written in those languages needs to"
-" be compiled to platform-specific binary modules before it can be used, and "
+"languages (e.g. C, C++, Rust, etc). Code written in those languages needs to "
+"be compiled to platform-specific binary modules before it can be used, and "
 "those pre-compiled binary modules are only available on specific platforms. "
-"Mobile and web platforms have very different requirements than \"standard\" "
-"desktop platforms. At this time, most Python packages don't provide pre-"
-"compiled binaries for mobile and web platforms."
+"Mobile and web platforms have very different requirements than \\"
+"\"standard\\\" desktop platforms. At this time, most Python packages don\\'t "
+"provide pre-compiled binaries for mobile and web platforms."
 msgstr ""
 
+#: docs/tutorial/tutorial-7.md:688
 msgid ""
 "On PyPI, packages are often provided in a pre-built distribution format "
-"called *wheels*. To check whether a package is pure Python, look at the PyPI"
-" downloads page for the project. If the wheels provided have a `-py3-none-"
-"any.whl` suffix (e.g., "
-"[Faker](https://pypi.org/project/Faker/37.3.0/#files)), then they are pure "
-"Python wheels. However, if the wheels have version and platform-specific "
-"extensions (e.g., [Pillow](https://pypi.org/project/pillow/11.2.1/#files), "
-"which has wheels with suffixes like `-cp313-cp313-macosx_11_0_arm64.whl` and"
-" `-cp39-cp39-win_amd64.whl`), then the wheel *contains a binary component*. "
-"That package cannot be installed on mobile or web platforms unless a wheel "
-"compatible with those platforms has been provided."
+"called *wheels*. To check whether a package is pure Python, look at the PyPI "
+"downloads page for the project. If the wheels provided have a `-py3-none-"
+"any.whl` suffix (e.g., [Faker]{1}), then they are pure Python wheels. "
+"However, if the wheels have version and platform-specific extensions (e.g., "
+"[Pillow]{2}, which has wheels with suffixes like "
+"`-cp313-cp313-macosx_11_0_arm64.whl` and `-cp39-cp39-win_amd64.whl`), then "
+"the wheel *contains a binary component*. That package cannot be installed on "
+"mobile or web platforms unless a wheel compatible with those platforms has "
+"been provided."
 msgstr ""
 
+#: docs/tutorial/tutorial-7.md:701
 msgid ""
-"At this time, *most* binary packages on PyPI don't provide mobile- or web-"
+"At this time, *most* binary packages on PyPI don\\'t provide mobile- or web-"
 "compatible wheels. To fill this gap, BeeWare provides binaries for some "
 "popular binary modules (including `numpy`, `pandas`, and `cryptography`). "
-"These wheels are *not* distributed on PyPI, but Briefcase will install those"
-" wheels if they're available."
+"These wheels are *not* distributed on PyPI, but Briefcase will install those "
+"wheels if they\\'re available."
 msgstr ""
 
+#: docs/tutorial/tutorial-7.md:707
 msgid ""
-"It's *usually* possible to compile binary packages for mobile platforms, but"
-" it's not easy to set up -- well outside the scope of an introductory "
+"It\\'s *usually* possible to compile binary packages for mobile platforms, "
+"but it\\'s not easy to set up \\-- well outside the scope of an introductory "
 "tutorial like this one."
 msgstr ""
 
+#: docs/tutorial/tutorial-7.md:711
+msgid "Next steps"
+msgstr ""
+
+#: docs/tutorial/tutorial-7.md:713
 msgid ""
-"We've now got an app that uses a third-party library! In `Tutorial 8 "
-"<tutorial-8>`{.interpreted-text role=\"doc\"} we'll learn how to ensure our "
-"app remains responsive as we add more complex application logic."
+"We\\'ve now got an app that uses a third-party library! In `Tutorial 8 "
+"<tutorial-8>`{.interpreted-text role=\"doc\"} we\\'ll learn how to ensure "
+"our app remains responsive as we add more complex application logic."
 msgstr ""
-
-msgid "import faker "
-msgstr ""
-
-msgid ""
-"async def say_hello(self, widget):     fake = faker.Faker()     await "
-"self.main_window.dialog(         toga.InfoDialog(             "
-"greeting(self.name_input.value),             f\"A message from "
-"{fake.name()}: {fake.text()}\",         )     ) "
-msgstr ""
-
-msgid ""
-"[tool.briefcase.app.helloworld] formal_name = \"Hello World\" description = "
-"\"A Tutorial app\" long_description = \"\"\"More details about the app "
-"should go here. \"\"\" sources = [\"src/helloworld\"] requires = [] "
-msgstr ""
-
-msgid "requires = [     \"faker\", ] "
-msgstr ""
-
-#~ msgid ""
-#~ "So far, the app we\\'ve built has only used our own code, plus the code "
-#~ "provided by BeeWare. However, in a real-world app, you\\'ll likely want to "
-#~ "use a third-party library, downloaded from the Python Package Index (PyPI)."
-#~ msgstr ""
-
-#~ msgid "Let\\'s modify our app to include a third-party library."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Let\\'s modify our application to say a little bit more than just \\\"Hi, "
-#~ "there!\\\"."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "To generate some more interesting text for the dialog, we\\'re going to use "
-#~ "a library called [Faker]{1} . Faker is a Python package that generates fake "
-#~ "content, including names and text blocks. The names and words in the text "
-#~ "block are generated from an arbitrary list of words provided by Faker. "
-#~ "We\\'re going to use Faker to construct a fake message, as if someone is "
-#~ "responding to the user."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Let\\'s run our updated app in Briefcase developer mode to check that our "
-#~ "change has worked."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "What happened? We\\'ve added `faker` to our *code*, but we haven\\'t added "
-#~ "it to our development virtual environment. We can fix this by installing "
-#~ "`faker` with `pip`, and then re-running `briefcase dev`:"
-#~ msgstr ""
-
-#~ msgid "![Hello World Tutorial 7 dialog, on macOS]{1}{.align-center} :::"
-#~ msgstr ""
-
-#~ msgid "![Hello World Tutorial 7 dialog, on Linux]{1}{.align-center} :::"
-#~ msgstr ""
-
-#~ msgid "![Hello World Tutorial 7 dialog, on Windows]{1}{.align-center} :::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We\\'ve now got a working app, using a third party library, running in "
-#~ "development mode!"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Let\\'s get this updated application code packaged as a standalone app. "
-#~ "Since we\\'ve made code changes, we need to follow the same steps as in "
-#~ "`Tutorial 4 <tutorial-4>`{.interpreted-text role=\"doc\"}:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "However, when the app runs, you\\'ll see an error in the console, plus a "
-#~ "crash dialog:"
-#~ msgstr ""
-
-#~ msgid "![Hello World Tutorial 7 app crash, on macOS]{1}{.align-center} :::"
-#~ msgstr ""
-
-#~ msgid "However, when the app runs, you\\'ll see an error in the console:"
-#~ msgstr ""
-
-#~ msgid "![Hello World Tutorial 7 app crash, on Windows]{1}{.align-center} :::"
-#~ msgstr ""
-
-#~ msgid "However, when the app runs, you\\'ll see an error in the console"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Once again, the app has failed to start because `faker` has not been "
-#~ "installed -but why? Haven\\'t we already installed `faker`?"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We have - but only in the development environment. Your development "
-#~ "environment is entirely local to your machine - and is only enabled when you"
-#~ " explicitly activate it. Although Briefcase has a development mode, the main"
-#~ " reason you\\'d use Briefcase is to package up your code so you can give it "
-#~ "to someone else."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The only way to guarantee that someone else will have a Python environment "
-#~ "that contains everything it needs is to build a completely isolated Python "
-#~ "environment. This means there\\'s a completely isolated Python install, and "
-#~ "a completely isolated set of dependencies. This is what Briefcase is "
-#~ "building when you run `briefcase build` - an isolated Python environment. "
-#~ "This also explains why `faker` isn\\'t installed - it has been installed in "
-#~ "your *development* environment, but not in the packaged app."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "By adding this setting, we\\'re telling Briefcase \\\"when you build my app,"
-#~ " run `pip install faker` into the application bundle\\\". Anything that "
-#~ "would be legal input to `pip install` can be used here - so, you could "
-#~ "specify:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "A local file path (However - be warned: if you give your code to someone "
-#~ "else, this path probably won\\'t exist on their machine!)"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Further down in `pyproject.toml`, you\\'ll notice other sections that are "
-#~ "operating system dependent, like `[tool.briefcase.app.helloworld.macOS]` and"
-#~ " `[tool.briefcase.app.helloworld.windows]`. These sections *also* have a "
-#~ "`requires` setting. These settings allow you to define additional platform-"
-#~ "specific dependencies - so, for example, if you need a platform-specific "
-#~ "library to handle some aspect of your app, you can specify that library in "
-#~ "the platform-specific `requires` section, and that setting will only be used"
-#~ " for that platform. You will notice that the `toga` libraries are all "
-#~ "specified in the platform-specific `requires` section - this is because the "
-#~ "libraries needed to display a user interface are platform specific."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Now that we\\'ve told Briefcase about our additional requirements, we can "
-#~ "try packaging our app again. Ensure that you\\'ve saved your changes to "
-#~ "`pyproject.toml`, and then update your app again - this time, passing in the"
-#~ " `-r` flag. This tells Briefcase to update requirements in the packaged app:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Once you\\'ve updated, you can run `briefcase build` and `briefcase run` - "
-#~ "and you should see your packaged app, with the new dialog behavior."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Faker is just one example of a third-party Python package - a collection of "
-#~ "code that isn\\'t part what Python provides out of the box. These third-"
-#~ "party packages are most commonly distributed using the [Python Package Index"
-#~ " (PyPI)]{1}, and installed into your local virtual environment. We\\'ve been"
-#~ " using `pip` in this tutorial, but there are other options."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "On desktop platforms (macOS, Windows, Linux), essentially any package on "
-#~ "PyPI package can be installed into your virtual environment, or added to "
-#~ "your app\\'s requirements. However, when building an app for mobile or web "
-#~ "platforms, [your options are slightly limited]{1}."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "In short; any *pure Python* package (i.e. any package created from a project"
-#~ " written *only* in Python) can be used without difficulty. Some packages, "
-#~ "though, are created from projects that contain both Python and other "
-#~ "languages (e.g. C, C++, Rust, etc). Code written in those languages needs to"
-#~ " be compiled to platform-specific binary modules before it can be used, and "
-#~ "those pre-compiled binary modules are only available on specific platforms. "
-#~ "Mobile and web platforms have very different requirements than "
-#~ "\\\"standard\\\" desktop platforms. At this time, most Python packages "
-#~ "don\\'t provide pre-compiled binaries for mobile and web platforms."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "On PyPI, packages are often provided in a pre-built distribution format "
-#~ "called *wheels*. To check whether a package is pure Python, look at the PyPI"
-#~ " downloads page for the project. If the wheels provided have a `-py3-none-"
-#~ "any.whl` suffix (e.g., [Faker]{1}), then they are pure Python wheels. "
-#~ "However, if the wheels have version and platform-specific extensions (e.g., "
-#~ "[Pillow]{2}, which has wheels with suffixes like "
-#~ "`-cp313-cp313-macosx_11_0_arm64.whl` and `-cp39-cp39-win_amd64.whl`), then "
-#~ "the wheel *contains a binary component*. That package cannot be installed on"
-#~ " mobile or web platforms unless a wheel compatible with those platforms has "
-#~ "been provided."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "At this time, *most* binary packages on PyPI don\\'t provide mobile- or web-"
-#~ "compatible wheels. To fill this gap, BeeWare provides binaries for some "
-#~ "popular binary modules (including `numpy`, `pandas`, and `cryptography`). "
-#~ "These wheels are *not* distributed on PyPI, but Briefcase will install those"
-#~ " wheels if they\\'re available."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "It\\'s *usually* possible to compile binary packages for mobile platforms, "
-#~ "but it\\'s not easy to set up \\-- well outside the scope of an introductory"
-#~ " tutorial like this one."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We\\'ve now got an app that uses a third-party library! In `Tutorial 8 "
-#~ "<tutorial-8>`{.interpreted-text role=\"doc\"} we\\'ll learn how to ensure "
-#~ "our app remains responsive as we add more complex application logic."
-#~ msgstr ""

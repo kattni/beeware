@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-19 16:59-0400\n"
+"POT-Creation-Date: 2025-07-19 19:48-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,11 +15,11 @@ msgstr ""
 
 #: docs/index.md:1
 msgid "Welcome to BeeWare!"
-msgstr "French translation!"
+msgstr "FRENCH TRANSLATION!"
 
 #: docs/index.md:3
 msgid "**Write Python. Run Anywhere.**"
-msgstr "**More French.**"
+msgstr "**More French. Further French.**"
 
 #: docs/index.md:5
 msgid ""
@@ -108,9 +108,10 @@ msgid ""
 "available in [Deutsch](https://docs.beeware.org/de), "
 "[Español](https://docs.beeware.org/es), "
 "[Français](https://docs.beeware.org/fr), "
-"[Italiano](https://docs.beeware.org/it), [Português<!-- codespell:ignore "
-"-->](https://docs.beeware.org/pt), [中文(简体)](https://docs.beeware.org/zh-cn),"
-" and [中文(繁體)](https://docs.beeware.org/zh-tw)."
+"[Italiano](https://docs.beeware.org/it), "
+"[Português](https://docs.beeware.org/pt), "
+"[中文(简体)](https://docs.beeware.org/zh-cn), and "
+"[中文(繁體)](https://docs.beeware.org/zh-tw)."
 msgstr ""
 
 msgid ""
@@ -135,15 +136,6 @@ msgstr ""
 msgid ""
 "Ready to try BeeWare for yourself? [Let's build a cross platform application"
 " in Python!](tutorial/tutorial-0.md)"
-msgstr ""
-
-msgid "\"Translations are available\""
-msgstr ""
-
-msgid "This is a machine translation!"
-msgstr ""
-
-msgid "This is a translation!"
 msgstr ""
 
 #~ msgid ""
@@ -174,4 +166,13 @@ msgstr ""
 #~ msgid ""
 #~ "Ready to try BeeWare for yourself? [Let's build a cross platform application"
 #~ " in Python!]{1}"
+#~ msgstr ""
+
+#~ msgid "\"Translations are available\""
+#~ msgstr ""
+
+#~ msgid "This is a machine translation!"
+#~ msgstr ""
+
+#~ msgid "This is a translation!"
 #~ msgstr ""

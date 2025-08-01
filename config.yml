@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+not_in_nav: |
+  /index.md
+
+validation:
+  omitted_files: warn
+  absolute_links: relative_to_docs
+  anchors: warn
+  unrecognized_links: warn
+
+theme:
+  name: material
+  language: en
+  features:
+    - content.tabs.link
+    - toc.follow
+    - navigation.path
+    - content.code.copy
+    - navigation.indexes
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: deep purple
+      toggle:
+       icon: material/brightness-7
+       name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: deep purple
+      toggle:
+       icon: material/brightness-4
+       name: Switch to light mode
+
+markdown_extensions:
+  pymdownx.highlight:
+    anchor_linenums: true
+  pymdownx.superfences: {}
+  pymdownx.blocks.admonition: {}
+  pymdownx.caret: {}
+  pymdownx.blocks.tab:
+    alternate_style: true
+  toc:
+    permalink: true
+    title: On this page
+  attr_list: {}
+
+extra:
+  "beta_support": ^&beta;^
+  "not_supported": ^&#x274C;^
+  "beta": ○
+  "stable": ●
+
+plugins:
+  search: {}
+  autorefs: {}
+  include-markdown: {}
+  literate-nav:
+    nav_file: SUMMARY.md
+  macros:
+    # Remove the below customisations after markdown is cleaned up
+    j2_comment_start_string: '[#'  # Set temporarily to deal with title anchors
+    j2_comment_end_string: '#]'  # Set temporarily to deal with title anchors
+  table-reader: {}
+  spellcheck:
+    backends:
+      - codespell:
+          dictionaries: [clear]
+    known_words: ../../spelling_wordlist.txt
+    ignore_code: yes
