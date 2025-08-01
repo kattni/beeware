@@ -18,7 +18,7 @@ build:
 #      - tox -e docs-lint
     build:
       html:
-        - mkdocs build -f docs/locales/fr/mkdocs.fr.yml
+        - mkdocs build -f docs/locales/fr/mkdocs.fr.yml -d /fr
 
 # Build documentation in the docs/ directory with MkDocs
 mkdocs:
