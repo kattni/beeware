@@ -1,7 +1,3 @@
 INHERIT: ./config.yml
 site_name: BeeWare Tutorial
 site_url: https://docs.beeware.org/
-
-plugins:
-  spellcheck:
-    known_words: spelling_wordlist.txt
