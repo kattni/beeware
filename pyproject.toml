@@ -73,7 +73,6 @@ docs = [
     "codespell",
     "symspellpy",
     "mkdocstrings",
-    "mkdocs-mdpo-plugin @ git+https://github.com/kattni/mkdocs-mdpo-plugin",
 ]
 
 [tool.codespell]
