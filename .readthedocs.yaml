@@ -21,7 +21,7 @@ build:
        - |
          if [ "$READTHEDOCS_LANGUAGE" != "en" ];
          then
-            print($READTHEDOCS_LANGUAGE);
+            echo "$READTHEDOCS_LANGUAGE";
          fi
     build:
       html:
