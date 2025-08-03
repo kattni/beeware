@@ -39,4 +39,3 @@ if __name__ == "__main__":
             template_dir=SOURCE_DIR / "docs",
             output_dir=output_directory,
         )
-        print(output_directory)

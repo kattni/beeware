@@ -67,15 +67,7 @@ if __name__ == "__main__":
             # to build on its own, files must be available relative to the build.
             shutil.copy(
                 SOURCE_DIR / "docs" / "config" / f"mkdocs.{language}.yml",
-                temp_md_directory
-                / "home"
-                / "docs"
-                / "checkouts"
-                / "readthedocs.org"
-                / "user_builds"
-                / "project_slug"
-                / "checkouts"
-                / "latest",
+                temp_md_directory,
             )
             shutil.copy(
                 SOURCE_DIR / "docs" / "config" / "config.yml", temp_md_directory

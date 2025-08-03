@@ -15,6 +15,7 @@ build:
     pre_install:
       - pip install mkdocs-material
     pre_build:
+      - cp docs/spelling_wordlist.txt $READTHEDOCS_REPOSITORY_PATH
       - python translation_tools/build_rtd_md_translations.py $READTHEDOCS_LANGUAGE
 #      - tox -e docs-lint
     build:
