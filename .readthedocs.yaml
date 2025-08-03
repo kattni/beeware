@@ -15,16 +15,20 @@ build:
     pre_install:
       - pip install mkdocs-material
     pre_build:
-      - cp docs/spelling_wordlist.txt $READTHEDOCS_REPOSITORY_PATH
-      - python translation_tools/build_rtd_md_translations.py $READTHEDOCS_LANGUAGE
+#      - cp docs/spelling_wordlist.txt $READTHEDOCS_REPOSITORY_PATH
+#      - python translation_tools/build_rtd_md_translations.py $READTHEDOCS_LANGUAGE
 #      - tox -e docs-lint
+       - |
+         if [ "$READTHEDOCS_LANGUAGE" != "en" ];
+         then
+            print($READTHEDOCS_LANGUAGE);
+         fi
     build:
       html:
         - python -m mkdocs build --config-file docs/config/mkdocs.$READTHEDOCS_LANGUAGE.yml --site-dir $READTHEDOCS_OUTPUT/html/
 
 # Build documentation in the docs/ directory with MkDocs
-mkdocs:
- configuration: mkdocs.yml
+
 
 # Build docs as PDF (other options are epub and htmlzip)
 #formats:
