@@ -13,8 +13,7 @@ build:
     python: "3.12"
   jobs:
     pre_install:
-      - pip install mkdocs-material
-      - pip install translate-toolkit
+      - pip install mkdocs-material translate-toolkit mistletoe
     pre_build:
 #      - cp docs/spelling_wordlist.txt $READTHEDOCS_REPOSITORY_PATH
 #      - python translation_tools/build_rtd_md_translations.py $READTHEDOCS_LANGUAGE
