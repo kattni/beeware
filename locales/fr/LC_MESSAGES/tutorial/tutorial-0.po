@@ -1,10 +1,9 @@
-#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-19 19:48-0400\n"
+"POT-Creation-Date: 2025-08-02 17:56-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +16,109 @@ msgstr ""
 msgid "Tutorial 0 - Let\\'s get set up!"
 msgstr ""
 
+#: docs/tutorial/tutorial-0.md:3
+msgid ""
+"Before we build our first BeeWare app, we have to make sure we\\'ve got all "
+"the prerequisites for running BeeWare."
+msgstr ""
+
 #: docs/tutorial/tutorial-0.md:6
 msgid "Install Python"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:8
+msgid "The first thing we\\'ll need is a working Python interpreter."
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:10
+#: docs/tutorial/tutorial-0.md:87
+msgid ":::::: {.tabs} ::: {.group-tab} macOS"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:14
+msgid ""
+"If you\\'re on macOS, a recent version of Python is included with Xcode or "
+"the command line developer tools. To check if you already have it, run the "
+"following command:"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:22
+msgid ""
+"If Python is installed, you\\'ll see its version number. Otherwise, you\\'ll "
+"be prompted to install the command line developer tools."
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:25
+msgid ""
+"You should ensure that you are using Python 3.9 or newer. If it isn\\'t, "
+"you\\'ll need to upgrade your Python install. You can get the official "
+"installer from [the Python website]{1}. You can use any stable version of "
+"Python from 3.9 onward. We\\'d advise avoiding alphas, betas, and release "
+"candidates unless you *really* know what you\\'re doing. :::"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:33
+#: docs/tutorial/tutorial-0.md:100
+msgid "::: {.group-tab} Linux"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:36
+msgid ""
+"If you\\'re on Linux, you\\'ll install Python using the system package "
+"manager (`apt` on Debian/Ubuntu/Mint, `dnf` on Fedora, or `pacman` on Arch)."
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:40
+msgid ""
+"You should ensure that the system Python is Python 3.9 or newer; if it isn\\"
+"'t (e.g., Ubuntu 20.04 ships with Python 3.8), you\\'ll need to upgrade your "
+"Linux distribution to something more recent."
 msgstr ""
 
 #: docs/tutorial/tutorial-0.md:44
 msgid "Support for Raspberry Pi is limited at this time. :::"
 msgstr ""
 
+#: docs/tutorial/tutorial-0.md:47
+#: docs/tutorial/tutorial-0.md:133
+msgid "::: {.group-tab} Windows"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:50
+msgid ""
+"If you\\'re on Windows, you can get the official installer from "
+"[the Python website]{1}. You can use any stable version of Python from 3.9 "
+"to 3.13. We\\'d also advise avoiding alphas, betas, and release candidates "
+"unless you *really* know what you\\'re doing. ::: ::::::"
+msgstr ""
+
 #: docs/tutorial/tutorial-0.md:58
 msgid "::: {.admonition} Alternative Python distributions"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:61
+msgid ""
+"There are lots of different ways of installing Python. You can install "
+"Python through [homebrew]{1}. You can use [pyenv]{2} to manage multiple "
+"Python installs on the same machine. Windows users can install Python from "
+"the Windows App Store. Users from a data science background might want to "
+"use [Anaconda]{3} or [Miniconda]{4}."
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:71
+msgid ""
+"If you\\'re on macOS or Windows, it doesn\\'t matter *how* you\\'ve "
+"installed Python - it only matters that you can run `python3` from your "
+"operating system\\'s command prompt/terminal application, and get a working "
+"Python interpreter."
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:76
+msgid ""
+"If you\\'re on Linux, you *must* use the system Python provided by your "
+"operating system. You will be able to complete *most* of this tutorial using "
+"a non-system Python, but you won\\'t be able to package your application for "
+"distribution to others. :::"
 msgstr ""
 
 #: docs/tutorial/tutorial-0.md:82
@@ -40,6 +132,21 @@ msgstr ""
 
 #: docs/tutorial/tutorial-0.md:91
 msgid "Building BeeWare apps on macOS requires:"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:93
+msgid ""
+"**Git**, a version control system. This is included with Xcode or the "
+"command line developer tools, which you installed above. You may need to "
+"open Xcode for the first time in order for Git to work in your terminal "
+"session. If it still doesn\\'t register that Git is installed, you may need "
+"to restart your terminal session. :::"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:103
+msgid ""
+"To support local development, you\\'ll need to install some system packages. "
+"The list of packages required varies depending on your distribution:"
 msgstr ""
 
 #: docs/tutorial/tutorial-0.md:107
@@ -58,8 +165,18 @@ msgstr ""
 msgid "**OpenSUSE Tumbleweed**"
 msgstr ""
 
+#: docs/tutorial/tutorial-0.md:131
+msgid ":::"
+msgstr ""
+
 #: docs/tutorial/tutorial-0.md:136
 msgid "Building BeeWare apps on Windows requires:"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:138
+msgid ""
+"**Git**, a version control system. You can download Git from from "
+"[git-scm.com]{1}."
 msgstr ""
 
 #: docs/tutorial/tutorial-0.md:141
@@ -73,6 +190,17 @@ msgstr ""
 msgid "Set up a virtual environment"
 msgstr ""
 
+#: docs/tutorial/tutorial-0.md:149
+msgid ""
+"We\\'re now going to create a virtual environment - a \\\"sandbox\\\" that "
+"we can use to isolate our work on this tutorial from our main Python "
+"installation. If we install packages into the virtual environment, our main "
+"Python installation (and any other Python projects on our computer) won\\'t "
+"be affected. If we make a complete mess of our virtual environment, we\\'ll "
+"be able to simply delete it and start again, without affecting any other "
+"Python project on our computer, and without the need to re-install Python."
+msgstr ""
+
 #: docs/tutorial/tutorial-0.md:158
 msgid "/// tab | macOS"
 msgstr ""
@@ -81,12 +209,35 @@ msgstr ""
 msgid "/// /// tab | Linux"
 msgstr ""
 
+#: docs/tutorial/tutorial-0.md:175
+msgid "///"
+msgstr ""
+
 #: docs/tutorial/tutorial-0.md:177
 msgid "/// tab | Windows"
 msgstr ""
 
+#: docs/tutorial/tutorial-0.md:186
+msgid ""
+"If you\\'re not using Python 3.12, replace the `-3.12` in these instructions "
+"with the version number that you are using."
+msgstr ""
+
 #: docs/tutorial/tutorial-0.md:189
 msgid "/// admonition | Errors running PowerShell Scripts"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:191
+msgid "If you\\'re using PowerShell, and you receive the error:"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:195
+msgid ""
+"Your Windows account doesn\\'t have permissions to run scripts. To fix this:"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:198
+msgid "Run [Windows PowerShell as Administrator]{1}."
 msgstr ""
 
 #: docs/tutorial/tutorial-0.md:200
@@ -97,307 +248,43 @@ msgstr ""
 msgid "Select `Y` to change the execution policy."
 msgstr ""
 
+#: docs/tutorial/tutorial-0.md:203
+msgid ""
+"Once you\\'ve done this you can rerun `beeware-venv\\Scripts\\activate.ps1` "
+"in your original PowerShell session (or a new session in the same directory)"
+". /// ///"
+msgstr ""
+
+#: docs/tutorial/tutorial-0.md:209
+msgid ""
+"If this worked, your prompt should now be changed - it should have a "
+"`(beeware-venv)` prefix. This lets you know that you\\'re currently in your "
+"BeeWare virtual environment. Whenever you\\'re working on this tutorial, you "
+"should make sure your virtual environment is activated. If it isn\\'t, re-"
+"run the last command (the `activate` command) to re-activate your "
+"environment."
+msgstr ""
+
 #: docs/tutorial/tutorial-0.md:216
 msgid "::: {.admonition} Alternative virtual environments"
 msgstr ""
 
-msgid "Tutorial 0 - Let's get set up!"
-msgstr ""
-
+#: docs/tutorial/tutorial-0.md:219
 msgid ""
-"Before we build our first BeeWare app, we have to make sure we've got all "
-"the prerequisites for running BeeWare."
-msgstr ""
-
-msgid "The first thing we'll need is a working Python interpreter."
-msgstr ""
-
-msgid ""
-"If you're on macOS, a recent version of Python is included with Xcode or the"
-" command line developer tools. To check if you already have it, run the "
-"following command:"
-msgstr ""
-
-msgid ""
-"If Python is installed, you'll see its version number. Otherwise, you'll be "
-"prompted to install the command line developer tools."
-msgstr ""
-
-msgid ""
-"You should ensure that you are using Python 3.9 or newer. If it isn't, "
-"you'll need to upgrade your Python install. You can get the official "
-"installer from [the Python website](https://www.python.org/downloads). You "
-"can use any stable version of Python from 3.9 onward. We'd advise avoiding "
-"alphas, betas, and release candidates unless you *really* know what you're "
-"doing. :::"
-msgstr ""
-
-msgid ""
-"If you're on Linux, you'll install Python using the system package manager "
-"(`apt` on Debian/Ubuntu/Mint, `dnf` on Fedora, or `pacman` on Arch)."
-msgstr ""
-
-msgid ""
-"You should ensure that the system Python is Python 3.9 or newer; if it isn't"
-" (e.g., Ubuntu 20.04 ships with Python 3.8), you'll need to upgrade your "
-"Linux distribution to something more recent."
-msgstr ""
-
-msgid ""
-"If you're on Windows, you can get the official installer from [the Python "
-"website](https://www.python.org/downloads). You can use any stable version "
-"of Python from 3.9 to 3.13. We'd also advise avoiding alphas, betas, and "
-"release candidates unless you *really* know what you're doing. ::: ::::::"
-msgstr ""
-
-msgid ""
-"There are lots of different ways of installing Python. You can install "
-"Python through [homebrew](https://docs.brew.sh/Homebrew-and-Python). You can"
-" use [pyenv](https://github.com/pyenv/pyenv#simple-python-version-"
-"management-pyenv) to manage multiple Python installs on the same machine. "
-"Windows users can install Python from the Windows App Store. Users from a "
-"data science background might want to use "
-"[Anaconda](https://docs.anaconda.com/anaconda/install/) or "
-"[Miniconda](https://docs.conda.io/en/latest/miniconda.html)."
-msgstr ""
-
-msgid ""
-"If you're on macOS or Windows, it doesn't matter *how* you've installed "
-"Python - it only matters that you can run `python3` from your operating "
-"system's command prompt/terminal application, and get a working Python "
-"interpreter."
-msgstr ""
-
-msgid ""
-"If you're on Linux, you *must* use the system Python provided by your "
-"operating system. You will be able to complete *most* of this tutorial using"
-" a non-system Python, but you won't be able to package your application for "
-"distribution to others. :::"
-msgstr ""
-
-msgid ""
-"**Git**, a version control system. This is included with Xcode or the "
-"command line developer tools, which you installed above. You may need to "
-"open Xcode for the first time in order for Git to work in your terminal "
-"session. If it still doesn't register that Git is installed, you may need to"
-" restart your terminal session. :::"
-msgstr ""
-
-msgid ""
-"To support local development, you'll need to install some system packages. "
-"The list of packages required varies depending on your distribution:"
-msgstr ""
-
-msgid ""
-"**Git**, a version control system. You can download Git from from [git-"
-"scm.com](https://git-scm.com/downloads/)."
-msgstr ""
-
-msgid ""
-"We're now going to create a virtual environment - a \"sandbox\" that we can "
-"use to isolate our work on this tutorial from our main Python installation. "
-"If we install packages into the virtual environment, our main Python "
-"installation (and any other Python projects on our computer) won't be "
-"affected. If we make a complete mess of our virtual environment, we'll be "
-"able to simply delete it and start again, without affecting any other Python"
-" project on our computer, and without the need to re-install Python."
-msgstr ""
-
-msgid ""
-"If you're not using Python 3.12, replace the `-3.12` in these instructions "
-"with the version number that you are using."
-msgstr ""
-
-msgid "If you're using PowerShell, and you receive the error:"
-msgstr ""
-
-msgid ""
-"Your Windows account doesn't have permissions to run scripts. To fix this:"
-msgstr ""
-
-msgid ""
-"Run [Windows PowerShell as Administrator](https://learn.microsoft.com/en-"
-"us/powershell/scripting/windows-powershell/starting-windows-"
-"powershell?view=powershell-7.4)."
-msgstr ""
-
-msgid ""
-"Once you've done this you can rerun `beeware-venv\\Scripts\\activate.ps1` in"
-" your original PowerShell session (or a new session in the same directory). "
-"/// ///"
-msgstr ""
-
-msgid ""
-"If this worked, your prompt should now be changed - it should have a "
-"`(beeware-venv)` prefix. This lets you know that you're currently in your "
-"BeeWare virtual environment. Whenever you're working on this tutorial, you "
-"should make sure your virtual environment is activated. If it isn't, re-run "
-"the last command (the `activate` command) to re-activate your environment."
-msgstr ""
-
-msgid ""
-"If you're using Anaconda or miniconda, you may be more familiar with using "
-"conda environments. You might also have heard of `virtualenv`, a predecessor"
-" to Python's built in `venv` module. As with Python installs -if you're on "
-"macOS or Windows, it doesn't matter *how* you create your virtual "
-"environment, as long as you have one. If you're on Linux, you should stick "
+"If you\\'re using Anaconda or miniconda, you may be more familiar with using "
+"conda environments. You might also have heard of `virtualenv`, a predecessor "
+"to Python\\'s built in `venv` module. As with Python installs -if you\\'re "
+"on macOS or Windows, it doesn\\'t matter *how* you create your virtual "
+"environment, as long as you have one. If you\\'re on Linux, you should stick "
 "to `venv` and the system Python. :::"
 msgstr ""
 
-msgid ""
-"We've now set up our environment. We're ready to `create our first BeeWare "
-"application <tutorial-1>`{.interpreted-text role=\"doc\"}."
+#: docs/tutorial/tutorial-0.md:227
+msgid "Next steps"
 msgstr ""
 
-#~ msgid ""
-#~ "Before we build our first BeeWare app, we have to make sure we\\'ve got all "
-#~ "the prerequisites for running BeeWare."
-#~ msgstr ""
-
-#~ msgid "The first thing we\\'ll need is a working Python interpreter."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you\\'re on macOS, a recent version of Python is included with Xcode or "
-#~ "the command line developer tools. To check if you already have it, run the "
-#~ "following command:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If Python is installed, you\\'ll see its version number. Otherwise, you\\'ll"
-#~ " be prompted to install the command line developer tools."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "You should ensure that you are using Python 3.9 or newer. If it isn\\'t, "
-#~ "you\\'ll need to upgrade your Python install. You can get the official "
-#~ "installer from [the Python website]{1}. You can use any stable version of "
-#~ "Python from 3.9 onward. We\\'d advise avoiding alphas, betas, and release "
-#~ "candidates unless you *really* know what you\\'re doing. :::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you\\'re on Linux, you\\'ll install Python using the system package "
-#~ "manager (`apt` on Debian/Ubuntu/Mint, `dnf` on Fedora, or `pacman` on Arch)."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "You should ensure that the system Python is Python 3.9 or newer; if it "
-#~ "isn\\'t (e.g., Ubuntu 20.04 ships with Python 3.8), you\\'ll need to upgrade"
-#~ " your Linux distribution to something more recent."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you\\'re on Windows, you can get the official installer from [the Python "
-#~ "website]{1}. You can use any stable version of Python from 3.9 to 3.13. "
-#~ "We\\'d also advise avoiding alphas, betas, and release candidates unless you"
-#~ " *really* know what you\\'re doing. ::: ::::::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "There are lots of different ways of installing Python. You can install "
-#~ "Python through [homebrew]{1}. You can use [pyenv]{2} to manage multiple "
-#~ "Python installs on the same machine. Windows users can install Python from "
-#~ "the Windows App Store. Users from a data science background might want to "
-#~ "use [Anaconda]{3} or [Miniconda]{4}."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you\\'re on macOS or Windows, it doesn\\'t matter *how* you\\'ve "
-#~ "installed Python - it only matters that you can run `python3` from your "
-#~ "operating system\\'s command prompt/terminal application, and get a working "
-#~ "Python interpreter."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you\\'re on Linux, you *must* use the system Python provided by your "
-#~ "operating system. You will be able to complete *most* of this tutorial using"
-#~ " a non-system Python, but you won\\'t be able to package your application "
-#~ "for distribution to others. :::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "**Git**, a version control system. This is included with Xcode or the "
-#~ "command line developer tools, which you installed above. You may need to "
-#~ "open Xcode for the first time in order for Git to work in your terminal "
-#~ "session. If it still doesn\\'t register that Git is installed, you may need "
-#~ "to restart your terminal session. :::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "To support local development, you\\'ll need to install some system packages."
-#~ " The list of packages required varies depending on your distribution:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "**Git**, a version control system. You can download Git from from [git-"
-#~ "scm.com]{1}."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We\\'re now going to create a virtual environment - a \\\"sandbox\\\" that "
-#~ "we can use to isolate our work on this tutorial from our main Python "
-#~ "installation. If we install packages into the virtual environment, our main "
-#~ "Python installation (and any other Python projects on our computer) won\\'t "
-#~ "be affected. If we make a complete mess of our virtual environment, we\\'ll "
-#~ "be able to simply delete it and start again, without affecting any other "
-#~ "Python project on our computer, and without the need to re-install Python."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you\\'re not using Python 3.12, replace the `-3.12` in these instructions"
-#~ " with the version number that you are using."
-#~ msgstr ""
-
-#~ msgid "If you\\'re using PowerShell, and you receive the error:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Your Windows account doesn\\'t have permissions to run scripts. To fix this:"
-#~ msgstr ""
-
-#~ msgid "Run [Windows PowerShell as Administrator]{1}."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Once you\\'ve done this you can rerun `beeware-venv\\Scripts\\activate.ps1` "
-#~ "in your original PowerShell session (or a new session in the same "
-#~ "directory). /// ///"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If this worked, your prompt should now be changed - it should have a "
-#~ "`(beeware-venv)` prefix. This lets you know that you\\'re currently in your "
-#~ "BeeWare virtual environment. Whenever you\\'re working on this tutorial, you"
-#~ " should make sure your virtual environment is activated. If it isn\\'t, re-"
-#~ "run the last command (the `activate` command) to re-activate your "
-#~ "environment."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "If you\\'re using Anaconda or miniconda, you may be more familiar with using"
-#~ " conda environments. You might also have heard of `virtualenv`, a "
-#~ "predecessor to Python\\'s built in `venv` module. As with Python installs "
-#~ "-if you\\'re on macOS or Windows, it doesn\\'t matter *how* you create your "
-#~ "virtual environment, as long as you have one. If you\\'re on Linux, you "
-#~ "should stick to `venv` and the system Python. :::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We\\'ve now set up our environment. We\\'re ready to `create our first "
-#~ "BeeWare application <tutorial-1>`{.interpreted-text role=\"doc\"}."
-#~ msgstr ""
-
-#~ msgid "macOS"
-#~ msgstr ""
-
-#~ msgid "Windows"
-#~ msgstr ""
-
-#~ msgid "Errors running PowerShell Scripts"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "File C:\\...\\beeware-tutorial\\beeware-venv\\Scripts\\activate.ps1 cannot "
-#~ "be loaded because running scripts is disabled on this system. "
-#~ msgstr ""
+#: docs/tutorial/tutorial-0.md:229
+msgid ""
+"We\\'ve now set up our environment. We\\'re ready to `create our first "
+"BeeWare application <tutorial-1>`{.interpreted-text role=\"doc\"}."
+msgstr ""

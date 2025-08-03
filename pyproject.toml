@@ -53,18 +53,23 @@ dev = [
 ]
 # Docs are always built on a specific Python version; see RTD and tox config files.
 docs = [
-    "pyenchant == 3.2.2",
-    "mkdocs-spellcheck",
-    "mkdocs-include-markdown-plugin",
-    "mkdocs-material",
-    "mkdocs-table-reader-plugin",
-    "mkdocs-autorefs",
-    "pymdown-extensions",
-    "mkdocs-macros-plugin",
-    "mkdocs-literate-nav",
+    "black",
     "codespell",
-    "symspellpy",
-    "mkdocstrings",
+    "markdown-checker",
+    "mkdocs",  # Is this needed?
+    "mkdocs-autorefs",
+    "mkdocs-include-markdown-plugin",
+    "mkdocs-literate-nav",
+    "mkdocs-material",
+    "mkdocs-macros-plugin",
+    "mkdocs-spellcheck",
+    "mkdocs-table-reader-plugin",
+    "mkdocstrings-python",
+    "mistletoe",
+    "pymdown-extensions",
+    "python-Levenshtein",
+    "symspellpy",  # Not used, but spellcheck fails without it. Bug report filed.
+    "translate-toolkit @ git+https://github.com/kattni/translate@md2po-line-numbers",
 ]
 
 [tool.codespell]
@@ -77,6 +82,9 @@ ignore-words-list = "re-use"
 profile = "black"
 split_on_trailing_comma = true
 combine_as_imports = true
+
+[tool.setuptools]
+py-modules = []
 
 [tool.setuptools_scm]
 # To enable SCM versioning, we need an empty tool configuration for setuptools_scm

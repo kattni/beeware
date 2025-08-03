@@ -14,12 +14,12 @@ build:
   jobs:
     pre_install:
       - pip install mkdocs-material
-#    pre_build:
+    pre_build:
+      - python -m test
 #      - tox -e docs-lint
     build:
       html:
-        - python -m mkdocs build --config-file docs/locales/mkdocs.$READTHEDOCS_LANGUAGE.yml --site-dir $READTHEDOCS_OUTPUT/html/
-#        - python -m mkdocs build -f mkdocs.yml -d $READTHEDOCS_OUTPUT/html/
+        - python -m mkdocs build --config-file docs/config/mkdocs.$READTHEDOCS_LANGUAGE.yml --site-dir $READTHEDOCS_OUTPUT/html/
 
 # Build documentation in the docs/ directory with MkDocs
 mkdocs:

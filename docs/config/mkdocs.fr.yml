@@ -1,4 +1,4 @@
-INHERIT: ../../config.yml
+INHERIT: config.yml
 site_name: BeeWare Tutorial
 site_url: https://docs.beeware.org/fr
 docs_dir: ./fr
