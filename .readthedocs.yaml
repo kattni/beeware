@@ -18,14 +18,14 @@ build:
 #      - cp docs/spelling_wordlist.txt $READTHEDOCS_REPOSITORY_PATH
 #      - python translation_tools/build_rtd_md_translations.py $READTHEDOCS_LANGUAGE
 #      - tox -e docs-lint
-#       - |
-#         if [ "$READTHEDOCS_LANGUAGE" != "en" ];
-#         then
-#            python translation_tools/build_rtd_md_translations.py $READTHEDOCS_LANGUAGE;
-#         fi
-         - cp docs/config/mkdocs.$READTHEDOCS_LANGUAGE.yml $READTHEDOCS_REPOSITORY_PATH
-         - cp docs/config/config.yml $READTHEDOCS_REPOSITORY_PATH
-         - cp docs/spelling_wordlist.txt $READTHEDOCS_REPOSITORY_PATH
+       - |
+         if [ "$READTHEDOCS_LANGUAGE" != "en" ];
+         then
+            python translation_tools/build_rtd_md_translations.py $READTHEDOCS_LANGUAGE;
+         fi
+       - cp docs/config/mkdocs.$READTHEDOCS_LANGUAGE.yml $READTHEDOCS_REPOSITORY_PATH
+       - cp docs/config/config.yml $READTHEDOCS_REPOSITORY_PATH
+       - cp docs/spelling_wordlist.txt $READTHEDOCS_REPOSITORY_PATH
     build:
       html:
         - python -m mkdocs build --config-file mkdocs.$READTHEDOCS_LANGUAGE.yml --site-dir $READTHEDOCS_OUTPUT/html/
