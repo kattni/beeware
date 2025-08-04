@@ -12,9 +12,6 @@ build:
     # Docs are always built on Python 3.12. See also the tox config.
     python: "3.12"
   jobs:
-    pre_install:
-      - python -m pip install .[dev]
-      - python -m pip install .[docs]
 #    pre_build:
 #      - tox -e docs-lint
     build:
@@ -30,4 +27,4 @@ python:
   - method: pip
     path: .
     extra_requirements:
-      - docs
+      - dev
