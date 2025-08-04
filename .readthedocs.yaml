@@ -12,6 +12,8 @@ build:
     # Docs are always built on Python 3.12. See also the tox config.
     python: "3.12"
   jobs:
+    pre_install:
+      - python -m pip install .[dev]
 #    pre_build:
 #      - tox -e docs-lint
     build:
@@ -20,11 +22,3 @@ build:
 # Build docs as PDF (other options are epub and htmlzip)
 #formats:
 #   - pdf
-
-# Optionally declare the Python requirements required to build your docs
-python:
-  install:
-  - method: pip
-    path: .
-    extra_requirements:
-      - dev
