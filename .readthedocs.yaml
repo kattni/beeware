@@ -19,6 +19,7 @@ build:
     build:
       html:
         - python -m tox -e docs-$READTHEDOCS_LANGUAGE -- --output=$READTHEDOCS_OUTPUT/html/
+
 # Build docs as PDF (other options are epub and htmlzip)
 #formats:
 #   - pdf

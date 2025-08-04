@@ -1,4 +1,4 @@
 INHERIT: config.yml
 site_name: BeeWare Tutorial
-site_url: https://docs.beeware.org/
+site_url: https://tutorial.beeware.org/
 docs_dir: en
