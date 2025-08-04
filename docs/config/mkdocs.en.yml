@@ -2,8 +2,3 @@ INHERIT: config.yml
 site_name: BeeWare Tutorial
 site_url: https://docs.beeware.org/
 docs_dir: ../../docs
-
-plugins:
-  spellcheck:
-    # Location of spelling_wordlist.txt is relative to docs_dir above
-    known_words: spelling_wordlist.txt
