@@ -18,7 +18,7 @@ build:
       - |
         if [ "$READTHEDOCS_LANGUAGE" != "en" ];
         then
-          cd /docs
+          cd docs
           pwd
         fi
   #            python translation_tools/build_rtd_md_translations.py $READTHEDOCS_LANGUAGE
