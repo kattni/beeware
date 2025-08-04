@@ -13,13 +13,13 @@ build:
     python: "3.12"
   jobs:
     pre_install:
+      - python -m pip install .[dev]
       - python -m pip install .[docs]
 #    pre_build:
 #      - tox -e docs-lint
     build:
       html:
-        - python translation_tools/build_md_translations.py --output=$READTHEDOCS_OUTPUT/html/ --flat $READTHEDOCS_LANGUAGE
-
+        - tox -e docs-$READTHEDOCS_LANGUAGE -- --output=$READTHEDOCS_OUTPUT/html/
 # Build docs as PDF (other options are epub and htmlzip)
 #formats:
 #   - pdf
