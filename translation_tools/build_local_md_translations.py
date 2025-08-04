@@ -67,12 +67,10 @@ if __name__ == "__main__":
             # relative, so to build translations successfully while allowing English
             # to build on its own, files must be available relative to the build.
             shutil.copy(
-                SOURCE_DIR / "docs" / "config" / f"mkdocs.{language}.yml",
+                SOURCE_DIR / "docs" / f"mkdocs.{language}.yml",
                 temp_md_directory,
             )
-            shutil.copy(
-                SOURCE_DIR / "docs" / "config" / "config.yml", temp_md_directory
-            )
+            shutil.copy(SOURCE_DIR / "docs" / "config.yml", temp_md_directory)
             shutil.copy(
                 SOURCE_DIR / "docs" / "spelling_wordlist.txt", temp_md_directory
             )
