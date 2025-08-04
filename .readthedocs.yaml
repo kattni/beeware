@@ -18,15 +18,7 @@ build:
 #      - tox -e docs-lint
     build:
       html:
-        - tox -e docs-$READTHEDOCS_LANGUAGE -- --output=$READTHEDOCS_OUTPUT/html/
+        - python -m tox -e docs-$READTHEDOCS_LANGUAGE -- --output=$READTHEDOCS_OUTPUT/html/
 # Build docs as PDF (other options are epub and htmlzip)
 #formats:
 #   - pdf
-
-# Optionally declare the Python requirements required to build your docs
-python:
-  install:
-  - method: pip
-    path: .
-    extra_requirements:
-      - dev
