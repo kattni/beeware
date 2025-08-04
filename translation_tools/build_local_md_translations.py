@@ -11,7 +11,8 @@ SOURCE_DIR = Path.cwd()
 
 def parse_args() -> Namespace:
     parser = ArgumentParser()
-    parser.add_argument("language_code", nargs="*")
+    parser.add_argument("language-code", nargs="*")
+    parser.add_argument("--output", default=SOURCE_DIR / "_build" / "html")
     args = parser.parse_args()
     for language_code in args.language_code:
         if not (SOURCE_DIR / "locales" / f"{language_code}").is_dir():
@@ -84,5 +85,5 @@ if __name__ == "__main__":
 
             build_docs(
                 config_file=temp_md_directory / f"mkdocs.{language}.yml",
-                build_dir=SOURCE_DIR / "_build" / "html" / f"{language}",
+                build_dir=Path(args.output) / f"{language}",
             )
