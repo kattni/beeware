@@ -72,7 +72,8 @@ if __name__ == "__main__":
             )
             shutil.copy(SOURCE_DIR / "docs" / "config.yml", temp_md_directory)
             shutil.copy(
-                SOURCE_DIR / "docs" / "spelling_wordlist.txt", temp_md_directory
+                SOURCE_DIR / "docs" / "spelling_wordlist.txt",
+                temp_md_directory / f"{language}",
             )
 
             generate_translated_md(
