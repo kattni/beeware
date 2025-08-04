@@ -11,7 +11,7 @@ SOURCE_DIR = Path.cwd()
 
 def parse_args() -> Namespace:
     parser = ArgumentParser()
-    parser.add_argument("language-code", nargs="*")
+    parser.add_argument("language_code", nargs="*")
     parser.add_argument("--output", default=SOURCE_DIR / "_build" / "html")
     args = parser.parse_args()
     for language_code in args.language_code:
