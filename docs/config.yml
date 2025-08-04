@@ -70,5 +70,5 @@ plugins:
     # Location of spelling_wordlist.txt is relative to docs_dir in mkdocs.x.yml.
     # This is the location of it relative to the temp directory for translations.
     # It is specifically overridden in mkdocs.en.yml to match local docs_dir.
-    known_words: spelling_wordlist.txt
+    known_words: ../spelling_wordlist.txt
     ignore_code: yes
