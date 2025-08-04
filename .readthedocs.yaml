@@ -18,7 +18,7 @@ build:
 #      - tox -e docs-lint
     build:
       html:
-        - python translation_tools/build_local_md_translations.py --output=$READTHEDOCS_OUTPUT/html/ --flat $READTHEDOCS_LANGUAGE
+        - python translation_tools/build_md_translations.py --output=$READTHEDOCS_OUTPUT/html/ --flat $READTHEDOCS_LANGUAGE
 
 # Build docs as PDF (other options are epub and htmlzip)
 #formats:
