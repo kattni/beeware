@@ -27,15 +27,15 @@ build:
   #            cp docs/spelling_wordlist.txt $READTHEDOCS_REPOSITORY_PATH/$READTHEDOCS_LANGUAGE
 #         fi
 #      - tox -e docs-lint
-#    build:
-#      html:
-#        - |
-#          if [ "$READTHEDOCS_LANGUAGE" != "en" ];
-#          then
-#            python -m mkdocs build --config-file mkdocs.$READTHEDOCS_LANGUAGE.yml --site-dir $READTHEDOCS_OUTPUT/html/
-#          else
-#            python -m mkdocs build --config-file docs/config/mkdocs.$READTHEDOCS_LANGUAGE.yml --site-dir $READTHEDOCS_OUTPUT/html/
-#          fi
+    build:
+      html:
+        - |
+          if [ "$READTHEDOCS_LANGUAGE" != "en" ];
+          then
+            python -m mkdocs build --config-file mkdocs.$READTHEDOCS_LANGUAGE.yml --site-dir $READTHEDOCS_OUTPUT/html/
+          else
+            python -m mkdocs build --config-file docs/config/mkdocs.$READTHEDOCS_LANGUAGE.yml --site-dir $READTHEDOCS_OUTPUT/html/
+          fi
 
 # Build docs as PDF (other options are epub and htmlzip)
 #formats:
