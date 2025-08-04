@@ -84,5 +84,5 @@ if __name__ == "__main__":
 
             build_docs(
                 config_file=temp_md_directory / f"mkdocs.{language}.yml",
-                build_dir=Path(args.output) / f"{language}",
+                build_dir=Path(args.output).resolve() / f"{language}",
             )
