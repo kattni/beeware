@@ -60,8 +60,8 @@ docs = [
     "mkdocs-autorefs",
     "mkdocs-include-markdown-plugin",
     "mkdocs-literate-nav",
-    "mkdocs-material",
     "mkdocs-macros-plugin",
+    "mkdocs-material",
     "mkdocs-spellcheck",
     "mkdocs-table-reader-plugin",
     "mkdocstrings-python",
@@ -69,12 +69,12 @@ docs = [
     "pymdown-extensions",
     "python-Levenshtein",
     "symspellpy",  # Not used, but spellcheck fails without it. Bug report filed.
-    "translate-toolkit @ git+https://github.com/kattni/translate@md2po-line-numbers",
+    "translate-toolkit @ git+https://github.com/translate/translate@master",  # Update to latest on next release; release notifications enabled.
 ]
 
 [tool.codespell]
 skip = ".git,*.pdf,*.svg"
-# the way to make case sensitive skips of words etc
+# The way to make case-sensitive skips of words, etc.
 ignore-regex = "\bNd\b"
 ignore-words-list = "re-use"
 

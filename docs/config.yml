@@ -49,8 +49,6 @@ markdown_extensions:
 extra:
   "beta_support": ^&beta;^
   "not_supported": ^&#x274C;^
-  "beta": ○
-  "stable": ●
 
 plugins:
   search: {}
@@ -62,6 +60,8 @@ plugins:
     # Remove the below customisations after markdown is cleaned up
     j2_comment_start_string: '[#'  # Set temporarily to deal with title anchors
     j2_comment_end_string: '#]'  # Set temporarily to deal with title anchors
+    include_yaml:
+      - extra: reference_index.yaml
   table-reader: {}
   spellcheck:
     backends:
@@ -69,6 +69,5 @@ plugins:
           dictionaries: [clear]
     # Location of spelling_wordlist.txt is relative to docs_dir in mkdocs.x.yml.
     # This is the location of it relative to the temp directory for translations.
-    # It is specifically overridden in mkdocs.en.yml to match local docs_dir.
     known_words: ../spelling_wordlist.txt
     ignore_code: yes
