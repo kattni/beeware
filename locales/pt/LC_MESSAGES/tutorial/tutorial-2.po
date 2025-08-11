@@ -263,4 +263,3 @@ msgstr "Criamos uma aplicação com recursos mais interessantes. Porém, ela som
 
 #~ msgid "Lets do something more interesting with our ``HelloWorld`` app."
 #~ msgstr ""
-

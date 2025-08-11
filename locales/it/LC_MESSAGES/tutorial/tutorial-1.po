@@ -218,4 +218,3 @@ msgstr "Ora abbiamo un'applicazione funzionante, eseguita in modalità sviluppat
 
 #~ msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
 #~ msgstr "Uno degli strumenti di BeeWare è **Briefcase**. Briefcase può essere utilizzato per confezionare l'applicazione da distribuire agli utenti finali, ma anche per avviare un nuovo progetto."
-

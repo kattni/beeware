@@ -253,4 +253,3 @@ msgstr "下一步"
 #, fuzzy
 msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
 msgstr "現在我們的手機上已經有一個應用程式了！我們還有其他地方可以部署 BeeWare 應用程式嗎？請參閱 :doc:`教學 6 <../tutorial-6>` 以了解..."
-

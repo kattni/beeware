@@ -294,4 +294,3 @@ msgstr "我們現在有了一個可以做一些更有趣的事情的應用程式
 
 #~ msgid "Lets do something more interesting with our ``HelloWorld`` app."
 #~ msgstr ""
-

@@ -95,4 +95,3 @@ msgstr "让我们开始吧！"
 #: ../../index.rst:77 f8400df8b4a54de281b05034bff2389f
 msgid "Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in Python! <tutorial/tutorial-0>`"
 msgstr "准备好亲身体验 BeeWare 了吗？:doc:`让我们用 Python 构建一个跨平台应用程序！ <tutorial/tutorial-0>`"
-

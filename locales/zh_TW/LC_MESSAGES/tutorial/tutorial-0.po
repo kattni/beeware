@@ -236,4 +236,3 @@ msgstr "我們現在已經設定好了我們的環境。我們準備好 :doc:`�
 
 #~ msgid "You should ensure that you are using Python 3.9 or newer. If it isn't, you'll need to upgrade your Python install. You can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.9 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
 #~ msgstr "如果您使用的是 Windows，則可以從 `Python 網站 <https://www.python.org/downloads>`_ 取得官方安裝程式。您可以使用 3.8 及以上的任何穩定版本的 Python。我們建議避免 alpha、beta 和候選版本，除非您 **真的** 知道自己在做什麼。"
-

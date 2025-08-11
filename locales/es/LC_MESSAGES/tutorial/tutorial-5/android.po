@@ -211,4 +211,3 @@ msgstr "Siguientes pasos"
 #: ../../tutorial/tutorial-5/android.rst:382 9acc33318e1742ffbc17d613201926b7
 msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
 msgstr "¡Ya tenemos una aplicación en nuestro teléfono! ¿Hay algún otro lugar donde podamos desplegar una aplicación BeeWare? Visita :doc:`Tutorial 6 <../tutorial-6>` para averiguarlo..."
-

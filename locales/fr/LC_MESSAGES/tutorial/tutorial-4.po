@@ -169,4 +169,3 @@ msgstr "Notre application est désormais prête à être distribuée sur les pla
 #, fuzzy
 msgid "But what about mobile? In :doc:`Tutorial 5 <tutorial-5/index>`, we'll convert our application into a mobile application, and deploy it onto a device simulator, and onto a phone."
 msgstr "Mais qu'en est-il de l'application mobile ? Dans :doc:`Tutoriel 5 <tutorial-5/index>`, nous allons convertir notre application en une application mobile, et la déployer sur un simulateur d'appareil, et sur un téléphone."
-

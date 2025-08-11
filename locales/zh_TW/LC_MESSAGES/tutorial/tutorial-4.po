@@ -173,4 +173,3 @@ msgstr "現在，我們已經將應用程式打包以便在桌面平台上分發
 #, fuzzy
 msgid "But what about mobile? In :doc:`Tutorial 5 <tutorial-5/index>`, we'll convert our application into a mobile application, and deploy it onto a device simulator, and onto a phone."
 msgstr "但行動裝置呢？在 :doc:`教程 5 <tutorial-5/index>` 中，我們會將應用程式轉換為行動應用程序，並將其部署到裝置模擬器和手機上。"
-

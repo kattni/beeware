@@ -52,4 +52,3 @@ msgstr "Android 應用程式可以在 macOS、Windows 或 Linux 上編譯。"
 
 #~ msgid ":doc:`Let's build our app for Android! <android>`"
 #~ msgstr ":doc:`讓我們為 Android 建立應用程式！<android>`"
-

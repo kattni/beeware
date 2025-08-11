@@ -191,4 +191,3 @@ msgstr "我們現在有了一個可以運行的應用程序，在開發人員模
 
 #~ msgid "One of the BeeWare tools is **Briefcase**. Briefcase can be used to package your application for distribution to end users - but it can also be used to bootstrap a new project."
 #~ msgstr "BeeWare 工具之一是 **Briefcase** 。它可用於打包您的應用程式以分發給最終用戶 - 但它也可用於初始化新專案。"
-

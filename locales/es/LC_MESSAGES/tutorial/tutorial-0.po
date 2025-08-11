@@ -230,4 +230,3 @@ msgstr "Ya hemos configurado nuestro entorno. Estamos listos para :doc:`crear nu
 
 #~ msgid "You should ensure that you are using Python 3.9 or newer. If it isn't, you'll need to upgrade your Python install. You can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.9 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
 #~ msgstr "Debes asegurarte de que estás usando Python 3.9 o superior. Si no es así, tendrás que actualizar tu instalación de Python. Puedes obtener el instalador oficial desde `La página web de Python <https://www.python.org/downloads>`_. Puedes utilizar cualquier versión estable de Python a partir de la 3.9. Te aconsejamos que evites las versiones alphas, betas y release candidates a menos que *realmente* sepas lo que estás haciendo."
-
