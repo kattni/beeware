@@ -20,7 +20,6 @@ miniconda
 pre
 Pre
 px
-pyenv
 Pygame
 pytest
 runtime
