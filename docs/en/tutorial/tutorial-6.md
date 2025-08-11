@@ -1,12 +1,11 @@
-# Tutorial 6 - Put it on the web!  { #tutorial-6 }
+# Tutorial 6 - Put it on the web!  { id="tutorial-6" }
 
 In addition to supporting mobile platforms, the Toga widget toolkit also
 supports the web! Using the same API that you used to deploy your
 desktop and mobile applications, you can deploy your application as a
 single-page web app.
 
-::: {.admonition}
-Proof of Concept
+/// admonition | Proof of Concept
 
 The Toga Web backend is the least mature of all the Toga backends. It's
 mature enough to show off a few features, but it's likely to be buggy,
@@ -17,7 +16,9 @@ enough to be relied on for serious development.
 
 If you have problems with this step of the tutorial, you can skip to the
 next page.
-:::
+
+
+///
 
 ## Deploying as a web app
 
@@ -29,11 +30,9 @@ hasn't been created or built for the platform being targeted, it will do
 the create and build steps for you. Since this is our first time running
 the app for the web, we can perform all three steps with one command:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase run web
 
 [helloworld] Generating application template...
@@ -68,12 +67,12 @@ Web server open on http://127.0.0.1:8080
 [helloworld] Web server log output (type CTRL-C to stop log)...
 ===========================================================================
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase run web
 
 [helloworld] Generating application template...
@@ -108,12 +107,12 @@ Web server open on http://127.0.0.1:8080
 [helloworld] Web server log output (type CTRL-C to stop log)...
 ===========================================================================
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase run web
 
 [helloworld] Generating application template...
@@ -148,12 +147,13 @@ Web server open on http://127.0.0.1:8080
 [helloworld] Web server log output (type CTRL-C to stop log)...
 ===========================================================================
 ```
-:::
-::::::
+
+///
+
 
 This will open a web browser, pointing at <http://127.0.0.1:8080>:
 
-![Hello World Tutorial 6 dialog, in a browser](images/tutorial-6.png)
+![Hello World Tutorial 6 dialog, in a browser](/tutorial/images/tutorial-6.png)
 
 If you enter your name and click the button, a dialog will appear.
 
@@ -178,5 +178,5 @@ handling code in the browser.
 Although we've now deployed this app on desktop, mobile and the web, the
 app is fairly simple, and doesn't involve any third-party libraries. Can
 we include libraries from the Python Package Index (PyPI) in our app?
-Turn to `Tutorial 7 <tutorial-7>`{.interpreted-text role="doc"} to find
+Turn to [Tutorial 7][tutorial-7] to find
 out...

@@ -18,7 +18,7 @@ process for deploying as a desktop application. First, you run the
 `create` command -but this time, we specify that we want to create an
 iOS application:
 
-``` console
+```console
 (beeware-venv) $ briefcase create iOS
 
 [helloworld] Generating application template...
@@ -50,7 +50,7 @@ application code needed for the application.
 You can then use Briefcase to compile your app using
 `briefcase build iOS`:
 
-``` console
+```console
 (beeware-venv) $ briefcase build iOS
 
 [helloworld] Updating app metadata...
@@ -71,7 +71,7 @@ may differ from the options show in this output - at the very least, the
 list of devices will likely be different. For our purposes, it doesn't
 matter which simulator you pick.
 
-``` console
+```console
 (beeware-venv) $ briefcase run iOS
 
 Select simulator device:
@@ -117,7 +117,7 @@ This will start the iOS simulator, install your app, and start it. You
 should see the simulator start, and eventually open your iOS
 application:
 
-![Hello World Tutorial 5 window, on iOS](../images/iOS/tutorial-5.png)
+![Hello World Tutorial 5 window, on iOS](/tutorial/images/iOS/tutorial-5.png)
 
 While the app is running, you'll see a series of Simulator log output
 messages in the console. Typing Ctrl+C into the terminal will halt the
@@ -129,7 +129,7 @@ can tell Briefcase to use that simulator by providing a `-d` (or
 `--device`) option. Using the name of the device you selected when you
 built your application, run:
 
-``` console
+```console
 $ briefcase run iOS -d "iPhone SE (3rd generation)"
 ```
 
@@ -137,13 +137,13 @@ If you have multiple iOS versions available, Briefcase will pick the
 highest iOS version; if you want to pick a particular iOS version, you
 tell it to use that specific version:
 
-``` console
+```console
 $ briefcase run iOS -d "iPhone SE (3rd generation)::iOS 15.5"
 ```
 
 Or, you can name a specific device UDID:
 
-``` console
+```console
 $ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E
 ```
 
@@ -151,5 +151,5 @@ $ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E
 
 We've now got an application on our phone! Is there anywhere else we can
 deploy a BeeWare app? Turn to
-`Tutorial 6 <../tutorial-6>`{.interpreted-text role="doc"} to find
+[Tutorial 6][tutorial-6] to find
 out...

@@ -27,11 +27,9 @@ We can run this test suite using the `--test` option to `briefcase dev`.
 As this is the first time we are running tests, we also need to pass in
 the `-r` option to ensure that the test requirements are also installed:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase dev --test -r
 
 [helloworld] Installing requirements...
@@ -51,12 +49,12 @@ tests/test_app.py::test_first PASSED                                     [100%]
 
 ============================== 1 passed in 0.01s ===============================
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase dev --test -r
 
 [helloworld] Installing requirements...
@@ -79,12 +77,12 @@ tests/test_app.py::test_first PASSED                                     [100%]
 
 ============================== 1 passed in 0.01s ===============================
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase dev --test -r
 
 [helloworld] Installing requirements...
@@ -107,8 +105,9 @@ tests/test_app.py::test_first PASSED                                     [100%]
 
 ============================== 1 passed in 0.01s ===============================
 ```
-:::
-::::::
+
+///
+
 
 Success! We've just executed a single test that verifies Python math
 works in the way we'd expect (What a relief!).
@@ -139,11 +138,9 @@ We can now re-run the test suite. This time, we don't need to provided
 the `-r` option, as the test requirements have already been installed;
 we only need to use the `--test` option:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase dev --test
 
 [helloworld] Running test suite in dev environment...
@@ -157,12 +154,12 @@ tests/test_app.py::test_empty PASSED                                     [100%]
 
 ============================== 2 passed in 0.11s ===============================
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase dev --test
 
 [helloworld] Running test suite in dev environment...
@@ -176,12 +173,12 @@ tests/test_app.py::test_empty PASSED                                     [100%]
 
 ============================== 2 passed in 0.11s ===============================
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase dev --test
 
 [helloworld] Running test suite in dev environment...
@@ -195,8 +192,9 @@ tests/test_app.py::test_empty PASSED                                     [100%]
 
 ============================== 2 passed in 0.11s ===============================
 ```
-:::
-::::::
+
+///
+
 
 Excellent! Our `greeting()` utility method is working as expected.
 
@@ -214,11 +212,9 @@ that we'd like to see to the bottom of `test_app.py`:
 
 Then, run the test suite with this new test:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase dev --test
 
 [helloworld] Running test suite in dev environment...
@@ -247,12 +243,12 @@ tests/test_app.py:19: AssertionError
 FAILED tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...
 ========================= 1 failed, 2 passed in 0.14s ==========================
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase dev --test
 
 [helloworld] Running test suite in dev environment...
@@ -283,12 +279,12 @@ FAILED tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...
 
 ============================== 2 passed in 0.11s ===============================
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase dev --test
 
 [helloworld] Running test suite in dev environment...
@@ -317,8 +313,9 @@ tests/test_app.py:19: AssertionError
 FAILED tests/test_app.py::test_brutus - AssertionError: assert 'Hello, Brutus...
 ========================= 1 failed, 2 passed in 0.14s ==========================
 ```
-:::
-::::::
+
+///
+
 
 This time, we see a test failure - and the output explains the source of
 the failure: the test is expecting the output "BeeWare the IDEs of
@@ -337,11 +334,9 @@ Brutus". Let's modify the implementation of `greeting()` in
 
 If we run the tests again, we'll now see our tests pass:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase dev --test
 
 [helloworld] Running test suite in dev environment...
@@ -356,12 +351,12 @@ tests/test_app.py::test_brutus PASSED                                    [100%]
 
 ============================== 3 passed in 0.15s ===============================
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase dev --test
 
 [helloworld] Running test suite in dev environment...
@@ -376,12 +371,12 @@ tests/test_app.py::test_brutus PASSED                                    [100%]
 
 ============================== 3 passed in 0.15s ===============================
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase dev --test
 
 [helloworld] Running test suite in dev environment...
@@ -396,8 +391,9 @@ tests/test_app.py::test_brutus PASSED                                    [100%]
 
 ============================== 3 passed in 0.15s ===============================
 ```
-:::
-::::::
+
+///
+
 
 ## Runtime tests
 
@@ -412,11 +408,9 @@ If you use `briefcase run --test -r`, the same test suite will run, but
 it will run inside the packaged application bundle rather than your
 development environment:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase run --test -r
 
 [helloworld] Updating application code...
@@ -455,12 +449,12 @@ tests/test_app.py::test_brutus PASSED [100%]
 
 [helloworld] Test suite passed!
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase run --test -r
 
 [helloworld] Finalizing application configuration...
@@ -489,12 +483,12 @@ tests/test_app.py::test_brutus PASSED [100%]
 
 ============================== 3 passed in 0.21s ===============================
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase run --test -r
 
 [helloworld] Updating application code...
@@ -528,8 +522,9 @@ tests/test_app.py::test_brutus PASSED [100%]
 
 ============================== 3 passed in 0.21s ===============================
 ```
-:::
-::::::
+
+///
+
 
 As with `briefcase dev --test`, the `-r` option is only needed the first
 time you run the test suite to ensure that the test dependencies are

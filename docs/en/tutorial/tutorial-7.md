@@ -1,4 +1,4 @@
-# Tutorial 7 - Get this (third)-party started  { #tutorial-7 }
+# Tutorial 7 - Get this (third-)party started  { id="tutorial-7" }
 
 So far, the app we've built has only used our own code, plus the code
 provided by BeeWare. However, in a real-world app, you'll likely want to
@@ -39,11 +39,9 @@ Then modify the `say_hello()` callback so it looks like this:
 Let's run our updated app in Briefcase developer mode to check that our
 change has worked.
 
-:::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase dev
 Traceback (most recent call last):
 File ".../venv/bin/briefcase", line 5, in <module>
@@ -60,12 +58,12 @@ File ".../venv/lib/python3.13/site-packages/briefcase/commands/base.py", line 14
     import faker
 ModuleNotFoundError: No module named 'faker'
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase dev
 Traceback (most recent call last):
 File ".../venv/bin/briefcase", line 5, in <module>
@@ -82,12 +80,12 @@ File ".../venv/lib/python3.13/site-packages/briefcase/commands/base.py", line 14
     import faker
 ModuleNotFoundError: No module named 'faker'
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase dev
 Traceback (most recent call last):
 File "...\venv\bin\briefcase", line 5, in <module>
@@ -104,32 +102,31 @@ File "...\venv\lib\python3.13\site-packages\briefcase\commands\base.py", line 14
     import faker
 ModuleNotFoundError: No module named 'faker'
 ```
-:::
 
-::: {.group-tab}
-Android
+///
+
+/// tab | Android
 
 You can't run an Android app in developer mode - use the instructions
 for your chosen desktop platform.
-:::
 
-::: {.group-tab}
-iOS
+///
+
+/// tab | iOS
 
 You can't run an iOS app in developer mode - use the instructions for
 your chosen desktop platform.
-:::
-::::::::
+
+///
+::
 
 What happened? We've added `faker` to our *code*, but we haven't added
 it to our development virtual environment. We can fix this by installing
 `faker` with `pip`, and then re-running `briefcase dev`:
 
-:::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ python -m pip install faker
 (beeware-venv) $ briefcase dev
 ```
@@ -137,13 +134,15 @@ macOS
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 7 dialog, on macOS](images/macOS/tutorial-7.png){.align-center}
-:::
+<figure class="align-center">
+    <img src="/tutorial/images/macOS/tutorial-7.png" alt="Hello World Tutorial 7 dialog, on macOS" />
+</figure>
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ python -m pip install faker
 (beeware-venv) $ briefcase dev
 ```
@@ -151,13 +150,15 @@ Linux
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 7 dialog, on Linux](images/linux/tutorial-7.png){.align-center}
-:::
+<figure class="align-center">
+    <img src="/tutorial/images/linux/tutorial-7.png" alt="Hello World Tutorial 7 dialog, on Linux" />
+</figure>
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>python -m pip install faker
 (beeware-venv) C:\...>briefcase dev
 ```
@@ -165,23 +166,26 @@ Windows
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 7 dialog, on Windows](images/windows/tutorial-7.png){.align-center}
-:::
+<figure class="align-center">
+    <img src="/tutorial/images/windows/tutorial-7.png" alt="Hello World Tutorial 7 dialog, on Windows" />
+</figure>
 
-::: {.group-tab}
-Android
+///
+
+/// tab | Android
 
 You can't run an Android app in developer mode - use the instructions
 for your chosen desktop platform.
-:::
 
-::: {.group-tab}
-iOS
+///
+
+/// tab | iOS
 
 You can't run an iOS app in developer mode - use the instructions for
 your chosen desktop platform.
-:::
-::::::::
+
+///
+::
 
 We've now got a working app, using a third party library, running in
 development mode!
@@ -190,15 +194,13 @@ development mode!
 
 Let's get this updated application code packaged as a standalone app.
 Since we've made code changes, we need to follow the same steps as in
-`Tutorial 4 <tutorial-4>`{.interpreted-text role="doc"}:
+[Tutorial 4][tutorial-4]:
 
-:::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
 Update the code in the packaged app:
 
-``` console
+```console
 (beeware-venv) $ briefcase update
 
 [helloworld] Updating application code...
@@ -209,7 +211,7 @@ Update the code in the packaged app:
 
 Rebuild the app:
 
-``` console
+```console
 (beeware-venv) $ briefcase build
 
 [helloworld] Adhoc signing app...
@@ -218,7 +220,7 @@ Rebuild the app:
 
 And finally, run the app:
 
-``` console
+```console
 (beeware-venv) $ briefcase run
 
 [helloworld] Starting app...
@@ -228,15 +230,18 @@ And finally, run the app:
 However, when the app runs, you'll see an error in the console, plus a
 crash dialog:
 
-![Hello World Tutorial 7 app crash, on macOS](images/macOS/tutorial-7-crash.png){.align-center}
-:::
+<figure class="align-center">
+    <img src="/tutorial/images/macOS/tutorial-7-crash.png" alt="Hello World Tutorial 7 app crash, on macOS" />
+</figure>
 
-::: {.group-tab}
-Linux
+
+///
+
+/// tab | Linux
 
 Update the code in the packaged app:
 
-``` console
+```console
 (beeware-venv) $ briefcase update
 
 [helloworld] Updating application code...
@@ -247,7 +252,7 @@ Update the code in the packaged app:
 
 Rebuild the app:
 
-``` console
+```console
 (beeware-venv) $ briefcase build
 
 [helloworld] Finalizing application configuration...
@@ -261,7 +266,7 @@ Rebuild the app:
 
 And finally, run the app:
 
-``` console
+```console
 (beeware-venv) $ briefcase run
 
 [helloworld] Starting app...
@@ -270,7 +275,7 @@ And finally, run the app:
 
 However, when the app runs, you'll see an error in the console:
 
-``` console
+```console
 Traceback (most recent call last):
   File "/usr/lib/python3.13/runpy.py", line 194, in _run_module_as_main
     return _run_code(code, main_globals, None,
@@ -284,14 +289,14 @@ ModuleNotFoundError: No module named 'faker'
 
 Unable to start app helloworld.
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
+
+/// tab | Windows
 
 Update the code in the packaged app:
 
-``` doscon
+```doscon
 (beeware-venv) C:\...>briefcase update
 
 [helloworld] Updating application code...
@@ -302,7 +307,7 @@ Update the code in the packaged app:
 
 Rebuild the app:
 
-``` doscon
+```doscon
 (beeware-venv) C:\...>briefcase build
 ...
 
@@ -311,7 +316,7 @@ Rebuild the app:
 
 And finally, run the app:
 
-``` doscon
+```doscon
 (beeware-venv) C:\...>briefcase run
 
 [helloworld] Starting app...
@@ -321,15 +326,17 @@ And finally, run the app:
 However, when the app runs, you'll see an error in the console, plus a
 crash dialog:
 
-![Hello World Tutorial 7 app crash, on Windows](images/windows/tutorial-7-crash.png){.align-center}
-:::
+<figure class="align-center">
+    <img src="/tutorial/images/windows/tutorial-7-crash.png" alt="Hello World Tutorial 7 app crash, on Windows" />
+</figure>
 
-::: {.group-tab}
-Android
+///
+
+/// tab | Android
 
 Update the code in the packaged app:
 
-``` console
+```console
 (beeware-venv) $ briefcase update android
 
 [helloworld] Updating application code...
@@ -340,7 +347,7 @@ Update the code in the packaged app:
 
 Rebuild the app:
 
-``` console
+```console
 (beeware-venv) $ briefcase build android
 
 [helloworld] Updating app metadata...
@@ -350,7 +357,7 @@ Rebuild the app:
 
 And finally, run the app (selecting a simulator when prompted):
 
-``` console
+```console
 (beeware-venv) $ briefcase run android
 
 [helloworld] Following device log output (type CTRL-C to stop log)...
@@ -359,7 +366,7 @@ And finally, run the app (selecting a simulator when prompted):
 
 However, when the app runs, you'll see an error in the console:
 
-``` console
+```console
 --------- beginning of crash
 E/AndroidRuntime: FATAL EXCEPTION: main
 E/AndroidRuntime: Process: com.example.helloworld, PID: 8289
@@ -397,14 +404,14 @@ E/AndroidRuntime:   at android.app.ActivityThread.performLaunchActivity(Activity
 E/AndroidRuntime:   ... 12 more
 I/Process : Sending signal. PID: 8289 SIG: 9
 ```
-:::
 
-::: {.group-tab}
-iOS
+///
+
+/// tab | iOS
 
 Update the code in the packaged app:
 
-``` console
+```console
 (beeware-venv) $ briefcase update iOS
 
 [helloworld] Updating application code...
@@ -415,7 +422,7 @@ Update the code in the packaged app:
 
 Rebuild the app:
 
-``` console
+```console
 (beeware-venv) $ briefcase build iOS
 
 [helloworld] Updating app metadata...
@@ -425,7 +432,7 @@ Rebuild the app:
 
 And finally, run the app (selecting a simulator when prompted):
 
-``` console
+```console
 (beeware-venv) $ briefcase run iOS
 
 ...
@@ -435,7 +442,7 @@ And finally, run the app (selecting a simulator when prompted):
 
 However, when the app runs, you'll see an error in the console
 
-``` console
+```console
 Application has crashed!
 ========================
 Traceback (most recent call last):
@@ -445,8 +452,9 @@ Traceback (most recent call last):
     import faker
 ModuleNotFoundError: No module named 'faker'
 ```
-:::
-::::::::
+
+///
+::
 
 Once again, the app has failed to start because `faker` has not been
 installed -but why? Haven't we already installed `faker`?
@@ -530,11 +538,9 @@ try packaging our app again. Ensure that you've saved your changes to
 the `-r` flag. This tells Briefcase to update requirements in the
 packaged app:
 
-:::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase update -r
 
 [helloworld] Updating application code...
@@ -552,12 +558,12 @@ Successfully installed faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslo
 
 [helloworld] Application updated.
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase update -r
 
 [helloworld] Finalizing application configuration...
@@ -581,12 +587,12 @@ Successfully installed faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslo
 
 [helloworld] Application updated.
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase update -r
 
 [helloworld] Updating application code...
@@ -604,12 +610,12 @@ Successfully installed faker-37.3.0 fonttools-4.58.1 rubicon-objc-0.5.1 std-nslo
 
 [helloworld] Application updated.
 ```
-:::
 
-::: {.group-tab}
-Android
+///
 
-``` console
+/// tab | Android
+
+```console
 (beeware-venv) $ briefcase update android -r
 
 [helloworld] Updating application code...
@@ -623,12 +629,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Application updated.
 ```
-:::
 
-::: {.group-tab}
-iOS
+///
 
-``` console
+/// tab | iOS
+
+```console
 (beeware-venv) $ briefcase update iOS -r
 
 [helloworld] Updating application code...
@@ -647,21 +653,20 @@ Removing unneeded app bundle content... done
 
 [helloworld] Application updated.
 ```
-:::
-::::::::
+
+///
+::
 
 Once you've updated, you can run `briefcase build` and `briefcase run` -
 and you should see your packaged app, with the new dialog behavior.
 
-:::: {.note}
-::: {.title}
-Note
-:::
+/// note | Note
 
 The `-r` option for updating requirements is also honored by the `build`
 and `run` command, so if you want to update, build, and run in one step,
 you could use `briefcase run -u -r`.
-::::
+
+///
 
 ## Third-Party Python Packages for Mobile and Web
 
@@ -714,6 +719,5 @@ tutorial like this one.
 
 ## Next steps
 
-We've now got an app that uses a third-party library! In `Tutorial 8
-<tutorial-8>`{.interpreted-text role="doc"} we'll learn how to ensure
+We've now got an app that uses a third-party library! In [Tutorial 8][tutorial-8] we'll learn how to ensure
 our app remains responsive as we add more complex application logic.

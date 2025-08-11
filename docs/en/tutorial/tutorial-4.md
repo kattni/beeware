@@ -1,4 +1,4 @@
-# Tutorial 4 - Updating your application  { #tutorial-4 }
+# Tutorial 4 - Updating your application  { id="tutorial-4" }
 
 In the last tutorial, we packaged our application as a native
 application. If you're dealing with a real-world app, that isn't going
@@ -29,32 +29,37 @@ Modify the `say_hello` callback so it looks like this:
 We need to make the method `async` so that when we display the dialog,
 the rest of the application continues to run. Don't worry about this
 detail too much right now -we'll give a more detailed explanation in
-`Tutorial 8 <tutorial-8>`{.interpreted-text role="doc"}.
+[Tutorial 8][tutorial-8].
 
 This directs Toga to open a modal dialog box when the button is pressed.
 
 If you run `briefcase dev`, enter a name, and press the button, you'll
 see the new dialog box:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-![Hello World Tutorial 4 dialog, on macOS](images/macOS/tutorial-4.png){.align-center}
-:::
+<figure class="align-center">
+    <img src="/tutorial/images/macOS/tutorial-4.png" alt="Hello World Tutorial 4 dialog, on macOS" />
+</figure>
 
-::: {.group-tab}
-Linux
+///
 
-![Hello World Tutorial 4 dialog, on Linux](images/linux/tutorial-4.png){.align-center}
-:::
+/// tab | Linux
 
-::: {.group-tab}
-Windows
+<figure class="align-center">
+    <img src="/tutorial/images/linux/tutorial-4.png" alt="Hello World Tutorial 4 dialog, on Linux" />
+</figure>
 
-![Hello World Tutorial 4 dialog, on Windows](images/windows/tutorial-4.png){.align-center}
-:::
-::::::
+///
+
+/// tab | Windows
+
+<figure class="align-center">
+    <img src="/tutorial/images/windows/tutorial-4.png" alt="Hello World Tutorial 4 dialog, on Windows" />
+</figure>
+
+///
+
 
 However, if you run `briefcase run`, the dialog box won't appear.
 
@@ -72,11 +77,9 @@ directory and starting from scratch. However, Briefcase provides an
 easier way - you can update the code for your existing bundled
 application:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase update
 
 [helloworld] Updating application code...
@@ -87,12 +90,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Application updated.
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase update
 
 [helloworld] Finalizing application configuration...
@@ -110,12 +113,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Application updated.
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase update
 
 [helloworld] Updating application code...
@@ -126,8 +129,9 @@ Removing unneeded app bundle content... done
 
 [helloworld] Application updated.
 ```
-:::
-::::::
+
+///
+
 
 If Briefcase can't find the scaffolded template, it will automatically
 invoke `create` to generate a fresh scaffold.
@@ -138,7 +142,7 @@ updated app, and `briefcase package` to repackage the application for
 distribution.
 
 (macOS users, remember that as noted in
-`Tutorial 3 <tutorial-3>`{.interpreted-text role="doc"}, for the
+[Tutorial 3][tutorial-3], for the
 tutorial we recommend running `briefcase package` with the
 `--adhoc-sign` flag to avoid the complexity of setting up a code signing
 identity and keep the tutorial as simple as possible.)
@@ -184,11 +188,9 @@ Run your app in development mode (with `briefcase dev`) to confirm that
 the new logic works; then update, build and run the app with one
 command:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase run -u
 
 [helloworld] Updating application code...
@@ -206,12 +208,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Starting app...
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase run -u
 
 [helloworld] Finalizing application configuration...
@@ -235,12 +237,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Starting app...
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase run -u
 
 [helloworld] Updating application code...
@@ -253,8 +255,9 @@ Removing unneeded app bundle content... done
 
 [helloworld] Starting app...
 ```
-:::
-::::::
+
+///
+
 
 The package command also accepts the `-u` argument, so if you make a
 change to your application code and want to repackage immediately, you
@@ -266,6 +269,6 @@ We now have our application packaged for distribution on desktop
 platforms, and we've been able to update the code in our application.
 
 But what about mobile? In
-`Tutorial 5 <tutorial-5/index>`{.interpreted-text role="doc"}, we'll
+[Tutorial 5][tutorial-5], we'll
 convert our application into a mobile application, and deploy it onto a
 device simulator, and onto a phone.

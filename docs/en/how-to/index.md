@@ -16,95 +16,93 @@ To build the BeeWare tutorial you **must** have a Python 3.12
 interpreter installed and available on your path (i.e., `python3` must
 start a Python 3.12 interpreter).
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 $ python3 --version
 $ pip3 --version
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 $ python3 --version
 $ pip3 --version
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 C:\...>python3 --version
 C:\...>pip3 --version
 ```
-:::
-::::::
+
+///
+
 
 ### Install Enchant
 
 You'll also need to install the Enchant spell checking library.
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
 Enchant can be installed using [Homebrew](https://brew.sh):
 
-``` console
+```console
 (venv) $ brew install enchant
 ```
 
 If you're on an Apple Silicon machine (M-series), you'll also need to
 manually set the location of the Enchant library:
 
-``` console
+```console
 (venv) $ export PYENCHANT_LIBRARY_PATH=/opt/homebrew/lib/libenchant-2.2.dylib
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
+
+/// tab | Linux
 
 Enchant can be installed as a system package:
 
 **Ubuntu / Debian**
 
-``` console
+```console
 $ sudo apt update
 $ sudo apt install enchant-2
 ```
 
 **Fedora**
 
-``` console
+```console
 $ sudo dnf install enchant
 ```
 
 **Arch / Manjaro**
 
-``` console
+```console
 $ sudo pacman -Syu enchant
 ```
 
 **OpenSUSE Tumbleweed**
 
-``` console
+```console
 $ sudo zypper install enchant
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
+
+/// tab | Windows
 
 Enchant is installed automatically when you set up your development
 environment.
-:::
-::::::
+
+///
+
 
 ### Create a virtual environment
 
@@ -112,34 +110,33 @@ The recommended way of setting up your development environment for
 BeeWare is to install a virtual environment, install the required
 dependencies and start coding. To set up a virtual environment, run:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 $ python3 -m venv venv
 $ source venv/bin/activate
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 $ python3 -m venv venv
 $ source venv/bin/activate
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 C:\...>python3 -m venv venv
 C:\...>venv\Scripts\activate
 ```
-:::
-::::::
+
+///
+
 
 Your prompt should now have a `(venv)` prefix in front of it.
 
@@ -155,39 +152,38 @@ desktop application installed on your computer, you can select "Open in
 Desktop"; otherwise, copy the URL provided, and use it to clone using
 the command line:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
 Fork the BeeWare repository, and then:
 
     (venv) $ git clone https://github.com/<your username>/beeware.git
 
 (substituting your GitHub username)
-:::
 
-::: {.group-tab}
-Linux
+///
+
+/// tab | Linux
 
 Fork the BeeWare repository, and then:
 
     (venv) $ git clone https://github.com/<your username>/beeware.git
 
 (substituting your GitHub username)
-:::
 
-::: {.group-tab}
-Windows
+///
+
+/// tab | Windows
 
 Fork the BeeWare repository, and then:
 
-``` doscon
+```doscon
 (venv) C:\...>git clone https://github.com/<your username>/beeware.git
 ```
 
 (substituting your GitHub username)
-:::
-::::::
+
+///
+
 
 ### Install BeeWare tutorial docs dependencies
 
@@ -196,34 +192,33 @@ requirements into your development environment. Since we're installing
 from source, we can't rely on pip to resolve the dependencies to source
 packages, so we have to manually install each package:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (venv) $ cd beeware
 (venv) $ python -m pip install -e ".[dev]"
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (venv) $ cd beeware
 (venv) $ python -m pip install -e .[dev]
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (venv) C:\...>cd beeware
 (venv) C:\...>python -m pip install -e .[dev]
 ```
-:::
-::::::
+
+///
+
 
 ### Install pre-commit
 
@@ -232,45 +227,42 @@ identify simple issues and standardize code formatting. It does this by
 installing a git hook that automatically runs a series of code linters
 prior to finalizing any git commit. To enable pre-commit, run:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (venv) $ pre-commit install
 pre-commit installed at .git/hooks/pre-commit
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (venv) $ pre-commit install
 pre-commit installed at .git/hooks/pre-commit
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (venv) C:\...>pre-commit install
 pre-commit installed at .git/hooks/pre-commit
 ```
-:::
-::::::
+
+///
+
 
 When you commit any change, pre-commit will run automatically. If there
 are any issues found with the commit, this will cause your commit to
 fail. Where possible, pre-commit will make the changes needed to correct
 the problems it has found:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (venv) $ git add some/interesting_file.py
 (venv) $ git commit -m "Minor change"
 black....................................................................Failed
@@ -293,12 +285,12 @@ isort....................................................................Passed
 pyupgrade................................................................Passed
 docformatter.............................................................Passed
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (venv) $ git add some/interesting_file.py
 (venv) $ git commit -m "Minor change"
 black....................................................................Failed
@@ -321,12 +313,12 @@ isort....................................................................Passed
 pyupgrade................................................................Passed
 docformatter.............................................................Passed
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (venv) C:\...>git add some/interesting_file.py
 (venv) C:\...>git commit -m "Minor change"
 black....................................................................Failed
@@ -349,17 +341,16 @@ isort....................................................................Passed
 pyupgrade................................................................Passed
 docformatter.............................................................Passed
 ```
-:::
-::::::
+
+///
+
 
 You can then re-add any files that were modified as a result of the
 pre-commit checks, and re-commit the change.
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (venv) $ git add some/interesting_file.py
 (venv) $ git commit -m "Minor change"
 black....................................................................Passed
@@ -376,12 +367,12 @@ docformatter.............................................................Passed
 [bugfix e3e0f73] Minor change
 1 file changed, 4 insertions(+), 2 deletions(-)
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (venv) $ git add some/interesting_file.py
 (venv) $ git commit -m "Minor change"
 black....................................................................Passed
@@ -398,12 +389,12 @@ docformatter.............................................................Passed
 [bugfix e3e0f73] Minor change
 1 file changed, 4 insertions(+), 2 deletions(-)
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (venv) C:\...>git add some\interesting_file.py
 (venv) C:\...>git commit -m "Minor change"
 black....................................................................Passed
@@ -418,8 +409,9 @@ isort....................................................................Passed
 pyupgrade................................................................Passed
 docformatter.............................................................Passed
 ```
-:::
-::::::
+
+///
+
 
 Now you are ready to start hacking on BeeWare docs!
 
@@ -429,31 +421,30 @@ Now you are ready to start hacking on BeeWare docs!
 
 Once your development environment is set up, run:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (venv) $ tox -e docs
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (venv) $ tox -e docs
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (venv) C:\...>tox -e docs
 ```
-:::
-::::::
+
+///
+
 
 The output of the file should be in the `docs/_build/html` folder. If
 there are any markup problems, they'll raise an error.
@@ -463,31 +454,30 @@ there are any markup problems, they'll raise an error.
 To support rapid editing of documentation, BeeWare also has a "live
 preview" mode:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (venv) $ tox -e docs-live
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (venv) $ tox -e docs-live
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (venv) C:\...>tox -e docs-live
 ```
-:::
-::::::
+
+///
+
 
 This will build the documentation, start a web server to serve the build
 documentation, and watch the file system for any changes to the
@@ -499,31 +489,30 @@ Live preview mode will only monitor the `docs` directory for changes. If
 you're updating the inline documentation associated with BeeWare source
 code, you'll need to use the `docs-live-src` target to build docs:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (venv) $ tox -e docs-live-src
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (venv) $ tox -e docs-live-src
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (venv) C:\...>tox -e docs-live-src
 ```
-:::
-::::::
+
+///
+
 
 This behaves the same as `docs-live`, but will also monitor any changes
 to the `core/src` folder, reflecting any changes to inline
@@ -536,31 +525,30 @@ documentation.
 The build process will identify reStructuredText problems, but BeeWare
 performs some additional "lint" checks. To run the lint checks:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (venv) $ tox -e docs-lint
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (venv) $ tox -e docs-lint
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (venv) C:\...>tox -e docs-lint
 ```
-:::
-::::::
+
+///
+
 
 This will validate the documentation does not contain:
 
@@ -583,31 +571,30 @@ the spellchecker's dictionary. When adding to this list, remember:
 
 To force a rebuild for all of the documentation:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (venv) $ tox -e docs-all
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (venv) $ tox -e docs-all
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (venv) C:\...>tox -e docs-all
 ```
-:::
-::::::
+
+///
+
 
 The documentation should be fully rebuilt in the `docs/_build/html`
 folder. If there are any markup problems, they'll raise an error.
@@ -649,31 +636,30 @@ branch has a simple name to identify the change that you've made.
 
 To create a feature branch, run:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (venv) $ git checkout -b fix-layout-bug
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (venv) $ git checkout -b fix-layout-bug
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (venv) C:\...>git checkout -b fix-layout-bug
 ```
-:::
-::::::
+
+///
+
 
 Commit your changes to this branch, then push to GitHub and create a
 pull request.

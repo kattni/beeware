@@ -113,7 +113,7 @@ For our purposes, it doesn't matter which simulator you pick.
 This will start the iOS simulator, install your app, and start it. You should
 see the simulator start, and eventually open your iOS application:
 
-.. image:: ../images/iOS/tutorial-5.png
+.. image:: /tutorial/images/iOS/tutorial-5.png
    :alt: Hello World Tutorial 5 window, on iOS
 
 While the app is running, you'll see a series of Simulator log output messages

@@ -1,4 +1,4 @@
-# Tutorial 1 - Your first app  { #tutorial-1 }
+# Tutorial 1 - Your first app { id="tutorial-1" }
 
 We're ready to create our first application.
 
@@ -8,53 +8,54 @@ First, we need to install **Briefcase**. Briefcase is a BeeWare tool
 that can be used to package your application for distribution to end
 users - but it can also be used to bootstrap a new project. Make sure
 you're in the `beeware-tutorial` directory you created in
-`Tutorial 0 <tutorial-0>`{.interpreted-text role="doc"}, with the
+[Tutorial 0][tutorial-0], with the
 `beeware-venv` virtual environment activated, and run:
 
-:::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
-(beeware-venv) $ python -m pip install briefcase
-```
-:::
-
-:::: {.group-tab}
-Linux
-
-``` console
+```console
 (beeware-venv) $ python -m pip install briefcase
 ```
 
-::: {.admonition}
-Possible errors during installation
+///
+
+/// tab | Linux
+
+```console
+(beeware-venv) $ python -m pip install briefcase
+```
+
+/// admonition | Possible errors during installation
 
 If you see errors during installation, it's almost certainly because
 some of the system requirements haven't been installed. Make sure you
 have `installed all the platform pre-requisites
 <install-dependencies>`{.interpreted-text role="ref"}.
-:::
-::::
 
-:::: {.group-tab}
-Windows
 
-``` doscon
+///
+
+///
+
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>python -m pip install briefcase
 ```
 
-::: {.admonition}
-Possible errors during installation
+/// admonition | Possible errors during installation
 
 It is important that you use `python -m pip`, rather than a bare `pip`.
 Briefcase needs to ensure that it has an up-to-date version of `pip` and
 `setuptools`, and a bare invocation of `pip` can't self-update. If you
 want to know more, [Brett Cannon has a detailed blog post about the
 issue](https://snarky.ca/why-you-should-use-python-m-pip/).
-:::
-::::
-::::::::
+
+
+///
+
+///
+
 
 ## Bootstrap a new project
 
@@ -62,31 +63,30 @@ Let's start our first BeeWare project! We're going to use the Briefcase
 `new` command to create an application called **Hello World**. Run the
 following from your command prompt:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase new
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase new
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase new
 ```
-:::
-::::::
+
+///
+
 
 Briefcase will ask us for some details of our new application. For the
 purposes of this tutorial, use the following:
@@ -121,25 +121,27 @@ Briefcase will then generate a project skeleton for you to use. If
 you've followed this tutorial so far, and accepted the defaults as
 described, your file system should look something like:
 
-    beeware-tutorial/
-    ├── beeware-venv/
-    │   └── ...
-    └── helloworld/
-        ├── CHANGELOG
-        ├── LICENSE
-        ├── pyproject.toml
-        ├── README.rst
-        ├── src/
-        │   └── helloworld/
-        │       ├── app.py
-        │       ├── __init__.py
-        │       ├── __main__.py
-        │       └── resources/
-        │           └── README
-        └── tests/
-            ├── helloworld.py
-            ├── __init__.py
-            └── test_app.py
+```text
+beeware-tutorial/
+├── beeware-venv/
+│   └── ...
+└── helloworld/
+    ├── CHANGELOG
+    ├── LICENSE
+    ├── pyproject.toml
+    ├── README.rst
+    ├── src/
+    │   └── helloworld/
+    │       ├── app.py
+    │       ├── __init__.py
+    │       ├── __main__.py
+    │       └── resources/
+    │           └── README
+    └── tests/
+        ├── helloworld.py
+        ├── __init__.py
+        └── test_app.py
+```
 
 This skeleton is actually a fully functioning application without adding
 anything else. The `src` folder contains all the code for the
@@ -156,11 +158,9 @@ application.
 Move into the `helloworld` project directory and tell briefcase to start
 the project in Developer (or `dev`) mode:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ cd helloworld
 (beeware-venv) $ briefcase dev
 
@@ -170,12 +170,12 @@ macOS
 [helloworld] Starting in dev mode...
 ===========================================================================
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ cd helloworld
 (beeware-venv) $ briefcase dev
 
@@ -185,12 +185,12 @@ Linux
 [helloworld] Starting in dev mode...
 ===========================================================================
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>cd helloworld
 (beeware-venv) C:\...>briefcase dev
 
@@ -200,35 +200,39 @@ Windows
 [helloworld] Starting in dev mode...
 ===========================================================================
 ```
-:::
-::::::
+
+///
+
 
 This should open a GUI window:
 
-::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-![Hello World Tutorial 1 window, on macOS](images/macOS/tutorial-1.png){.align-center}
-:::
+<figure class="align-center">
+    <img src="/tutorial/images/macOS/tutorial-1.png" alt="Hello World Tutorial 1 window, on macOS" />
+</figure>
 
-::: {.group-tab}
-Linux
+///
 
-![Hello World Tutorial 1 window, on Linux](images/linux/tutorial-1.png){.align-center}
-:::
+/// tab | Linux
 
-:::: {.group-tab}
-Windows
+<figure class="align-center">
+    <img src="/tutorial/images/linux/tutorial-1.png" alt="Hello World Tutorial 1 window, on Linux" />
+</figure>
 
-![Hello World Tutorial 1 window, on Windows](images/windows/tutorial-1.png){.align-center}
+///
 
-::: {.admonition}
-Invalid requirements or pip unable to connect
+/// tab | Windows
+
+<figure class="align-center">
+    <img src="/tutorial/images/windows/tutorial-1.png" alt="Hello World Tutorial 1 window, on Windows" />
+</figure>
+
+/// admonition | Invalid requirements or pip unable to connect
 
 If you encounter the error:
 
-``` doscon
+```doscon
 Unable to install requirements. This may be because one of your
 requirements is invalid, or because pip was unable to connect
 to the PyPI server.
@@ -240,9 +244,12 @@ Confirm that you are running a
 
 If your version of python is *not* a supported version, you will have to
 restart the tutorial.
-:::
-::::
-:::::::
+
+
+///
+
+///
+
 
 Close the application - either by pressing the close button on the
 application window, by selecting Quit/Exit from the application's menu,
@@ -254,6 +261,5 @@ native application in Python!
 
 We now have a working application, running in developer mode. Now we can
 add some logic of our own to make our application do something a little
-more interesting. In `Tutorial 2 <tutorial-2>`{.interpreted-text
-role="doc"}, we'll put a more useful user interface onto our
+more interesting. In [Tutorial 2][tutorial-2], we'll put a more useful user interface onto our
 application.

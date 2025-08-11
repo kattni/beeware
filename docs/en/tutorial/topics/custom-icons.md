@@ -29,11 +29,9 @@ We can now run `briefcase update` again - but this time, we pass in the
 `--update-resources` flag, telling Briefcase that we want to install new
 application resources (i.e., the icons):
 
-:::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase update --update-resources
 
 [helloworld] Updating application code...
@@ -47,12 +45,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Application updated.
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase update --update-resources
 
 [helloworld] Updating application code...
@@ -71,12 +69,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Application updated.
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase update --update-resources
 
 [helloworld] Updating application code...
@@ -90,12 +88,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Application updated.
 ```
-:::
 
-::: {.group-tab}
-Android
+///
 
-``` console
+/// tab | Android
+
+```console
 (beeware-venv) $ briefcase update android --update-resources
 
 [helloworld] Updating application code...
@@ -128,12 +126,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Application updated.
 ```
-:::
 
-::: {.group-tab}
-iOS
+///
 
-``` console
+/// tab | iOS
+
+```console
 (beeware-venv) $ briefcase iOS --update-resources
 
   [helloworld] Updating application code...
@@ -162,8 +160,9 @@ iOS
 
   [helloworld] Application updated.
 ```
-:::
-::::::::
+
+///
+::
 
 This reports the specific icon file (or files) that Briefcase is
 expecting. However, as we haven't provided the actual icon files, the
@@ -193,7 +192,9 @@ project directory should look something like:
 There's a *lot* of icons in this folder, but most of them should look
 the same: a green snake on a light blue background:
 
-![Icon of green snake with a light blue background](../resources/icon.png){.align-center}
+<figure class="align-center">
+    <img src="../resources/icon.png" alt="Icon of green snake with a light blue background" />
+</figure>
 
 The only exception will be the icons with `-adaptive-` in their name;
 these will have a transparent background. This represents all the
@@ -207,11 +208,9 @@ included, then start the app. We can shortcut this process by passing
 `--update-resources` to our call to `run` - this will update the app,
 update the app's resources, and then start the app:
 
-:::::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase run --update-resources
 
 [helloworld] Updating application code...
@@ -232,12 +231,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Starting app...
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase run --update-resources
 
 [helloworld] Updating application code...
@@ -264,12 +263,12 @@ Build bootstrap binary...
 
 [helloworld] Starting app...
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase build --update-resources
 
 [helloworld] Updating application code...
@@ -296,7 +295,7 @@ Setting stub app details... done
 ::::: {.group-tab}
 Android
 
-``` console
+```console
 (beeware-venv) $ briefcase build android --update-resources
 
 [helloworld] Updating application code...
@@ -332,21 +331,19 @@ Removing unneeded app bundle content... done
 [helloworld] Starting app...
 ```
 
-:::: {.note}
-::: {.title}
-Note
-:::
+/// note | Note
 
 If you're using a recent version of Android, you may notice that the app
 icon has been changed to a green snake, but the background of the icon
 is *white*, rather than light blue. We'll fix this in the next step.
-::::
-:::::
 
-::: {.group-tab}
-iOS
+///
 
-``` console
+///
+
+/// tab | iOS
+
+```console
 (beeware-venv) $ briefcase build iOS --update-resources
 
 [helloworld] Updating application code...
@@ -377,19 +374,19 @@ Removing unneeded app bundle content... done
 
 [helloworld] Starting app...
 ```
-:::
-::::::::::
 
-:::: {.note}
-::: {.title}
-Note
-:::
+///
+
+///
+
+/// note | Note
 
 If you get a stack trace referencing `faker` or `httpx` when you run the
 app, it's possible you missed running your app during step 7 or 8 of the
 tutorial. Re-run the app, adding the `-r` argument to update the app
 requirements.
-::::
+
+///
 
 When you run the app on iOS or Android, in addition to the icon change,
 you should also notice that the splash screen incorporates the new icon.
@@ -408,11 +405,9 @@ To apply this change, we have to re-create the app by re-running
 `briefcase create`. When we do this, we'll be prompted to confirm that
 we want to overwrite the existing project:
 
-:::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase create
 
 Application 'helloworld' already exists; overwrite [y/N]? y
@@ -424,12 +419,12 @@ Application 'helloworld' already exists; overwrite [y/N]? y
 
 [helloworld] Created build/helloworld/macos/app
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase create
 
 Application 'helloworld' already exists; overwrite [y/N]? y
@@ -441,12 +436,12 @@ Application 'helloworld' already exists; overwrite [y/N]? y
 
 [helloworld] Created build/helloworld/linux/ubuntu/jammy
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase create
 
 Application 'helloworld' already exists; overwrite [y/N]? y
@@ -458,12 +453,12 @@ Application 'helloworld' already exists; overwrite [y/N]? y
 
 [helloworld] Created build\helloworld\windows\app
 ```
-:::
 
-::: {.group-tab}
-Android
+///
 
-``` console
+/// tab | Android
+
+```console
 (beeware-venv) $ briefcase create android
 
 Application 'helloworld' already exists; overwrite [y/N]? y
@@ -474,12 +469,12 @@ Application 'helloworld' already exists; overwrite [y/N]? y
 ...
 [helloworld] Created build/helloworld/android/gradle
 ```
-:::
 
-::: {.group-tab}
-iOS
+///
 
-``` console
+/// tab | iOS
+
+```console
 (beeware-venv) $ briefcase create iOS
 
 Application 'helloworld' already exists; overwrite [y/N]? y
@@ -490,8 +485,9 @@ Application 'helloworld' already exists; overwrite [y/N]? y
 ...
 [helloworld] Created build/helloworld/ios/xcode
 ```
-:::
-::::::::
+
+///
+::
 
 You can then re-build and re-run the app using `briefcase run`. You
 won't notice any changes to the desktop app; but the Android or iOS apps

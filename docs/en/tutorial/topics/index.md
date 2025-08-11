@@ -1,4 +1,4 @@
-# Going further
+# Going further { #topics }
 
 Want to go deeper on specific topics? Here are some additional tutorials
 that explore common aspects of application development. Each tutorial is
@@ -27,9 +27,5 @@ Camera access
 
 Use the camera on your mobile or desktop device to take and view a
 picture from within your application.
-:::
-::::::
 
-::: {.toctree maxdepth="1" hidden=""}
-custom-icons testing camera-access
-:::
+///

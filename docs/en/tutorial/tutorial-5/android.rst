@@ -237,7 +237,7 @@ emulator" option, and accept the default choice for the device name
 Briefcase ``run`` will automatically boot the virtual device. When the device
 is booting, you will see the Android logo:
 
-.. figure:: ../images/android/tutorial-5-booting.png
+.. figure:: /tutorial/images/android/tutorial-5-booting.png
    :align: center
    :width: 30%
    :alt: Android virtual device booting
@@ -247,7 +247,7 @@ is booting, you will see the Android logo:
 Once the device has finished booting, Briefcase will install your app on the
 device. You will briefly see a launcher screen:
 
-.. figure:: ../images/android/tutorial-5-running.png
+.. figure:: /tutorial/images/android/tutorial-5-running.png
    :align: center
    :width: 30%
    :alt: Android virtual device fully started, on the launcher screen
@@ -256,7 +256,7 @@ device. You will briefly see a launcher screen:
 
 The app will then start. You'll see a splash screen while the app starts up:
 
-.. figure:: ../images/android/tutorial-5-splash.png
+.. figure:: /tutorial/images/android/tutorial-5-splash.png
    :align: center
    :width: 30%
    :alt: App splash screen
@@ -276,7 +276,7 @@ The first time the app starts, it needs to unpack itself onto the device. This
 may take a few seconds. Once it's unpacked, you'll see the Android version of
 our desktop app:
 
-.. figure:: ../images/android/tutorial-5-launched.png
+.. figure:: /tutorial/images/android/tutorial-5-launched.png
    :align: center
    :width: 30%
    :alt: App from Tutorial 2, fully launched

@@ -5,8 +5,7 @@ tutorial, we'll write new application that is able to request access to
 this camera, take a photograph, and then display that photograph in the
 new application that uses your device's camera.
 
-::: {.admonition}
-This tutorial won't work on all platforms!
+/// admonition | This tutorial won't work on all platforms!
 
 Unfortunately, at present, this tutorial will only work on macOS and
 Android.
@@ -21,7 +20,9 @@ raise an error when you try to take a photograph.
 
 The code will work if it is run on an actual iOS device, but will fail
 to take a photograph if deployed to the iOS simulator.
-:::
+
+
+///
 
 ## Start a new project
 
@@ -33,7 +34,7 @@ to re-run the `briefcase new` wizard.
 Change back to the directory that contains the `helloworld` project
 folder, and start a new project named "Hello Camera":
 
-``` console
+```console
 (beeware-venv) $ cd ..
 (beeware-venv) $ briefcase new
 ...
@@ -53,7 +54,7 @@ The wizard has generated a new empty Toga project. We can now add the
 code to take and display a photograph. Edit the `app.py` for the new
 application so that it has the following content:
 
-``` {.python emphasize-lines="9-18, 23-44"}
+```{.python emphasize-lines="9-18, 23-44"}
 import toga
 from toga.style.pack import COLUMN, ROW
 
@@ -144,7 +145,7 @@ permissions. In the `[tool.briefcase.app.hellocamera]` configuration
 section of your app's `pyproject.toml` file, add the following (just
 above the `sources` declaration):
 
-``` toml
+```toml
 permission.camera = "App will take mugshots."
 ```
 
@@ -156,16 +157,14 @@ presented.
 
 We can now generate and run the app:
 
-::::: {.tabs}
-::: {.group-tab}
-macOS .. code-block:: console
+/// tab | macOS .. code-block:: console
 
 (beeware-venv)\$ briefcase create (beeware-venv)\$ briefcase build
 (beeware-venv)\$ briefcase run
-:::
 
-::: {.group-tab}
-Android .. code-block:: console
+///
+
+/// tab | Android .. code-block:: console
 
 (beeware-venv)\$ briefcase create android (beeware-venv)\$ briefcase
 build android (beeware-venv)\$ briefcase run android

@@ -1,4 +1,4 @@
-# Tutorial 3 - Packaging for distribution  { #tutorial-3 }
+# Tutorial 3 - Packaging for distribution  { id="tutorial-3" }
 
 So far, we've been running our application in "Developer mode". This
 makes it easy for us to run our application locally - but what we really
@@ -18,11 +18,9 @@ Since this is the first time we're packaging our application, we need to
 create some configuration files and other scaffolding to support the
 packaging process. From the `helloworld` directory, run:
 
-::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase create
 
 [helloworld] Generating application template...
@@ -46,12 +44,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Created build/helloworld/macos/app
 ```
-:::
 
-:::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase create
 
 [helloworld] Finalizing application configuration...
@@ -82,8 +80,7 @@ Removing unneeded app bundle content... done
 [helloworld] Created build/helloworld/linux/ubuntu/jammy
 ```
 
-::: {.admonition}
-Errors about Python versions
+/// admonition | Errors about Python versions
 
 If you receive an error that reads something like:
 
@@ -93,13 +90,15 @@ If you receive an error that reads something like:
 You will need to recreate your virtual environment using the system
 `python3`. Using the system Python is a requirement for packaging your
 application.
-:::
-::::
 
-::: {.group-tab}
-Windows
 
-``` doscon
+///
+
+///
+
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase create
 
 [helloworld] Generating application template...
@@ -120,8 +119,9 @@ Installing src/helloworld... done
 
 [helloworld] Created build\helloworld\windows\app
 ```
-:::
-:::::::
+
+///
+:
 
 You've probably just seen pages of content go past in your terminal...
 so what just happened? Briefcase has done the following:
@@ -191,11 +191,9 @@ You can now compile your application. This step performs any binary
 compilation that is necessary for your application to be executable on
 your target platform.
 
-::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase build
 
 [helloworld] Adhoc signing app...
@@ -211,12 +209,12 @@ does need to sign the contents of binary so that it can be executed.
 This signature is an *ad hoc* signature - it will only work on *your*
 machine; if you want to distribute the application to others, you'll
 need to provide a full signature.
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase build
 
 [helloworld] Finalizing application configuration...
@@ -245,12 +243,12 @@ Once this step completes, the `build` folder will contain a
 system. This file system mirror will contain a `bin` folder with a
 `helloworld` binary, plus `lib` and `share` folders needed to support
 the binary.
-:::
 
-:::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase build
 Setting stub app details... done
 
@@ -261,8 +259,7 @@ On Windows, the `build` command doesn't need to *compile* anything, but
 it does need to write some metadata so that the application knows its
 name, version, and so on.
 
-::: {.admonition}
-Triggering antivirus
+/// admonition | Triggering antivirus
 
 Since this metadata is being written directly in to the pre-compiled
 binary rolled out from the template during the `create` command, this
@@ -270,19 +267,20 @@ may trigger antivirus software running on your machine and prevent the
 metadata from being written. In that case, instruct the antivirus to
 allow the tool (named `rcedit-x64.exe`) to run and re-run the command
 above.
-:::
-::::
-:::::::
+
+
+///
+
+///
+
 
 ## Running your app
 
 You can now use Briefcase to run your application:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase run
 
 [helloworld] Starting app...
@@ -302,12 +300,12 @@ Installing Python NSLog handler...
 Running app module: helloworld
 ---------------------------------------------------------------------------
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase run
 
 [helloworld] Finalizing application configuration...
@@ -330,12 +328,12 @@ Initializing Python runtime...
 Running app module: helloworld
 ---------------------------------------------------------------------------
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase run
 
 [helloworld] Starting app...
@@ -354,8 +352,9 @@ Initializing Python runtime...
 Running app module: helloworld
 ---------------------------------------------------------------------------
 ```
-:::
-::::::
+
+///
+
 
 This will start to run your native application, using the app bundle
 created by the `build` command.
@@ -382,11 +381,9 @@ product. Depending on the platform, this may involve compiling an
 installer, performing code signing, or doing other pre-distribution
 tasks.
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase package --adhoc-sign
 
 [helloworld] Signing app...
@@ -433,16 +430,16 @@ others to use, we would need to specify real credentials.
 When you're ready to publish a real application, check out the Briefcase
 How-To guide on [Setting up a macOS code signing
 identity](https://briefcase.beeware.org/en/latest/how-to/code-signing/macOS.html).
-:::
 
-::: {.group-tab}
-Linux
+///
+
+/// tab | Linux
 
 The output of the package step will be slightly different depending on
 your Linux distribution. If you're on a Debian-derived distribution,
 you'll see:
 
-``` console
+```console
 (beeware-venv) $ briefcase package
 
 [helloworld] Finalizing application configuration...
@@ -464,7 +461,7 @@ The `dist` folder will contain the `.deb` file that was generated.
 
 If you're on a RHEL-based distribution, you'll see:
 
-``` console
+```console
 (beeware-venv) $ briefcase package
 
 [helloworld] Finalizing application configuration...
@@ -493,7 +490,7 @@ The `dist` folder will contain the `.rpm` file that was generated.
 
 If you're on an Arch-based distribution, you'll see:
 
-``` console
+```console
 (beeware-venv) $ briefcase package
 
 [helloworld] Finalizing application configuration...
@@ -526,7 +523,7 @@ however, ensure you don't install Docker in "rootless" mode.
 Once you've installed Docker, you should be able to start an Linux
 container - for example:
 
-``` console
+```console
 $ docker run --rm -it ubuntu:22.04
 ```
 
@@ -540,7 +537,7 @@ a Docker image as an argument. For example, to build a DEB package for
 Ubuntu 22.04 (Jammy), regardless of the operating system you're on, you
 can run:
 
-``` console
+```console
 $ briefcase package --target ubuntu:jammy
 ```
 
@@ -548,12 +545,12 @@ This will download the Docker image for your selected operating system,
 create a container that is able to run Briefcase builds, and build the
 app package inside the image. Once it's completed, the `dist` folder
 will contain the package for the target Linux distribution.
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase package
 
 *************************************************************************
@@ -600,13 +597,14 @@ Once this step completes, the `dist` folder will contain a file named
 it, you should go through a familiar Windows installation process. Once
 this installation completes, there will be a "Hello World" entry in your
 start menu.
-:::
-::::::
+
+///
+
 
 ## Next steps
 
 We now have our application packaged for distribution on desktop
 platforms. But what happens when we need to update the code in our
 application? How do we get those updates into our packaged application?
-Turn to `Tutorial 4 <./tutorial-4>`{.interpreted-text role="doc"} to
+Turn to[Tutorial 4][tutorial-4] to
 find out...

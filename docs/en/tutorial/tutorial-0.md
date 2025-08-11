@@ -1,4 +1,4 @@
-# Tutorial 0 - Let's get set up! { #tutorial-0 }
+# Tutorial 0 - Let's get set up! { id="tutorial-0" }
 
 Before we build our first BeeWare app, we have to make sure we've got
 all the prerequisites for running BeeWare.
@@ -7,9 +7,7 @@ all the prerequisites for running BeeWare.
 
 The first thing we'll need is a working Python interpreter.
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
 If you're on macOS, you can get an official Python installer from [the
 Python website](https://www.python.org/downloads). You can use any
@@ -35,15 +33,15 @@ to the Xcode-provided version of Python to run this tutorial.
 To check the version of Python that you have installed, run the
 following command:
 
-``` console
+```console
 $ python3 --version
 ```
 
 If Python is installed, you'll see its version number.
-:::
 
-::: {.group-tab}
-Linux
+///
+
+/// tab | Linux
 
 If you're on Linux, you'll install Python using the system package
 manager (`apt` on Debian/Ubuntu/Mint, `dnf` on Fedora, or `pacman` on
@@ -60,10 +58,10 @@ operating system. Alternative Python installations (pyenv, Anaconda,
 manually compiled Python, etc.) will prevent you from successfully
 packaging your application for distribution in later steps of this
 tutorial.
-:::
 
-::: {.group-tab}
-Windows
+///
+
+/// tab | Windows
 
 If you're on Windows, you can get the official installer from [the
 Python website](https://www.python.org/downloads). You can use any
@@ -78,17 +76,16 @@ You can also install Python from the Windows App Store, or use
 matter *how* you've installed Python - it only matters that you can run
 `python3` from your command prompt and get a working, supported Python
 interpreter.
-:::
-::::::
+
+///
+
 
 ## Install dependencies
 
 Next, install the additional dependencies needed for your operating
 system:
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
 Building BeeWare apps on macOS requires:
 
@@ -97,10 +94,10 @@ Building BeeWare apps on macOS requires:
   to open Xcode for the first time in order for Git to work in your
   terminal session. If it still doesn't register that Git is installed,
   you may need to restart your terminal session.
-:::
 
-::: {.group-tab}
-Linux
+///
+
+/// tab | Linux
 
 To support local development, you'll need to install some system
 packages. The list of packages required varies depending on your
@@ -108,32 +105,32 @@ distribution:
 
 **Ubuntu / Debian**
 
-``` console
+```console
 $ sudo apt update
 $ sudo apt install git build-essential pkg-config python3-dev python3-venv libgirepository1.0-dev libcairo2-dev gir1.2-gtk-3.0 libcanberra-gtk3-module
 ```
 
 **Fedora**
 
-``` console
+```console
 $ sudo dnf install git gcc make pkg-config rpm-build python3-devel gobject-introspection-devel cairo-gobject-devel gtk3 libcanberra-gtk3
 ```
 
 **Arch / Manjaro**
 
-``` console
+```console
 $ sudo pacman -Syu git base-devel pkgconf python3 gobject-introspection cairo gtk3 libcanberra
 ```
 
 **OpenSUSE Tumbleweed**
 
-``` console
+```console
 $ sudo zypper install git patterns-devel-base-devel_basis pkgconf-pkg-config python3-devel gobject-introspection-devel cairo-devel gtk3 'typelib(Gtk)=3.0' libcanberra-gtk3-module
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
+
+/// tab | Windows
 
 Building BeeWare apps on Windows requires:
 
@@ -143,8 +140,9 @@ Building BeeWare apps on Windows requires:
 After installing these tools, you should ensure you restart any terminal
 sessions. Windows will only expose newly installed tools terminals
 started *after* the install has completed.
-:::
-::::::
+
+///
+
 
 ## Set up a virtual environment
 
@@ -157,33 +155,31 @@ environment, we'll be able to simply delete it and start again, without
 affecting any other Python project on our computer, and without the need
 to re-install Python.
 
-::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 $ mkdir beeware-tutorial
 $ cd beeware-tutorial
 $ python3 -m venv beeware-venv
 $ source beeware-venv/bin/activate
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 $ mkdir beeware-tutorial
 $ cd beeware-tutorial
 $ python3 -m venv beeware-venv
 $ source beeware-venv/bin/activate
 ```
-:::
 
-:::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 C:\...>md beeware-tutorial
 C:\...>cd beeware-tutorial
 C:\...>py -3.12 -m venv beeware-venv
@@ -193,8 +189,7 @@ C:\...>beeware-venv\Scripts\activate
 If you're not using Python 3.12, replace the `-3.12` in these
 instructions with the version number that you are using.
 
-::: {.admonition}
-Errors running PowerShell Scripts
+/// admonition | Errors running PowerShell Scripts
 
 If you're using PowerShell, and you receive the error:
 
@@ -211,9 +206,13 @@ this:
 Once you've done this you can rerun `beeware-venv\Scripts\activate.ps1`
 in your original PowerShell session (or a new session in the same
 directory).
-:::
-::::
-:::::::
+
+
+///
+
+///
+
+
 
 If this worked, your prompt should now be changed - it should have a
 `(beeware-venv)` prefix. This lets you know that you're currently in
@@ -222,8 +221,7 @@ tutorial, you should make sure your virtual environment is activated. If
 it isn't, re-run the last command (the `activate` command) to
 re-activate your environment.
 
-::: {.admonition}
-Alternative virtual environments
+/// admonition | Alternative virtual environments
 
 If you're using Anaconda or miniconda, you may be more familiar with
 using conda environments. You might also have heard of `virtualenv`, a
@@ -231,10 +229,11 @@ predecessor to Python's built in `venv` module. As with Python installs
 -if you're on macOS or Windows, it doesn't matter *how* you create your
 virtual environment, as long as you have one. If you're on Linux, you
 should stick to `venv` and the system Python.
-:::
+
+
+///
 
 ## Next steps
 
 We've now set up our environment. We're ready to
-`create our first BeeWare
-application <tutorial-1>`{.interpreted-text role="doc"}.
+[create our first BeeWare application][tutorial-1].

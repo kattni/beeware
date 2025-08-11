@@ -13,11 +13,9 @@ Android emulator, and a Java compiler.
 First, run the `create` command. This downloads an Android app template
 and adds your Python code to it.
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase create android
 
 [helloworld] Generating application template...
@@ -41,12 +39,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Created build/helloworld/android/gradle
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase create android
 
 [helloworld] Generating application template...
@@ -70,12 +68,12 @@ Removing unneeded app bundle content... done
 
 [helloworld] Created build/helloworld/android/gradle
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase create android
 
 [helloworld] Generating application template...
@@ -99,8 +97,9 @@ Removing unneeded app bundle content... done
 
 [helloworld] Created build\helloworld\android\gradle
 ```
-:::
-::::::
+
+///
+
 
 When you run `briefcase create android` for the first time, Briefcase
 downloads a Java JDK, and the Android SDK. File sizes and download times
@@ -119,11 +118,9 @@ code, and a support package containing the Python interpreter.
 We can then use Briefcase's `build` command to compile this into an
 Android APK app file.
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase build android
 
 [helloworld] Updating app metadata...
@@ -138,12 +135,12 @@ Building... done
 
 [helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase build android
 
 [helloworld] Updating app metadata...
@@ -158,12 +155,12 @@ Building... done
 
 [helloworld] Built build/helloworld/android/gradle/app/build/outputs/apk/debug/app-debug.apk
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase build android
 
 [helloworld] Updating app metadata...
@@ -178,11 +175,11 @@ Building... done
 
 [helloworld] Built build\helloworld\android\gradle\app\build\outputs\apk\debug\app-debug.apk
 ```
-:::
-::::::
 
-::: {.admonition}
-Gradle may look stuck
+///
+
+
+/// admonition | Gradle may look stuck
 
 During the `briefcase build android` step, Gradle (the Android platform
 build tool) will print `CONFIGURING: 100%`, and appear to be doing
@@ -191,7 +188,9 @@ components. Depending on your Internet connection speed, this may take
 another 10 minutes (or longer). This lag should only happen the very
 first time you run `build`; the tools are cached, and on your next
 build, the cached versions will be used.
-:::
+
+
+///
 
 ## Run the app on a virtual device
 
@@ -203,11 +202,9 @@ To run your application, run `briefcase run android`. When you do this,
 you'll be prompted with a list of devices that you could run the app on.
 The last item will always be an option to create a new Android emulator.
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase run android
 
 Select device:
@@ -216,12 +213,12 @@ Select device:
 
 >
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase run android
 
 Select device:
@@ -230,12 +227,12 @@ Select device:
 
 >
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase run android
 
 Select device:
@@ -244,8 +241,9 @@ Select device:
 
 >
 ```
-:::
-::::::
+
+///
+
 
 We can now choose our desired device. Select the "Create a new Android
 emulator" option, and accept the default choice for the device name
@@ -255,8 +253,8 @@ Briefcase `run` will automatically boot the virtual device. When the
 device is booting, you will see the Android logo:
 
 <figure class="align-center">
-<img src="../images/android/tutorial-5-booting.png" style="width:30.0%"
-alt="../images/android/tutorial-5-booting.png" />
+<img src="/tutorial/images/android/tutorial-5-booting.png" style="width:30.0%"
+alt="/tutorial/images/android/tutorial-5-booting.png" />
 <figcaption>Android virtual device booting</figcaption>
 </figure>
 
@@ -264,8 +262,8 @@ Once the device has finished booting, Briefcase will install your app on
 the device. You will briefly see a launcher screen:
 
 <figure class="align-center">
-<img src="../images/android/tutorial-5-running.png" style="width:30.0%"
-alt="../images/android/tutorial-5-running.png" />
+<img src="/tutorial/images/android/tutorial-5-running.png" style="width:30.0%"
+alt="/tutorial/images/android/tutorial-5-running.png" />
 <figcaption>Android virtual device fully started, on the launcher
 screen</figcaption>
 </figure>
@@ -274,13 +272,12 @@ The app will then start. You'll see a splash screen while the app starts
 up:
 
 <figure class="align-center">
-<img src="../images/android/tutorial-5-splash.png" style="width:30.0%"
-alt="../images/android/tutorial-5-splash.png" />
+<img src="/tutorial/images/android/tutorial-5-splash.png" style="width:30.0%"
+alt="/tutorial/images/android/tutorial-5-splash.png" />
 <figcaption>App splash screen</figcaption>
 </figure>
 
-::: {.admonition}
-The emulator didn't start!
+/// admonition | The emulator didn't start!
 
 The Android emulator is a complex piece of software that relies on a
 number of hardware and operating system features - features that may not
@@ -289,15 +286,17 @@ difficulties starting the Android emulator, consult the [Requirements
 and
 recommendations](https://developer.android.com/studio/run/emulator#requirements)
 section of the Android developer documentation.
-:::
+
+
+///
 
 The first time the app starts, it needs to unpack itself onto the
 device. This may take a few seconds. Once it's unpacked, you'll see the
 Android version of our desktop app:
 
 <figure class="align-center">
-<img src="../images/android/tutorial-5-launched.png" style="width:30.0%"
-alt="../images/android/tutorial-5-launched.png" />
+<img src="/tutorial/images/android/tutorial-5-launched.png" style="width:30.0%"
+alt="/tutorial/images/android/tutorial-5-launched.png" />
 <figcaption>Demo app fully launched</figcaption>
 </figure>
 
@@ -325,8 +324,8 @@ Android requires that you prepare your device before it can be used for
 development. You will need to make 2 changes to the options on your
 device:
 
-> - Enable developer options
-> - Enable USB debugging
+ - Enable developer options
+ - Enable USB debugging
 
 Details on how to make these changes can be found [in the Android
 developer
@@ -335,11 +334,9 @@ documentation](https://developer.android.com/studio/debug/dev-options#enable).
 Once these steps have been completed, your device should appear in the
 list of available devices when you run `briefcase run android`.
 
-:::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase run android
 
 Select device:
@@ -350,12 +347,12 @@ Select device:
 
 >
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase run android
 
 Select device:
@@ -366,12 +363,12 @@ Select device:
 
 >
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase run android
 
 Select device:
@@ -382,8 +379,9 @@ Select device:
 
 >
 ```
-:::
-::::::
+
+///
+
 
 Here we can see a new physical device with it's serial number on the
 deployment list - in this case, a Pixel 3a. In the future, if you want
@@ -392,8 +390,7 @@ phone's serial number to Briefcase (in this case,
 `briefcase run android -d 94ZZY0LNE8`). This will run on the device
 directly, without prompting.
 
-::: {.admonition}
-My device doesn't appear!
+/// admonition | My device doesn't appear!
 
 If your device doesn't appear on this list at all, either you haven't
 enabled USB debugging, (or the device isn't plugged in!).
@@ -403,11 +400,13 @@ for development)", developer mode hasn't been correctly enabled. Re-run
 [the steps to enable developer
 options](https://developer.android.com/studio/debug/dev-options#enable),
 and re-run `briefcase run android`.
-:::
+
+
+///
 
 ## Next steps
 
 We've now got an application on our phone! Is there anywhere else we can
 deploy a BeeWare app? Turn to
-`Tutorial 6 <../tutorial-6>`{.interpreted-text role="doc"} to find
+[Tutorial 6][tutorial-6] to find
 out...

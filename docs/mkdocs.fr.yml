@@ -5,3 +5,7 @@ docs_dir: fr
 
 theme:
   language: fr
+
+extra:
+  human_translation: true
+  machine_translation: false

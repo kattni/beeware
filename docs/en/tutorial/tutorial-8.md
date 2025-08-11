@@ -1,4 +1,4 @@
-# Tutorial 8 - Making it Smooooth  { #tutorial-8 }
+# Tutorial 8 - Making it Smooooth  { id="tutorial-8" }
 
 So far, our application has been relatively simple - displaying GUI
 widgets, calling a simple third-party library, and displaying output in
@@ -49,30 +49,36 @@ install it separately to use it here.
 Let's add a `httpx` API call to our app. Modify the `requires` setting
 in our `pyproject.toml` to include the new requirement:
 
-    requires = [
-        "faker",
-        "httpx",
-    ]
+```python
+requires = [
+    "faker",
+    "httpx",
+]
+```
 
 Add an import to the top of the `app.py` to import `httpx`:
 
-    import httpx
+```python
+import httpx
+```
 
 Then modify the `say_hello()` callback so it looks like this:
 
-    async def say_hello(self, widget):
-        fake = faker.Faker()
-        with httpx.Client() as client:
-            response = client.get("https://jsonplaceholder.typicode.com/posts/42")
+```python
+async def say_hello(self, widget):
+    fake = faker.Faker()
+    with httpx.Client() as client:
+        response = client.get("https://jsonplaceholder.typicode.com/posts/42")
 
-        payload = response.json()
+    payload = response.json()
 
-        await self.main_window.dialog(
-            toga.InfoDialog(
-                greeting(self.name_input.value),
-                f"A message from {fake.name()}: {payload['body']}",
-            )
+    await self.main_window.dialog(
+        toga.InfoDialog(
+            greeting(self.name_input.value),
+            f"A message from {fake.name()}: {payload['body']}",
         )
+    )
+```
 
 This will change the `say_hello()` callback so that when it is invoked,
 it will:
@@ -87,11 +93,9 @@ Lets run our updated app in Briefcase developer mode to check that our
 change has worked. As we've added a new requirement, we need to tell
 developer mode to reinstall requirements, by using the `-r` argument:
 
-:::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase dev -r
 
 [helloworld] Installing requirements...
@@ -103,13 +107,15 @@ macOS
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 8 dialog, on macOS](images/macOS/tutorial-8.png){.align-center}
-:::
+<figure class="align-center">
+    <img src="/tutorial/images/macOS/tutorial-8.png" alt="Hello World Tutorial 8 dialog, on macOS" />
+</figure>
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase dev -r
 
 [helloworld] Installing requirements...
@@ -121,13 +127,15 @@ Linux
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 8 dialog, on Linux](images/linux/tutorial-8.png){.align-center}
-:::
+<figure class="align-center">
+    <img src="/tutorial/images/linux/tutorial-8.png" alt="Hello World Tutorial 8 dialog, on Linux" />
+</figure>
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase dev -r
 
 [helloworld] Installing requirements...
@@ -139,23 +147,26 @@ Windows
 When you enter a name and press the button, you should see a dialog that
 looks something like:
 
-![Hello World Tutorial 8 dialog, on Windows](images/windows/tutorial-8.png){.align-center}
-:::
+<figure class="align-center">
+    <img src="/tutorial/images/windows/tutorial-8.png" alt="Hello World Tutorial 8 dialog, on Windows" />
+</figure>
 
-::: {.group-tab}
-Android
+///
+
+/// tab | Android
 
 You can't run an Android app in developer mode - use the instructions
 for your chosen desktop platform.
-:::
 
-::: {.group-tab}
-iOS
+///
+
+/// tab | iOS
 
 You can't run an iOS app in developer mode - use the instructions for
 your chosen desktop platform.
-:::
-::::::::
+
+///
+::
 
 Unless you've got a *really* fast internet connection, you may notice
 that when you press the button, the GUI for your app locks up for a
@@ -309,47 +320,46 @@ requirement (`httpx`) we also need to update our app's requirements; we
 can do this by passing `-r` to `briefcase run`. This will update our
 app's requirements, then re-build the app, then launch the app:
 
-:::::::: {.tabs}
-::: {.group-tab}
-macOS
+/// tab | macOS
 
-``` console
+```console
 (beeware-venv) $ briefcase run -r
 ```
-:::
 
-::: {.group-tab}
-Linux
+///
 
-``` console
+/// tab | Linux
+
+```console
 (beeware-venv) $ briefcase run -r
 ```
-:::
 
-::: {.group-tab}
-Windows
+///
 
-``` doscon
+/// tab | Windows
+
+```doscon
 (beeware-venv) C:\...>briefcase run -r
 ```
-:::
 
-::: {.group-tab}
-Android
+///
 
-``` console
+/// tab | Android
+
+```console
 (beeware-venv) $ briefcase run android -r
 ```
-:::
 
-::: {.group-tab}
-iOS
+///
 
-``` console
+/// tab | iOS
+
+```console
 (beeware-venv) $ briefcase run iOS -r
 ```
-:::
-::::::::
+
+///
+
 
 You should see you app running, and remaining responsive when you press
 the button and network content is retrieved.
@@ -371,8 +381,7 @@ BeeWare project. Over the course of this tutorial, you have:
 So - where to from here?
 
 - If you'd like to go further, there are some additional
-  `topic tutorials
-  </tutorial/topics/index>`{.interpreted-text role="doc"} that go into
+  [topic tutorials][topics] that go into
   detail on specific aspects of application development.
 - If you'd like to know more about how to build complex user interfaces
   with Toga, you can dive into [Toga's
