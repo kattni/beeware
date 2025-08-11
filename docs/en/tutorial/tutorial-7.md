@@ -1,4 +1,4 @@
-# Tutorial 7 - Get this (third)-party started
+# Tutorial 7 - Get this (third)-party started  { #tutorial-7 }
 
 So far, the app we've built has only used our own code, plus the code
 provided by BeeWare. However, in a real-world app, you'll likely want to

@@ -1,4 +1,4 @@
-# Tutorial 8 - Making it Smooooth
+# Tutorial 8 - Making it Smooooth  { #tutorial-8 }
 
 So far, our application has been relatively simple - displaying GUI
 widgets, calling a simple third-party library, and displaying output in
