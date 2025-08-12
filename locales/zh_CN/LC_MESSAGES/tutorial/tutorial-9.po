@@ -162,3 +162,4 @@ msgstr ""
 
 #~ msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
 #~ msgstr "配置您的 Briefcase 项目 <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__ 时可用选项的详细信息。"
+

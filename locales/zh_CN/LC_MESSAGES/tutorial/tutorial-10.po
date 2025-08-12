@@ -144,3 +144,4 @@ msgstr ""
 
 #~ msgid "We've now got an application with a custom icon on our desktop and phone! How do we share this application with everyone else? Turn to :doc:`Tutorial 11 <tutorial-11>` to find out..."
 #~ msgstr "现在，我们的桌面和手机上都有了一个带有自定义图标的应用程序！我们如何与其他人共享这个应用程序呢？请访问 :doc:`Tutorial 11<tutorial-11>` 了解更多..."
+

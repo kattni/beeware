@@ -52,3 +52,4 @@ msgstr "Le applicazioni Android possono essere compilate su macOS, Windows o Lin
 
 #~ msgid ":doc:`Let's build our app for Android! <android>`"
 #~ msgstr ":doc:`Costruiamo la nostra applicazione per Android! <android>`"
+

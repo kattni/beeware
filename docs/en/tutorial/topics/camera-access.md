@@ -157,19 +157,23 @@ presented.
 
 We can now generate and run the app:
 
-/// tab | macOS .. code-block:: console
+/// tab | macOS
 
+```console
 (beeware-venv)\$ briefcase create (beeware-venv)\$ briefcase build
 (beeware-venv)\$ briefcase run
+```
 
 ///
 
-/// tab | Android .. code-block:: console
+/// tab | Android
 
+```console
 (beeware-venv)\$ briefcase create android (beeware-venv)\$ briefcase
 build android (beeware-venv)\$ briefcase run android
-:::
-:::::
+```
+
+///
 
 When the app runs, you'll be presented with a button. Press the button,
 and the platform's default camera dialog will be displayed. Take a

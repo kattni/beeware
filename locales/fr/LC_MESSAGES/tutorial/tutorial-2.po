@@ -259,3 +259,4 @@ msgstr "Nous avons maintenant une application qui fait quelque chose d'un peu pl
 
 #~ msgid "Lets do something more interesting with our ``HelloWorld`` app."
 #~ msgstr ""
+

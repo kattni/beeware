@@ -168,3 +168,4 @@ msgstr "Wir haben unsere Anwendung jetzt für die Verteilung auf Desktop-Plattfo
 #, fuzzy
 msgid "But what about mobile? In :doc:`Tutorial 5 <tutorial-5/index>`, we'll convert our application into a mobile application, and deploy it onto a device simulator, and onto a phone."
 msgstr "Aber was ist mit mobilen Geräten? In :doc:`Tutorial 5 <tutorial-5/index>` werden wir unsere Anwendung in eine mobile Anwendung umwandeln und sie in einem Gerätesimulator und auf einem Telefon einsetzen."
+

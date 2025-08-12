@@ -118,7 +118,7 @@ You can't run an iOS app in developer mode - use the instructions for
 your chosen desktop platform.
 
 ///
-::
+
 
 What happened? We've added `faker` to our *code*, but we haven't added
 it to our development virtual environment. We can fix this by installing
@@ -185,7 +185,7 @@ You can't run an iOS app in developer mode - use the instructions for
 your chosen desktop platform.
 
 ///
-::
+
 
 We've now got a working app, using a third party library, running in
 development mode!
@@ -454,7 +454,7 @@ ModuleNotFoundError: No module named 'faker'
 ```
 
 ///
-::
+
 
 Once again, the app has failed to start because `faker` has not been
 installed -but why? Haven't we already installed `faker`?
@@ -655,7 +655,7 @@ Removing unneeded app bundle content... done
 ```
 
 ///
-::
+
 
 Once you've updated, you can run `briefcase build` and `briefcase run` -
 and you should see your packaged app, with the new dialog behavior.

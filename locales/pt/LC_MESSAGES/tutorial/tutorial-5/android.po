@@ -252,3 +252,4 @@ msgstr "Próximos passos"
 #, fuzzy
 msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
 msgstr "Agora temos um aplicativo em nosso telefone! Há algum outro lugar onde possamos implantar um aplicativo BeeWare? Consulte :doc:`Tutorial 6 <../tutorial-6>` para descobrir..."
+

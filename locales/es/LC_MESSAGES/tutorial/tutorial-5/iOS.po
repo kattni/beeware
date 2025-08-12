@@ -78,3 +78,4 @@ msgstr "¡Ya tenemos una aplicación en nuestro teléfono! ¿Hay algún otro lug
 
 #~ msgid "To compile iOS applications we'll need Xcode, which is available for free from `the macOS App Store <https://apps.apple.com/au/app/xcode/id497799835?mt=12>`__."
 #~ msgstr "Para compilar aplicaciones de iOS necesitaremos Xcode, que está disponible de forma gratuita en `la App Store de macOS <https://apps.apple.com/es/app/xcode/id497799835?mt=12>`__."
+

@@ -314,3 +314,4 @@ msgstr "現在，我們已將應用程式打包以便在桌面平台上分發。
 
 #~ msgid "Before continuing, close the app. As with previous tutorial steps, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran ``briefcase dev``."
 #~ msgstr ""
+

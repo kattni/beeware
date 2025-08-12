@@ -145,3 +145,4 @@ msgstr ""
 
 #~ msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <../resources/icons.zip>`, and unpack it into the root of your project directory. After unpacking, your project directory should look something like::"
 #~ msgstr ""
+

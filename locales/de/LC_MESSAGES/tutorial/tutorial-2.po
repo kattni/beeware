@@ -285,3 +285,4 @@ msgstr "Wir haben jetzt eine Anwendung, die etwas Interessanteres macht. Aber si
 
 #~ msgid "Lets do something more interesting with our ``HelloWorld`` app."
 #~ msgstr ""
+

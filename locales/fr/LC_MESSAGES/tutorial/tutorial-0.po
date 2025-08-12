@@ -232,3 +232,4 @@ msgstr "Nous avons maintenant mis en place notre environnement. Nous sommes prê
 
 #~ msgid "You should ensure that you are using Python 3.9 or newer. If it isn't, you'll need to upgrade your Python install. You can get the official installer from `the Python website <https://www.python.org/downloads>`_. You can use any stable version of Python from 3.9 onward. We'd advise avoiding alphas, betas, and release candidates unless you *really* know what you're doing."
 #~ msgstr "Si vous êtes sous Windows, vous pouvez obtenir l'installateur officiel à partir du `site web de Python <https://www.python.org/downloads>`_. Vous pouvez utiliser n'importe quelle version stable de Python à partir de la 3.8. Nous vous conseillons d'éviter les versions alpha, beta et release candidates à moins que vous ne sachiez *vraiment* ce que vous faites."
+

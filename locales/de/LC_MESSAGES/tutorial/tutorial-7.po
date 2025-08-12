@@ -372,3 +372,4 @@ msgstr ""
 
 #~ msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
 #~ msgstr "Wir haben jetzt eine App, die eine Bibliothek eines Drittanbieters verwendet! Vielleicht haben Sie jedoch bemerkt, dass die App beim Drücken der Taste nicht mehr richtig reagiert. Können wir etwas tun, um das zu beheben? Schau dir :doc:`Tutorial 8 <tutorial-8>` an, um das herauszufinden..."
+

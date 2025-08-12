@@ -162,7 +162,6 @@ Removing unneeded app bundle content... done
 ```
 
 ///
-::
 
 This reports the specific icon file (or files) that Briefcase is
 expecting. However, as we haven't provided the actual icon files, the
@@ -290,10 +289,10 @@ Setting stub app details... done
 
 [helloworld] Starting app...
 ```
-:::
 
-::::: {.group-tab}
-Android
+///
+
+/// tab | Android
 
 ```console
 (beeware-venv) $ briefcase build android --update-resources
@@ -487,7 +486,7 @@ Application 'helloworld' already exists; overwrite [y/N]? y
 ```
 
 ///
-::
+
 
 You can then re-build and re-run the app using `briefcase run`. You
 won't notice any changes to the desktop app; but the Android or iOS apps

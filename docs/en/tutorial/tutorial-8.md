@@ -166,7 +166,7 @@ You can't run an iOS app in developer mode - use the instructions for
 your chosen desktop platform.
 
 ///
-::
+
 
 Unless you've got a *really* fast internet connection, you may notice
 that when you press the button, the GUI for your app locks up for a
@@ -188,9 +188,11 @@ environment you're using.
 
 A GUI app is, fundamentally, a single loop that looks something like:
 
-    while not app.quit_requested():
-        app.process_events()
-        app.redraw()
+```python
+while not app.quit_requested():
+    app.process_events()
+    app.redraw()
+```
 
 This loop is called the *Event Loop*. (These aren't actual method
 names - it's an illustration of what is going on using "pseudo-code").
@@ -262,19 +264,21 @@ coding.
 To make our tutorial asynchronous, modify the `say_hello()` event
 handler so it looks like this:
 
-    async def say_hello(self, widget):
-        fake = faker.Faker()
-        async with httpx.AsyncClient() as client:
-            response = await client.get("https://jsonplaceholder.typicode.com/posts/42")
+```python
+async def say_hello(self, widget):
+    fake = faker.Faker()
+    async with httpx.AsyncClient() as client:
+        response = await client.get("https://jsonplaceholder.typicode.com/posts/42")
 
-        payload = response.json()
+    payload = response.json()
 
-        await self.main_window.dialog(
-            toga.InfoDialog(
-                greeting(self.name_input.value),
-                f"A message from {fake.name()}: {payload['body']}",
-            )
+    await self.main_window.dialog(
+        toga.InfoDialog(
+            greeting(self.name_input.value),
+            f"A message from {fake.name()}: {payload['body']}",
         )
+    )
+```
 
 There are only three changes to this callback from the previous version:
 

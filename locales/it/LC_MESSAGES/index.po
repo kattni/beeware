@@ -119,3 +119,4 @@ msgstr "Andiamo!"
 #, fuzzy
 msgid "Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in Python! <tutorial/tutorial-0>`"
 msgstr "Siete pronti a provare BeeWare? :doc:`Costruiamo un'applicazione multipiattaforma in Python! <tutorial/tutorial-0>`"
+

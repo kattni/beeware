@@ -15,7 +15,7 @@ theme:
   features:
     - content.tabs.link
     - toc.follow
-    - content.code.copy
+    - content.code.copy  # Ask about fixing this
     - navigation.indexes
     - navigation.expand
   palette:

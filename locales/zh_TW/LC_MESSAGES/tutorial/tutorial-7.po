@@ -376,3 +376,4 @@ msgstr ""
 
 #~ msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
 #~ msgstr "我們現在有了一個使用第三方函式庫的應用程式！但是，您可能已經注意到，當您按下按鈕時，應用程式變得有點無響應。我們能做些什麼來解決這個問題嗎？前往 :doc:`教學 8 <tutorial-8>` 找出..."
+
