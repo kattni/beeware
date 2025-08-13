@@ -91,7 +91,6 @@ You will need to recreate your virtual environment using the system
 `python3`. Using the system Python is a requirement for packaging your
 application.
 
-
 ///
 
 ///
@@ -121,7 +120,6 @@ Installing src/helloworld... done
 ```
 
 ///
-:
 
 You've probably just seen pages of content go past in your terminal...
 so what just happened? Briefcase has done the following:
@@ -268,11 +266,9 @@ metadata from being written. In that case, instruct the antivirus to
 allow the tool (named `rcedit-x64.exe`) to run and re-run the command
 above.
 
-
 ///
 
 ///
-
 
 ## Running your app
 
@@ -354,7 +350,6 @@ Running app module: helloworld
 ```
 
 ///
-
 
 This will start to run your native application, using the app bundle
 created by the `build` command.
@@ -515,10 +510,9 @@ If you want to build a package for a Linux distribution other than the
 one you're using, Briefcase can also help - but you'll need to install
 Docker.
 
-Official installers for [Docker
-Engine](https://docs.docker.com/engine/install) are available for a
-range of Unix distributions. Follow the instructions for your platform;
-however, ensure you don't install Docker in "rootless" mode.
+Official installers for [Docker Engine](https://docs.docker.com/engine/install)
+are available for a range of Unix distributions. Follow the instructions for
+your platform; however, ensure you don't install Docker in "rootless" mode.
 
 Once you've installed Docker, you should be able to start an Linux
 container - for example:
@@ -600,11 +594,9 @@ start menu.
 
 ///
 
-
 ## Next steps
 
 We now have our application packaged for distribution on desktop
 platforms. But what happens when we need to update the code in our
 application? How do we get those updates into our packaged application?
-Turn to[Tutorial 4][tutorial-4] to
-find out...
+Turn to [Tutorial 4][tutorial-4] to find out...

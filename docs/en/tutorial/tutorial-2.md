@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
 This file does two things:
 
-- It imports the `main` method from from the `helloworld` app.
+- It imports the `main` method from the `helloworld` app.
 - Then, it starts the application’s main loop. The main loop is the way
   a GUI application listens for user input (like mouse clicks and
   keyboard presses).
@@ -323,7 +323,6 @@ starting the application again. As before, we'll use developer mode:
 
 ///
 
-
 You'll notice that this time, it *doesn't* install dependencies.
 Briefcase can detect that the application has been run before, and to
 save time, will only run the application. If you add new dependencies to
@@ -356,7 +355,6 @@ This should open a GUI window:
 
 ///
 
-
 If you enter a name in the text box, and press the GUI button, you
 should see output appear in the console where you started the
 application.
@@ -370,7 +368,6 @@ terminal where you ran `briefcase dev`.
 
 We've now got an application that does something a little more
 interesting. But it only runs on our own computer. Let's package this
-application for distribution. In
-[Tutorial 3][tutorial-3], we'll wrap our
+application for distribution. In [Tutorial 3][tutorial-3], we'll wrap our
 application up as a standalone installer that we could send to a friend,
 a customer, or upload to an App Store.

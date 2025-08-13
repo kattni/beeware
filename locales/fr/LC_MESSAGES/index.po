@@ -31,8 +31,8 @@ msgid "Translations are available"
 msgstr "Des traductions sont disponibles"
 
 #: ../../index.rst:16 021f4393db314ba7903a7f0228aa26c4
-msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `中文(简体) <https://docs.beeware.org/zh-cn>`__, and `中文(繁體) <https://docs.beeware.org/zh-tw>`__."
-msgstr "Si vous n'êtes pas à l'aise en français, vous pouvez trouver des traductions de ce didacticiel en `English <https://docs.beeware.org/en>`__, `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Português <https://docs.beeware.org/pt>`__, and `汉语 <https://docs.beeware.org/zh-cn>`__."
+msgid "If you're not comfortable with English, translations of this tutorial are available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
+msgstr "Si vous n'êtes pas à l'aise en français, vous pouvez trouver des traductions de ce didacticiel en [English]{1}, [Deutsch]{2}, [Español]{3}, [Português]{4}, and [汉语]{5}."
 
 #: ../../index.rst:29 b437aa3f82534cfab531b0a8809dfd51
 msgid "This is a machine translation!"
@@ -44,8 +44,8 @@ msgstr "Cette version du didacticiel a en partie été générée par une traduc
 
 #: ../../index.rst:35 ../../index.rst:47 46d4c2eb8938487b92b3141ea8c5aa4f
 #: b5a5d118b9c44330acf43ccd710b25bb
-msgid "If you'd like the help improve the translation, get in touch! We have a ``#translations`` channel in `Discord <https://beeware.org/bee/chat/>`__. Introduce yourself there and we will add you to the translation team."
-msgstr "Si vous souhaitez nous aider à améliorer la traduction, n'hésitez pas à nous contacter ! Nous avons un canal ``#translations`` dans `Discord <https://beeware.org/bee/chat/>`__ ; présentez-vous et nous vous ajouterons à l'équipe de traduction."
+msgid "If you'd like the help improve the translation, get in touch! We have a `#translations` channel in [Discord]{1}. Introduce yourself there and we will add you to the translation team."
+msgstr "Si vous souhaitez nous aider à améliorer la traduction, n'hésitez pas à nous contacter ! Nous avons un canal `#translations` dans [Discord]{1} ; présentez-vous et nous vous ajouterons à l'équipe de traduction."
 
 #: ../../index.rst:41 44cad816a6e04508928ef8940ac60ce4
 msgid "This is a translation!"
@@ -65,18 +65,18 @@ msgstr "BeeWare n'est pas un produit, un outil ou une bibliothèque unique - c'e
 
 #: ../../index.rst:58 d1b0c56da7bc4a5d8b8a068847f2ef8e
 #, fuzzy
-msgid "`Toga <https://toga.beeware.org>`__, a cross platform widget toolkit;"
-msgstr "`Toga <https://toga.readthedocs.io>`__, une boîte à outils de widgets multiplateforme ;"
+msgid "[Toga]{1}, a cross platform widget toolkit;"
+msgstr "[Toga]{1}, une boîte à outils de widgets multiplateforme ;"
 
 #: ../../index.rst:59 c96c333e7d4f4d2e8f8d659ce706820e
 #, fuzzy
-msgid "`Briefcase <https://briefcase.beeware.org>`__, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
-msgstr "`Briefcase <https://briefcase.readthedocs.io>`__, un outil pour empaqueter les projets Python en tant qu'artefacts distribuables pouvant être envoyés aux utilisateurs finaux ;"
+msgid "[Briefcase]{1}, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
+msgstr "[Briefcase]{1}, un outil pour empaqueter les projets Python en tant qu'artefacts distribuables pouvant être envoyés aux utilisateurs finaux ;"
 
 #: ../../index.rst:61 15d3549e5d5e4aee8cb668e50dcc6fdc
 #, fuzzy
-msgid "Libraries (such as `Rubicon ObjC <https://rubicon-objc.beeware.org>`__) for accessing platform-native libraries;"
-msgstr "Des bibliothèques (telles que `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__) pour accéder aux bibliothèques natives des diverses plates-formes ;"
+msgid "Libraries (such as [Rubicon ObjC]{1}) for accessing platform-native libraries;"
+msgstr "Des bibliothèques (telles que [Rubicon ObjC]{1}) pour accéder aux bibliothèques natives des diverses plates-formes ;"
 
 #: ../../index.rst:63 e714fc5aa5fe4a6ab721d6bbcedeb640
 msgid "Pre-compiled builds of Python that can be used on platforms where official Python installers aren't available."
@@ -96,6 +96,6 @@ msgid "Let's go!"
 msgstr "C'est parti !"
 
 #: ../../index.rst:77 f8400df8b4a54de281b05034bff2389f
-msgid "Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in Python! <tutorial/tutorial-0>`"
-msgstr "Prêt à essayer BeeWare par vous-même ? :doc:`Créons une application multiplateforme en Python ! <tutorial/tutorial-0>`"
+msgid "Ready to try BeeWare for yourself? [Let's build a cross platform application in Python!][tutorial/tutorial-0]"
+msgstr "Prêt à essayer BeeWare par vous-même ? [Créons une application multiplateforme en Python !][tutorial/tutorial-0]"
 

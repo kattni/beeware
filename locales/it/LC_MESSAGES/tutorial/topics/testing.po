@@ -36,18 +36,18 @@ msgstr "Esecuzione della suite di test"
 
 #: ../../tutorial/topics/testing.rst:13 e55d23b4fa494b09a62a3c55ee0d0ebb
 #, fuzzy
-msgid "It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
-msgstr "Si scopre che il nostro progetto ha già una suite di test! Quando abbiamo generato il nostro progetto, sono state generate due directory di primo livello: ``src`` e ``tests``. La cartella ``src`` contiene il codice della nostra applicazione; la cartella ``tests`` contiene la nostra suite di test. All'interno della cartella ``tests`` c'è un file chiamato ``test_app.py`` con il seguente contenuto::"
+msgid "It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: `src` and `tests`. The `src` folder contains the code for our app; the `tests` folder contains our test suite. Inside the `tests` folder is a file named `test_app.py` with the following content:"
+msgstr "Si scopre che il nostro progetto ha già una suite di test! Quando abbiamo generato il nostro progetto, sono state generate due directory di primo livello: `src` e `tests`. La cartella `src` contiene il codice della nostra applicazione; la cartella `tests` contiene la nostra suite di test. All'interno della cartella `tests` c'è un file chiamato `test_app.py` con il seguente contenuto:"
 
 #: ../../tutorial/topics/testing.rst:23 12578aff26fb4372963fa5ccd8005e18
 #, fuzzy
-msgid "This is a `Pytest <https://pytest.org>`__ *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
-msgstr "Questo è un `Pytest <https://pytest.org>`__ *caso di test* - un blocco di codice che può essere eseguito per verificare un comportamento dell'applicazione. In questo caso, il test è un segnaposto e non verifica nulla della nostra applicazione, ma è un test che possiamo eseguire."
+msgid "This is a [Pytest]{1} *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
+msgstr "Questo è un [Pytest]{1} *caso di test* - un blocco di codice che può essere eseguito per verificare un comportamento dell'applicazione. In questo caso, il test è un segnaposto e non verifica nulla della nostra applicazione, ma è un test che possiamo eseguire."
 
 #: ../../tutorial/topics/testing.rst:28 a8e6e625f47e4c0f8f476892ce705854
 #, fuzzy
-msgid "We can run this test suite using the ``--test`` option to ``briefcase dev``. As this is the first time we are running tests, we also need to pass in the ``-r`` option to ensure that the test requirements are also installed:"
-msgstr "Possiamo eseguire questa suite di test usando l'opzione ``--test`` di ``briefcase dev``. Poiché è la prima volta che si eseguono dei test, è necessario inserire anche l'opzione ``-r`` per assicurarsi che anche i requisiti dei test siano installati:"
+msgid "We can run this test suite using the `--test` option to `briefcase dev`. As this is the first time we are running tests, we also need to pass in the `-r` option to ensure that the test requirements are also installed:"
+msgstr "Possiamo eseguire questa suite di test usando l'opzione `--test` di `briefcase dev`. Poiché è la prima volta che si eseguono dei test, è necessario inserire anche l'opzione `-r` per assicurarsi che anche i requisiti dei test siano installati:"
 
 #: ../../tutorial/topics/testing.rst:34 ../../tutorial/topics/testing.rst:139
 #: ../../tutorial/topics/testing.rst:209 ../../tutorial/topics/testing.rst:326
@@ -80,8 +80,8 @@ msgstr "Successo! Abbiamo appena eseguito un singolo test che verifica che la ma
 
 #: ../../tutorial/topics/testing.rst:112 bdfb76180b914a03a4b9f51b8b415562
 #, fuzzy
-msgid "Let's replace this placeholder test with a test to verify that our ``greeting()`` method behaves the way we'd expect. Replace the contents of ``test_app.py`` with the following::"
-msgstr "Sostituiamo questo test segnaposto con un test per verificare che il nostro metodo ``greeting()`` si comporti come ci aspettiamo. Sostituire il contenuto di ``test_app.py`` con il seguente::"
+msgid "Let's replace this placeholder test with a test to verify that our `greeting()` method behaves the way we'd expect. Replace the contents of `test_app.py` with the following:"
+msgstr "Sostituiamo questo test segnaposto con un test per verificare che il nostro metodo `greeting()` si comporti come ci aspettiamo. Sostituire il contenuto di `test_app.py` con il seguente:"
 
 #: ../../tutorial/topics/testing.rst:130 8d4c83b186744c548956a63775950dbe
 #, fuzzy
@@ -90,13 +90,13 @@ msgstr "Questo definisce due nuovi test, che verificano i due comportamenti che 
 
 #: ../../tutorial/topics/testing.rst:133 94079c4ca18a4ccb92c8421eadd1127e
 #, fuzzy
-msgid "We can now re-run the test suite. This time, we don't need to provided the ``-r`` option, as the test requirements have already been installed; we only need to use the ``--test`` option:"
-msgstr "Ora possiamo eseguire nuovamente la suite di test. Questa volta non è necessario fornire l'opzione ``-r``, poiché i requisiti per i test sono già stati installati; è sufficiente usare l'opzione ``--test``:"
+msgid "We can now re-run the test suite. This time, we don't need to provided the `-r` option, as the test requirements have already been installed; we only need to use the `--test` option:"
+msgstr "Ora possiamo eseguire nuovamente la suite di test. Questa volta non è necessario fornire l'opzione `-r`, poiché i requisiti per i test sono già stati installati; è sufficiente usare l'opzione `--test`:"
 
 #: ../../tutorial/topics/testing.rst:190 66047769b0fd4eb79fc58304776210e3
 #, fuzzy
-msgid "Excellent! Our ``greeting()`` utility method is working as expected."
-msgstr "Eccellente! Il nostro metodo di utilità ``greeting()`` funziona come previsto."
+msgid "Excellent! Our `greeting()` utility method is working as expected."
+msgstr "Eccellente! Il nostro metodo di utilità `greeting()` funziona come previsto."
 
 #: ../../tutorial/topics/testing.rst:193 4bf668f3028a4019ab4eb59af44fc5b2
 #, fuzzy
@@ -105,8 +105,8 @@ msgstr "Sviluppo guidato dai test"
 
 #: ../../tutorial/topics/testing.rst:195 f8743019f36042a6af9a0a74d87eb700
 #, fuzzy
-msgid "Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of ``test_app.py``::"
-msgstr "Ora che abbiamo una suite di test, possiamo usarla per guidare lo sviluppo di nuove funzionalità. Modifichiamo la nostra applicazione per avere un saluto speciale per un utente in particolare. Possiamo iniziare aggiungendo un caso di test per il nuovo comportamento che vorremmo vedere in fondo a ``test_app.py``::"
+msgid "Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of `test_app.py`:"
+msgstr "Ora che abbiamo una suite di test, possiamo usarla per guidare lo sviluppo di nuove funzionalità. Modifichiamo la nostra applicazione per avere un saluto speciale per un utente in particolare. Possiamo iniziare aggiungendo un caso di test per il nuovo comportamento che vorremmo vedere in fondo a `test_app.py`:"
 
 #: ../../tutorial/topics/testing.rst:205 7bda7f335bfa42dfada3354efe73ada4
 #, fuzzy
@@ -115,8 +115,8 @@ msgstr "Quindi, eseguire la suite di test con questo nuovo test:"
 
 #: ../../tutorial/topics/testing.rst:307 4c7f397a6b4342e8a1ddee9b9e830615
 #, fuzzy
-msgid "This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output \"BeeWare the IDEs of Python!\", but our implementation of ``greeting()`` is returning \"Hello, Brutus\". Let's modify the implementation of ``greeting()`` in ``src/helloworld/app.py`` to have the new behavior::"
-msgstr "Questa volta, vediamo un fallimento del test e l'output spiega la fonte del fallimento: il test si aspetta l'output \"BeeWare the IDEs of Python!\", ma la nostra implementazione di ``greeting()`` restituisce \"Hello, Brutus\". Modifichiamo l'implementazione di ``greeting()`` in ``src/helloworld/app.py`` per avere il nuovo comportamento::"
+msgid "This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output \"BeeWare the IDEs of Python!\", but our implementation of `greeting()` is returning \"Hello, Brutus\". Let's modify the implementation of `greeting()` in `src/helloworld/app.py` to have the new behavior:"
+msgstr "Questa volta, vediamo un fallimento del test e l'output spiega la fonte del fallimento: il test si aspetta l'output \"BeeWare the IDEs of Python!\", ma la nostra implementazione di `greeting()` restituisce \"Hello, Brutus\". Modifichiamo l'implementazione di `greeting()` in `src/helloworld/app.py` per avere il nuovo comportamento:"
 
 #: ../../tutorial/topics/testing.rst:322 7793c86300ea44a4b32e745c7cc6bb66
 #, fuzzy
@@ -135,18 +135,18 @@ msgstr "Finora abbiamo eseguito i test in modalità di sviluppo. Questo è parti
 
 #: ../../tutorial/topics/testing.rst:389 19507bc8ccbe47debc44a70d39982e81
 #, fuzzy
-msgid "The ``--test`` and ``-r`` options can also be passed to the ``run`` command. If you use ``briefcase run --test -r``, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:"
-msgstr "Le opzioni ``--test`` e ``-r`` possono essere passate anche al comando ``run``. Se si usa ``briefcase run --test -r``, verrà eseguita la stessa suite di test, ma all'interno del bundle dell'applicazione confezionata e non nell'ambiente di sviluppo:"
+msgid "The `--test` and `-r` options can also be passed to the `run` command. If you use `briefcase run --test -r`, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:"
+msgstr "Le opzioni `--test` e `-r` possono essere passate anche al comando `run`. Se si usa `briefcase run --test -r`, verrà eseguita la stessa suite di test, ma all'interno del bundle dell'applicazione confezionata e non nell'ambiente di sviluppo:"
 
 #: ../../tutorial/topics/testing.rst:507 eb9f04a25a2b444e9d687d04e9ad2982
 #, fuzzy
-msgid "As with ``briefcase dev --test``, the ``-r`` option is only needed the first time you run the test suite to ensure that the test dependencies are present. On subsequent runs, you can omit this option."
-msgstr "Come per ``briefcase dev --test``, l'opzione ``-r`` è necessaria solo la prima volta che si esegue la suite di test, per assicurarsi che le dipendenze del test siano presenti. Nelle esecuzioni successive, si può omettere questa opzione."
+msgid "As with `briefcase dev --test`, the `-r` option is only needed the first time you run the test suite to ensure that the test dependencies are present. On subsequent runs, you can omit this option."
+msgstr "Come per `briefcase dev --test`, l'opzione `-r` è necessaria solo la prima volta che si esegue la suite di test, per assicurarsi che le dipendenze del test siano presenti. Nelle esecuzioni successive, si può omettere questa opzione."
 
 #: ../../tutorial/topics/testing.rst:511 3bd3cefc847441d7b56ff08b6888e60c
 #, fuzzy
-msgid "You can also use the ``--test`` option on mobile backends: - so ``briefcase run iOS --test`` and ``briefcase run android --test`` will both work, running the test suite on the mobile device you select."
-msgstr "Si può anche usare l'opzione ``--test`` sui backend mobili: - quindi ``briefcase run iOS --test`` e ``briefcase run android --test`` funzioneranno entrambi, eseguendo la suite di test sul dispositivo mobile selezionato."
+msgid "You can also use the `--test` option on mobile backends: - so `briefcase run iOS --test` and `briefcase run android --test` will both work, running the test suite on the mobile device you select."
+msgstr "Si può anche usare l'opzione `--test` sui backend mobili: - quindi `briefcase run iOS --test` e `briefcase run android --test` funzioneranno entrambi, eseguendo la suite di test sul dispositivo mobile selezionato."
 
 #~ msgid "Next steps"
 #~ msgstr "Prossimi passi"

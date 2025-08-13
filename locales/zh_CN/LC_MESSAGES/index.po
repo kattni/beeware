@@ -31,8 +31,8 @@ msgid "Translations are available"
 msgstr "有翻译版本"
 
 #: ../../index.rst:16 021f4393db314ba7903a7f0228aa26c4
-msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `中文(简体) <https://docs.beeware.org/zh-cn>`__, and `中文(繁體) <https://docs.beeware.org/zh-tw>`__."
-msgstr "如果您不熟悉中文，本教程提供了以下语言的翻译：`Deutsch <https://docs.beeware.org/de>`__ （德语）、`Español <https://docs.beeware.org/es>`__ （西班牙语）、`Français <https://docs.beeware.org/fr>`__ （法语）、`Italiano <https://docs.beeware.org/it>`__ （意大利语）、`Português <https://docs.beeware.org/pt>`__ （葡萄牙语）、`中文(简体) <https://docs.beeware.org/zh-cn>`__ （中文（简体））和 `中文(繁體) <https://docs.beeware.org/zh-cn>`__ （中文（繁体））。"
+msgid "If you're not comfortable with English, translations of this tutorial are available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
+msgstr "如果您不熟悉中文，本教程提供了以下语言的翻译：[Deutsch]{1} （德语）、[Español]{2} （西班牙语）、[Français]{3} （法语）、[Italiano]{4} （意大利语）、[Português]{5} （葡萄牙语）、[中文(简体)]{6} （中文（简体））和 [中文(繁體)]{7} （中文（繁体））。"
 
 #: ../../index.rst:29 b437aa3f82534cfab531b0a8809dfd51
 msgid "This is a machine translation!"
@@ -44,8 +44,8 @@ msgstr "本教程版本由机器翻译生成。我们知道这并不理想，但
 
 #: ../../index.rst:35 ../../index.rst:47 46d4c2eb8938487b92b3141ea8c5aa4f
 #: b5a5d118b9c44330acf43ccd710b25bb
-msgid "If you'd like the help improve the translation, get in touch! We have a ``#translations`` channel in `Discord <https://beeware.org/bee/chat/>`__. Introduce yourself there and we will add you to the translation team."
-msgstr "如果您想帮助改进翻译，请联系我们！我们在 `Discord <https://beeware.org/bee/chat/>`__ 中有一个 ``#translations`` 频道；在那儿介绍自己，我们会邀请您加入翻译团队。"
+msgid "If you'd like the help improve the translation, get in touch! We have a `#translations` channel in [Discord]{1}. Introduce yourself there and we will add you to the translation team."
+msgstr "如果您想帮助改进翻译，请联系我们！我们在 [Discord]{1} 中有一个 `#translations` 频道；在那儿介绍自己，我们会邀请您加入翻译团队。"
 
 #: ../../index.rst:41 44cad816a6e04508928ef8940ac60ce4
 msgid "This is a translation!"
@@ -64,16 +64,16 @@ msgid "BeeWare is not a single product, or tool, or library - it's a collection 
 msgstr "BeeWare 并不是一个单独的产品、工具或库 (library)，它是一系列工具和库的集合：每个工具和库都能协同工作，帮助您编写跨平台、具有本地图形用户界面的 Python 应用程序。它包括:"
 
 #: ../../index.rst:58 d1b0c56da7bc4a5d8b8a068847f2ef8e
-msgid "`Toga <https://toga.beeware.org>`__, a cross platform widget toolkit;"
-msgstr "`Toga <https://toga.beeware.org>`__，一个跨平台控件工具包;"
+msgid "[Toga]{1}, a cross platform widget toolkit;"
+msgstr "[Toga]{1}，一个跨平台控件工具包;"
 
 #: ../../index.rst:59 c96c333e7d4f4d2e8f8d659ce706820e
-msgid "`Briefcase <https://briefcase.beeware.org>`__, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
-msgstr "`Briefcase <https://briefcase.beeware.org>`__，一个用于将 Python 项目打包为可分发给最终用户的的成品的工具;"
+msgid "[Briefcase]{1}, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
+msgstr "[Briefcase]{1}，一个用于将 Python 项目打包为可分发给最终用户的的成品的工具;"
 
 #: ../../index.rst:61 15d3549e5d5e4aee8cb668e50dcc6fdc
-msgid "Libraries (such as `Rubicon ObjC <https://rubicon-objc.beeware.org>`__) for accessing platform-native libraries;"
-msgstr "用于访问平台原生库的库（如 `Rubicon ObjC <https://rubicon-objc.beeware.org>`__）;"
+msgid "Libraries (such as [Rubicon ObjC]{1}) for accessing platform-native libraries;"
+msgstr "用于访问平台原生库的库（如 [Rubicon ObjC]{1}）;"
 
 #: ../../index.rst:63 e714fc5aa5fe4a6ab721d6bbcedeb640
 msgid "Pre-compiled builds of Python that can be used on platforms where official Python installers aren't available."
@@ -93,6 +93,6 @@ msgid "Let's go!"
 msgstr "让我们开始吧！"
 
 #: ../../index.rst:77 f8400df8b4a54de281b05034bff2389f
-msgid "Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in Python! <tutorial/tutorial-0>`"
-msgstr "准备好亲身体验 BeeWare 了吗？:doc:`让我们用 Python 构建一个跨平台应用程序！ <tutorial/tutorial-0>`"
+msgid "Ready to try BeeWare for yourself? [Let's build a cross platform application in Python!][tutorial/tutorial-0]"
+msgstr "准备好亲身体验 BeeWare 了吗？[让我们用 Python 构建一个跨平台应用程序！][tutorial/tutorial-0]"
 

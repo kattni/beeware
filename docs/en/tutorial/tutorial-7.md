@@ -13,7 +13,7 @@ Let's modify our application to say a little bit more than just "Hi,
 there!".
 
 To generate some more interesting text for the dialog, we're going to
-use a library called [Faker](https://faker.readthedocs.io/en/stable/) .
+use a library called [Faker](https://faker.readthedocs.io/en/stable/).
 Faker is a Python package that generates fake content, including names
 and text blocks. The names and words in the text block are generated
 from an arbitrary list of words provided by Faker. We're going to use
@@ -23,18 +23,22 @@ user.
 We start by adding `faker` to our app. Add an import to the top of the
 `app.py` to import `faker`:
 
-    import faker
+```python
+import faker
+```
 
 Then modify the `say_hello()` callback so it looks like this:
 
-    async def say_hello(self, widget):
-        fake = faker.Faker()
-        await self.main_window.dialog(
-            toga.InfoDialog(
-                greeting(self.name_input.value),
-                f"A message from {fake.name()}: {fake.text()}",
-            )
+```python
+async def say_hello(self, widget):
+    fake = faker.Faker()
+    await self.main_window.dialog(
+        toga.InfoDialog(
+            greeting(self.name_input.value),
+            f"A message from {fake.name()}: {fake.text()}",
         )
+    )
+```
 
 Let's run our updated app in Briefcase developer mode to check that our
 change has worked.
@@ -119,7 +123,6 @@ your chosen desktop platform.
 
 ///
 
-
 What happened? We've added `faker` to our *code*, but we haven't added
 it to our development virtual environment. We can fix this by installing
 `faker` with `pip`, and then re-running `briefcase dev`:
@@ -186,7 +189,6 @@ your chosen desktop platform.
 
 ///
 
-
 We've now got a working app, using a third party library, running in
 development mode!
 
@@ -233,7 +235,6 @@ crash dialog:
 <figure class="align-center">
     <img src="/tutorial/images/macOS/tutorial-7-crash.png" alt="Hello World Tutorial 7 app crash, on macOS" />
 </figure>
-
 
 ///
 
@@ -455,7 +456,6 @@ ModuleNotFoundError: No module named 'faker'
 
 ///
 
-
 Once again, the app has failed to start because `faker` has not been
 installed -but why? Haven't we already installed `faker`?
 
@@ -485,13 +485,15 @@ that you provided when you originally ran `briefcase new`.
 `pyproject.toml` is broken up into sections; one of the sections
 describes the settings for your app:
 
-    [tool.briefcase.app.helloworld]
-    formal_name = "Hello World"
-    description = "A Tutorial app"
-    long_description = """More details about the app should go here.
-    """
-    sources = ["src/helloworld"]
-    requires = []
+```toml
+[tool.briefcase.app.helloworld]
+formal_name = "Hello World"
+description = "A Tutorial app"
+long_description = """More details about the app should go here.
+"""
+sources = ["src/helloworld"]
+requires = []
+```
 
 The `requires` option describes the dependencies of our application. It
 is a list of strings, specifying libraries (and, optionally, versions)
@@ -499,9 +501,11 @@ of libraries that you want to be included with your app.
 
 Modify the `requires` setting so that it reads:
 
-    requires = [
-        "faker",
-    ]
+```toml
+requires = [
+    "faker",
+]
+```
 
 By adding this setting, we're telling Briefcase "when you build my app,
 run `pip install faker` into the application bundle". Anything that
@@ -656,7 +660,6 @@ Removing unneeded app bundle content... done
 
 ///
 
-
 Once you've updated, you can run `briefcase build` and `briefcase run` -
 and you should see your packaged app, with the new dialog behavior.
 
@@ -719,5 +722,6 @@ tutorial like this one.
 
 ## Next steps
 
-We've now got an app that uses a third-party library! In [Tutorial 8][tutorial-8] we'll learn how to ensure
+We've now got an app that uses a third-party library! In
+[Tutorial 8][tutorial-8] we'll learn how to ensure
 our app remains responsive as we add more complex application logic.

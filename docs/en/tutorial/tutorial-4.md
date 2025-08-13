@@ -18,13 +18,15 @@ output. They need to use dialogs to communicate with users.
 Let's add a dialog box to say hello, instead of writing to the console.
 Modify the `say_hello` callback so it looks like this:
 
-    async def say_hello(self, widget):
-        await self.main_window.dialog(
-            toga.InfoDialog(
-                f"Hello, {self.name_input.value}",
-                "Hi there!",
-            )
+```python
+async def say_hello(self, widget):
+    await self.main_window.dialog(
+        toga.InfoDialog(
+            f"Hello, {self.name_input.value}",
+            "Hi there!",
         )
+    )
+```
 
 We need to make the method `async` so that when we display the dialog,
 the rest of the application continues to run. Don't worry about this
@@ -41,6 +43,10 @@ see the new dialog box:
 <figure class="align-center">
     <img src="/tutorial/images/macOS/tutorial-4.png" alt="Hello World Tutorial 4 dialog, on macOS" />
 </figure>
+
+![Hello World Tutorial 4 dialog, on macOS](/tutorial/images/macOS/tutorial-4.png)
+/// caption
+///
 
 ///
 
@@ -59,7 +65,6 @@ see the new dialog box:
 </figure>
 
 ///
-
 
 However, if you run `briefcase run`, the dialog box won't appear.
 
@@ -132,7 +137,6 @@ Removing unneeded app bundle content... done
 
 ///
 
-
 If Briefcase can't find the scaffolded template, it will automatically
 invoke `create` to generate a fresh scaffold.
 
@@ -141,8 +145,7 @@ Now that we've updated the installer code, we can then run
 updated app, and `briefcase package` to repackage the application for
 distribution.
 
-(macOS users, remember that as noted in
-[Tutorial 3][tutorial-3], for the
+(macOS users, remember that as noted in [Tutorial 3][tutorial-3], for the
 tutorial we recommend running `briefcase package` with the
 `--adhoc-sign` flag to avoid the complexity of setting up a code signing
 identity and keep the tutorial as simple as possible.)
@@ -168,21 +171,25 @@ At the top of the file, between the imports and the `class HelloWorld`
 definition, add a utility method to generate an appropriate greeting
 depending on the value of the name that has been provided:
 
-    def greeting(name):
-        if name:
-            return f"Hello, {name}"
-        else:
-            return "Hello, stranger"
+```python
+def greeting(name):
+    if name:
+        return f"Hello, {name}"
+    else:
+        return "Hello, stranger"
+```
 
 Then, modify the `say_hello` callback to use this new utility method:
 
-    async def say_hello(self, widget):
-        await self.main_window.dialog(
-            toga.InfoDialog(
-                greeting(self.name_input.value),
-                "Hi there!",
-            )
+```python
+async def say_hello(self, widget):
+    await self.main_window.dialog(
+        toga.InfoDialog(
+            greeting(self.name_input.value),
+            "Hi there!",
         )
+    )
+```
 
 Run your app in development mode (with `briefcase dev`) to confirm that
 the new logic works; then update, build and run the app with one
@@ -258,7 +265,6 @@ Removing unneeded app bundle content... done
 
 ///
 
-
 The package command also accepts the `-u` argument, so if you make a
 change to your application code and want to repackage immediately, you
 can run `briefcase package -u`.
@@ -268,7 +274,6 @@ can run `briefcase package -u`.
 We now have our application packaged for distribution on desktop
 platforms, and we've been able to update the code in our application.
 
-But what about mobile? In
-[Tutorial 5][tutorial-5], we'll
+But what about mobile? In [Tutorial 5][tutorial-5], we'll
 convert our application into a mobile application, and deploy it onto a
 device simulator, and onto a phone.

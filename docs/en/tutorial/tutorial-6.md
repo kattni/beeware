@@ -17,7 +17,6 @@ enough to be relied on for serious development.
 If you have problems with this step of the tutorial, you can skip to the
 next page.
 
-
 ///
 
 ## Deploying as a web app
@@ -150,10 +149,9 @@ Web server open on http://127.0.0.1:8080
 
 ///
 
-
 This will open a web browser, pointing at <http://127.0.0.1:8080>:
 
-![Hello World Tutorial 6 dialog, in a browser](/tutorial/images/tutorial-6.png)
+![Hello World Tutorial 6 dialog, in a browser](../tutorial/images/tutorial-6.png)
 
 If you enter your name and click the button, a dialog will appear.
 
@@ -178,5 +176,4 @@ handling code in the browser.
 Although we've now deployed this app on desktop, mobile and the web, the
 app is fairly simple, and doesn't involve any third-party libraries. Can
 we include libraries from the Python Package Index (PyPI) in our app?
-Turn to [Tutorial 7][tutorial-7] to find
-out...
+Turn to [Tutorial 7][tutorial-7] to find out...

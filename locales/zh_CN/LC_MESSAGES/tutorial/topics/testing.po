@@ -31,25 +31,25 @@ msgid "Running the test suite"
 msgstr "运行测试套件"
 
 #: ../../tutorial/topics/testing.rst:13 e55d23b4fa494b09a62a3c55ee0d0ebb
-msgid "It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: ``src`` and ``tests``. The ``src`` folder contains the code for our app; the ``tests`` folder contains our test suite. Inside the ``tests`` folder is a file named ``test_app.py`` with the following content::"
+msgid "It turns out the project from the core tutorial already has a test suite! When we originally generated our project, two top-level directories were generated: `src` and `tests`. The `src` folder contains the code for our app; the `tests` folder contains our test suite. Inside the `tests` folder is a file named `test_app.py` with the following content:"
 msgstr ""
-"原来我们的项目已经有了一个测试套件！我们最初生成项目时，会生成两个顶级目录：`"
-"`src``\\ 和\\ ``tests``。``src``\\ 文件夹包含应用程序的代码；``tests``\\ "
-"文件夹包含测试套件。在\\ ``tests``\\ 文件夹中，有一个名为\\ ``test_app.py``\\"
-" 的文件，内容如下::"
+"原来我们的项目已经有了一个测试套件！我们最初生成项目时，会生成两个顶级目录：["
+"`src`\\ 和\\ `tests`。`src`\\ 文件夹包含应用程序的代码；`tests`\\ "
+"文件夹包含测试套件。在\\ `tests`\\ 文件夹中，有一个名为\\ `test_app.py`\\"
+" 的文件，内容如下:"
 
 #: ../../tutorial/topics/testing.rst:23 12578aff26fb4372963fa5ccd8005e18
-msgid "This is a `Pytest <https://pytest.org>`__ *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
+msgid "This is a `Pytest]{1} *test case* - a block of code that can be executed to verify some behavior of your app. In this case, the test is a placeholder, and doesn't test anything about our app - but it is a test that we can perform."
 msgstr ""
-"这是一个 `Pytest <https://pytest.org>`__ *测试用例* - "
+"这是一个 [Pytest]{1} *测试用例* - "
 "用于验证应用程序的某些行为的可以执行的代码块。在本例中，该测试是一个占位符，"
 "并不测试我们应用程序的任何内容，但我们可以执行该测试。"
 
 #: ../../tutorial/topics/testing.rst:28 a8e6e625f47e4c0f8f476892ce705854
-msgid "We can run this test suite using the ``--test`` option to ``briefcase dev``. As this is the first time we are running tests, we also need to pass in the ``-r`` option to ensure that the test requirements are also installed:"
+msgid "We can run this test suite using the `--test` option to `briefcase dev`. As this is the first time we are running tests, we also need to pass in the `-r` option to ensure that the test requirements are also installed:"
 msgstr ""
-"我们可以使用 ``briefcase dev`` 的 ``--test`` "
-"选项来运行这个测试套件。由于这是第一次运行测试，我们还需要传递 ``-r`` "
+"我们可以使用 `briefcase dev` 的 `--test` "
+"选项来运行这个测试套件。由于这是第一次运行测试，我们还需要传递 `-r` "
 "选项，以确保测试以来想也已安装："
 
 #: ../../tutorial/topics/testing.rst:34 ../../tutorial/topics/testing.rst:139
@@ -82,10 +82,10 @@ msgstr "成功了！我们刚刚执行了一个测试，验证了 Python "
 "数学以我们预期的方式运行（真是松了一口气！）。"
 
 #: ../../tutorial/topics/testing.rst:112 bdfb76180b914a03a4b9f51b8b415562
-msgid "Let's replace this placeholder test with a test to verify that our ``greeting()`` method behaves the way we'd expect. Replace the contents of ``test_app.py`` with the following::"
+msgid "Let's replace this placeholder test with a test to verify that our `greeting()` method behaves the way we'd expect. Replace the contents of `test_app.py` with the following:"
 msgstr ""
-"让我们用一个测试来替换这个占位符测试，以验证我们的 ``greeting()`` "
-"方法是否按照我们预期的方式运行。用以下内容替换 ``test_app.py`` 中的内容::"
+"让我们用一个测试来替换这个占位符测试，以验证我们的 `greeting()` "
+"方法是否按照我们预期的方式运行。用以下内容替换 `test_app.py` 中的内容:"
 
 #: ../../tutorial/topics/testing.rst:130 8d4c83b186744c548956a63775950dbe
 msgid "This defines two new tests, verifying the two behaviors we expect to see: the output when a name is provided, and the output when the name is empty."
@@ -93,37 +93,37 @@ msgstr "这将定义两个新测试，验证我们期望看到的两种行为：
 "的输出。"
 
 #: ../../tutorial/topics/testing.rst:133 94079c4ca18a4ccb92c8421eadd1127e
-msgid "We can now re-run the test suite. This time, we don't need to provided the ``-r`` option, as the test requirements have already been installed; we only need to use the ``--test`` option:"
+msgid "We can now re-run the test suite. This time, we don't need to provided the `-r` option, as the test requirements have already been installed; we only need to use the `--test` option:"
 msgstr ""
-"现在我们可以重新运行测试套件。这一次，我们不需要提供 ``-r`` "
-"选项，因为测试需求已经安装完毕；我们只需要使用 ``--test`` 选项："
+"现在我们可以重新运行测试套件。这一次，我们不需要提供 `-r` "
+"选项，因为测试需求已经安装完毕；我们只需要使用 `--test` 选项："
 
 #: ../../tutorial/topics/testing.rst:190 66047769b0fd4eb79fc58304776210e3
-msgid "Excellent! Our ``greeting()`` utility method is working as expected."
-msgstr "非常好！我们的 ``greeting()`` 实用程序方法如期工作了。"
+msgid "Excellent! Our `greeting()` utility method is working as expected."
+msgstr "非常好！我们的 `greeting()` 实用程序方法如期工作了。"
 
 #: ../../tutorial/topics/testing.rst:193 4bf668f3028a4019ab4eb59af44fc5b2
 msgid "Test driven development"
 msgstr "测试驱动开发"
 
 #: ../../tutorial/topics/testing.rst:195 f8743019f36042a6af9a0a74d87eb700
-msgid "Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of ``test_app.py``::"
+msgid "Now that we have a test suite, we can use it to drive the development of new features. Let's modify our app to have a special greeting for one particular user. We can start by adding a test case for the new behavior that we'd like to see to the bottom of `test_app.py`:"
 msgstr ""
 "现在我们有了测试套件，可以用它来推动新功能的开发。让我们修改应用程序，为某位"
-"用户添加特殊的问候语。首先，我们可以在 ``test_app.py`` "
-"的底部为我们希望看到的新行为添加一个测试用例::"
+"用户添加特殊的问候语。首先，我们可以在 `test_app.py` "
+"的底部为我们希望看到的新行为添加一个测试用例:"
 
 #: ../../tutorial/topics/testing.rst:205 7bda7f335bfa42dfada3354efe73ada4
 msgid "Then, run the test suite with this new test:"
 msgstr "然后，用这个新测试运行测试套件："
 
 #: ../../tutorial/topics/testing.rst:307 4c7f397a6b4342e8a1ddee9b9e830615
-msgid "This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output \"BeeWare the IDEs of Python!\", but our implementation of ``greeting()`` is returning \"Hello, Brutus\". Let's modify the implementation of ``greeting()`` in ``src/helloworld/app.py`` to have the new behavior::"
+msgid "This time, we see a test failure - and the output explains the source of the failure: the test is expecting the output \"BeeWare the IDEs of Python!\", but our implementation of `greeting()` is returning \"Hello, Brutus\". Let's modify the implementation of `greeting()` in `src/helloworld/app.py` to have the new behavior:"
 msgstr ""
 "这一次，我们看到了测试失败--输出结果解释了失败的原因：测试期望输出 "
-"\"BeeWare the IDEs of Python!\"，但我们的 ``greeting()`` 实现却返回 "
-"\"Hello, Brutus\"。让我们修改 ``src/helloworld/app.py`` 中 ``greeting()`` "
-"的实现，使其具有新的行为::"
+"\"BeeWare the IDEs of Python!\"，但我们的 `greeting()` 实现却返回 "
+"\"Hello, Brutus\"。让我们修改 `src/helloworld/app.py` 中 `greeting()` "
+"的实现，使其具有新的行为:"
 
 #: ../../tutorial/topics/testing.rst:322 7793c86300ea44a4b32e745c7cc6bb66
 msgid "If we run the tests again, we'll now see our tests pass:"
@@ -141,23 +141,23 @@ msgstr ""
 "的代码在捆绑应用程序环境下是否也能正确运行。"
 
 #: ../../tutorial/topics/testing.rst:389 19507bc8ccbe47debc44a70d39982e81
-msgid "The ``--test`` and ``-r`` options can also be passed to the ``run`` command. If you use ``briefcase run --test -r``, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:"
+msgid "The `--test` and `-r` options can also be passed to the `run` command. If you use `briefcase run --test -r`, the same test suite will run, but it will run inside the packaged application bundle rather than your development environment:"
 msgstr ""
-"``-test`` 和 ``-r`` 选项也可以传递给 ``run`` 命令。如果使用 ``briefcase run "
+"`-test` 和 `-r` 选项也可以传递给 `run` 命令。如果使用 `briefcase run "
 "--test "
-"-r``，将运行相同的测试套件，但它将在打包的应用程序捆绑包内运行，而不是在开发"
+"-r`，将运行相同的测试套件，但它将在打包的应用程序捆绑包内运行，而不是在开发"
 "环境中运行："
 
 #: ../../tutorial/topics/testing.rst:507 eb9f04a25a2b444e9d687d04e9ad2982
-msgid "As with ``briefcase dev --test``, the ``-r`` option is only needed the first time you run the test suite to ensure that the test dependencies are present. On subsequent runs, you can omit this option."
+msgid "As with `briefcase dev --test`, the `-r` option is only needed the first time you run the test suite to ensure that the test dependencies are present. On subsequent runs, you can omit this option."
 msgstr ""
-"与 ``briefcase dev --test`` 一样，只有在第一次运行测试套件时才需要使用 ``-r``"
+"与 `briefcase dev --test` 一样，只有在第一次运行测试套件时才需要使用 `-r`"
 " 选项，以确保测试依赖项的存在。以后运行时，可以省略该选项。"
 
 #: ../../tutorial/topics/testing.rst:511 3bd3cefc847441d7b56ff08b6888e60c
-msgid "You can also use the ``--test`` option on mobile backends: - so ``briefcase run iOS --test`` and ``briefcase run android --test`` will both work, running the test suite on the mobile device you select."
+msgid "You can also use the `--test` option on mobile backends: - so `briefcase run iOS --test` and `briefcase run android --test` will both work, running the test suite on the mobile device you select."
 msgstr ""
-"你也可以在移动后端使用 ``--test`` 选项：``briefcase run iOS --test`` 和 ``"
+"你也可以在移动后端使用 `--test` 选项：`briefcase run iOS --test` 和 `"
 "briefcase run android --test`` 都可以在你选择的移动设备上运行测试套件。"
 
 #~ msgid "This has been a taste for what you can do with the tools provided by the BeeWare project. What you do from here is up to you!"
@@ -166,11 +166,11 @@ msgstr ""
 #~ msgid "Some places to go from here:"
 #~ msgstr "从这里可以去一些地方："
 
-#~ msgid "Tutorials demonstrating `features of the Toga widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
-#~ msgstr "演示 \"Toga widget 工具包 <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__ 的功能 \"的教程。"
+#~ msgid "Tutorials demonstrating [features of the Toga widget toolkit]{1}."
+#~ msgstr "演示 [Toga widget 工具包 {1} 的功能] 的教程。"
 
-#~ msgid "Details on the `options available when configuring your Briefcase project <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__."
-#~ msgstr "配置您的 Briefcase 项目 <https://briefcase.readthedocs.io/en/latest/reference/index.html>`__ 时可用选项的详细信息。"
+#~ msgid "Details on the `options available when configuring your Briefcase project]{1}."
+#~ msgstr "配置您的 [Briefcase 项目]{1} 时可用选项的详细信息。"
 
 #~ msgid "Next steps"
 #~ msgstr "下一步"

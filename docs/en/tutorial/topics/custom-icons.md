@@ -1,4 +1,4 @@
-# Customizing icons
+# Customizing icons  { id="custom-icons" }
 
 The app we developed in the main tutorial uses a default "gray bee" icon
 when it is packaged. Let's personalize this application by configuring
@@ -16,7 +16,9 @@ Edit your `pyproject.toml`, adding a new `icon` configuration item in
 the `[tool.briefcase.app.helloworld]` configuration section, just above
 the `sources` definition:
 
-    icon = "icons/helloworld"
+```toml
+icon = "icons/helloworld"
+```
 
 This icon definition doesn't specify any file extension. The value will
 be used as a prefix; each platform will add additional items to this
@@ -173,26 +175,28 @@ Let's provide some actual icons. Download `this icons.zip bundle
 it into the root of your project directory. After unzipping, your
 project directory should look something like:
 
-    beeware-tutorial/
-    ├── beeware-venv/
+```text
+beeware-tutorial/
+├── beeware-venv/
+│   └── ...
+└── helloworld/
+    ├── ...
+    ├── icons/
+    │   ├── helloworld.icns
+    │   ├── helloworld.ico
+    │   ├── helloworld.png
+    │   ├── helloworld-16.png
+    │   └──...
+    ├── src/
     │   └── ...
-    └── helloworld/
-        ├── ...
-        ├── icons/
-        │   ├── helloworld.icns
-        │   ├── helloworld.ico
-        │   ├── helloworld.png
-        │   ├── helloworld-16.png
-        │   └──...
-        ├── src/
-        │   └── ...
-        └── pyproject.toml
+    └── pyproject.toml
+```
 
 There's a *lot* of icons in this folder, but most of them should look
 the same: a green snake on a light blue background:
 
 <figure class="align-center">
-    <img src="../resources/icon.png" alt="Icon of green snake with a light blue background" />
+    <img src="../../resources/icon.png" alt="Icon of green snake with a light blue background" />
 </figure>
 
 The only exception will be the icons with `-adaptive-` in their name;
@@ -376,8 +380,6 @@ Removing unneeded app bundle content... done
 
 ///
 
-///
-
 /// note | Note
 
 If you get a stack trace referencing `faker` or `httpx` when you run the
@@ -395,7 +397,9 @@ by customizing the background color of the splash screen. Add the
 following definition to your `pyproject.toml`, just after the `icon`
 definition:
 
-    splash_background_color = "#D3E6F5"
+```toml
+splash_background_color = "#D3E6F5"
+```
 
 Unfortunately, Briefcase isn't able to apply this change to an already
 generated project, as it requires making modifications to one of the

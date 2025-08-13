@@ -1,4 +1,4 @@
-# Tutorial 0 - Let's get set up! { id="tutorial-0" }
+# Tutorial 0 - Let's get set up!
 
 Before we build our first BeeWare app, we have to make sure we've got
 all the prerequisites for running BeeWare.
@@ -193,13 +193,14 @@ instructions with the version number that you are using.
 
 If you're using PowerShell, and you receive the error:
 
-    File C:\...\beeware-tutorial\beeware-venv\Scripts\activate.ps1 cannot be loaded because running scripts is disabled on this system.
+```console
+File C:\...\beeware-tutorial\beeware-venv\Scripts\activate.ps1 cannot be loaded because running scripts is disabled on this system.
+```
 
 Your Windows account doesn't have permissions to run scripts. To fix
 this:
 
-1.  Run [Windows PowerShell as
-    Administrator](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.4).
+1.  Run [Windows PowerShell as Administrator](https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.4).
 2.  Run `set-executionpolicy RemoteSigned`
 3.  Select `Y` to change the execution policy.
 
@@ -207,12 +208,9 @@ Once you've done this you can rerun `beeware-venv\Scripts\activate.ps1`
 in your original PowerShell session (or a new session in the same
 directory).
 
-
 ///
 
 ///
-
-
 
 If this worked, your prompt should now be changed - it should have a
 `(beeware-venv)` prefix. This lets you know that you're currently in
@@ -229,7 +227,6 @@ predecessor to Python's built in `venv` module. As with Python installs
 -if you're on macOS or Windows, it doesn't matter *how* you create your
 virtual environment, as long as you have one. If you're on Linux, you
 should stick to `venv` and the system Python.
-
 
 ///
 

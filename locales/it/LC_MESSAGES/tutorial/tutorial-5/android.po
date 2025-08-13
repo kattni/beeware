@@ -41,8 +41,8 @@ msgstr "Creare un'applicazione Android e compilarla"
 
 #: ../../tutorial/tutorial-5/android.rst:16 3b361eb258b54e2487da137a5dbcabc6
 #, fuzzy
-msgid "First, run the ``create`` command. This downloads an Android app template and adds your Python code to it."
-msgstr "Per prima cosa, eseguire il comando ``create``. Questo scarica un modello di applicazione Android e vi aggiunge il codice Python."
+msgid "First, run the `create` command. This downloads an Android app template and adds your Python code to it."
+msgstr "Per prima cosa, eseguire il comando `create`. Questo scarica un modello di applicazione Android e vi aggiunge il codice Python."
 
 #: ../../tutorial/tutorial-5/android.rst:21
 #: ../../tutorial/tutorial-5/android.rst:120
@@ -73,18 +73,18 @@ msgstr "Windows"
 
 #: ../../tutorial/tutorial-5/android.rst:102 72d65e3da98248cd8b14009fd6db873f
 #, fuzzy
-msgid "When you run ``briefcase create android`` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license. There's a number of licenses you'll need to agree too - keep entering ``y`` at the prompt to review and accept each of the necessary the license agreements."
-msgstr "Quando si esegue ``briefcase create android`` per la prima volta, Briefcase scarica un JDK Java e l'SDK Android. Le dimensioni dei file e i tempi di download possono essere considerevoli; il download può richiedere un po' di tempo (10 minuti o più, a seconda della velocità della connessione a Internet). Al termine del download, verrà richiesto di accettare la licenza Android SDK di Google."
+msgid "When you run `briefcase create android` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license. There's a number of licenses you'll need to agree too - keep entering `y` at the prompt to review and accept each of the necessary the license agreements."
+msgstr "Quando si esegue `briefcase create android` per la prima volta, Briefcase scarica un JDK Java e l'SDK Android. Le dimensioni dei file e i tempi di download possono essere considerevoli; il download può richiedere un po' di tempo (10 minuti o più, a seconda della velocità della connessione a Internet). Al termine del download, verrà richiesto di accettare la licenza Android SDK di Google."
 
 #: ../../tutorial/tutorial-5/android.rst:110 08d75338c70c4293b3fc7e4756341837
 #, fuzzy
-msgid "Once this completes, we'll have a ``build\\helloworld\\android\\gradle`` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
-msgstr "Una volta completata questa operazione, nel nostro progetto avremo una cartella ``buildhelloworld\\android\\gradle``, che conterrà un progetto Android con una configurazione di compilazione Gradle. Questo progetto conterrà il codice dell'applicazione e un pacchetto di supporto contenente l'interprete Python."
+msgid "Once this completes, we'll have a `build\\helloworld\\android\\gradle` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
+msgstr "Una volta completata questa operazione, nel nostro progetto avremo una cartella `buildhelloworld\\android\\gradle`, che conterrà un progetto Android con una configurazione di compilazione Gradle. Questo progetto conterrà il codice dell'applicazione e un pacchetto di supporto contenente l'interprete Python."
 
 #: ../../tutorial/tutorial-5/android.rst:115 5dd50cc6120848178154812570387bd6
 #, fuzzy
-msgid "We can then use Briefcase's ``build`` command to compile this into an Android APK app file."
-msgstr "Possiamo quindi usare il comando ``build`` di Briefcase per compilare questo file in un'applicazione Android APK."
+msgid "We can then use Briefcase's `build` command to compile this into an Android APK app file."
+msgstr "Possiamo quindi usare il comando `build` di Briefcase per compilare questo file in un'applicazione Android APK."
 
 #: ../../tutorial/tutorial-5/android.rst:174 23e97dda834d4e96a5262d182cdc8ce1
 #, fuzzy
@@ -93,8 +93,8 @@ msgstr "Gradle può sembrare bloccato"
 
 #: ../../tutorial/tutorial-5/android.rst:176 9448604dd38b47418cda6119877c8af4
 #, fuzzy
-msgid "During the ``briefcase build android`` step, Gradle (the Android platform build tool) will print ``CONFIGURING: 100%``, and appear to be doing nothing. Don't worry, it's not stuck - it's downloading more Android SDK components. Depending on your Internet connection speed, this may take another 10 minutes (or longer). This lag should only happen the very first time you run ``build``; the tools are cached, and on your next build, the cached versions will be used."
-msgstr "Durante il passaggio ``briefcase build android``, Gradle (lo strumento di creazione della piattaforma Android) stampa ``CONFIGURING: 100%`` e sembra non fare nulla. Non preoccupatevi, non è bloccato: sta scaricando altri componenti dell'SDK Android. A seconda della velocità della connessione a Internet, potrebbero essere necessari altri 10 minuti (o più). Questo ritardo dovrebbe verificarsi solo la prima volta che si esegue ``build``; gli strumenti vengono memorizzati nella cache e nella compilazione successiva verranno utilizzate le versioni memorizzate nella cache."
+msgid "During the `briefcase build android` step, Gradle (the Android platform build tool) will print `CONFIGURING: 100%`, and appear to be doing nothing. Don't worry, it's not stuck - it's downloading more Android SDK components. Depending on your Internet connection speed, this may take another 10 minutes (or longer). This lag should only happen the very first time you run `build`; the tools are cached, and on your next build, the cached versions will be used."
+msgstr "Durante il passaggio `briefcase build android`, Gradle (lo strumento di creazione della piattaforma Android) stampa `CONFIGURING: 100%` e sembra non fare nulla. Non preoccupatevi, non è bloccato: sta scaricando altri componenti dell'SDK Android. A seconda della velocità della connessione a Internet, potrebbero essere necessari altri 10 minuti (o più). Questo ritardo dovrebbe verificarsi solo la prima volta che si esegue `build`; gli strumenti vengono memorizzati nella cache e nella compilazione successiva verranno utilizzate le versioni memorizzate nella cache."
 
 #: ../../tutorial/tutorial-5/android.rst:185 29f00fe3304f4645b241034444799d92
 #, fuzzy
@@ -103,23 +103,23 @@ msgstr "Eseguire l'applicazione su un dispositivo virtuale"
 
 #: ../../tutorial/tutorial-5/android.rst:187 2a682a7b3d354745b8f65a9b1dc614e8
 #, fuzzy
-msgid "We're now ready to run our application. You can use Briefcase's ``run`` command to run the app on an Android device. Let's start by running on an Android emulator."
-msgstr "Ora siamo pronti a eseguire la nostra applicazione. È possibile utilizzare il comando ``run`` di Briefcase per eseguire l'applicazione su un dispositivo Android. Cominciamo con l'esecuzione su un emulatore Android."
+msgid "We're now ready to run our application. You can use Briefcase's `run` command to run the app on an Android device. Let's start by running on an Android emulator."
+msgstr "Ora siamo pronti a eseguire la nostra applicazione. È possibile utilizzare il comando `run` di Briefcase per eseguire l'applicazione su un dispositivo Android. Cominciamo con l'esecuzione su un emulatore Android."
 
 #: ../../tutorial/tutorial-5/android.rst:191 4e3a8649a4014bf7a54a9616d94d242d
 #, fuzzy
-msgid "To run your application, run ``briefcase run android``. When you do this, you'll be prompted with a list of devices that you could run the app on. The last item will always be an option to create a new Android emulator."
-msgstr "Per eseguire la vostra applicazione, eseguite ``briefcase run android``. In questo modo, verrà richiesto un elenco di dispositivi su cui è possibile eseguire l'applicazione. L'ultima voce sarà sempre un'opzione per creare un nuovo emulatore Android."
+msgid "To run your application, run `briefcase run android`. When you do this, you'll be prompted with a list of devices that you could run the app on. The last item will always be an option to create a new Android emulator."
+msgstr "Per eseguire la vostra applicazione, eseguite `briefcase run android`. In questo modo, verrà richiesto un elenco di dispositivi su cui è possibile eseguire l'applicazione. L'ultima voce sarà sempre un'opzione per creare un nuovo emulatore Android."
 
 #: ../../tutorial/tutorial-5/android.rst:233 02a98c7bbb8944a18b88b85db3201d45
 #, fuzzy
-msgid "We can now choose our desired device. Select the \"Create a new Android emulator\" option, and accept the default choice for the device name (``beePhone``)."
-msgstr "Ora possiamo scegliere il dispositivo desiderato. Selezionate l'opzione \"Crea un nuovo emulatore Android\" e accettate la scelta predefinita per il nome del dispositivo (``beePhone``)."
+msgid "We can now choose our desired device. Select the \"Create a new Android emulator\" option, and accept the default choice for the device name (`beePhone`)."
+msgstr "Ora possiamo scegliere il dispositivo desiderato. Selezionate l'opzione \"Crea un nuovo emulatore Android\" e accettate la scelta predefinita per il nome del dispositivo (`beePhone`)."
 
 #: ../../tutorial/tutorial-5/android.rst:237 570897b7d0bc4f79a56cf3934f9610dc
 #, fuzzy
-msgid "Briefcase ``run`` will automatically boot the virtual device. When the device is booting, you will see the Android logo:"
-msgstr "Briefcase ``run`` avvierà automaticamente il dispositivo virtuale. Quando il dispositivo si avvia, si vedrà il logo di Android:"
+msgid "Briefcase `run` will automatically boot the virtual device. When the device is booting, you will see the Android logo:"
+msgstr "Briefcase `run` avvierà automaticamente il dispositivo virtuale. Quando il dispositivo si avvia, si vedrà il logo di Android:"
 
 #: ../../tutorial/tutorial-5/android.rst:240
 #: ../../tutorial/tutorial-5/android.rst:245 54e365a9e9324329986e9634378da2d7
@@ -159,8 +159,8 @@ msgstr "L'emulatore non si è avviato!"
 
 #: ../../tutorial/tutorial-5/android.rst:268 152e105a148541e2b3cf630b83ef839f
 #, fuzzy
-msgid "The Android emulator is a complex piece of software that relies on a number of hardware and operating system features - features that may not be available or enabled on older machines. If you experience any difficulties starting the Android emulator, consult the `Requirements and recommendations <https://developer.android.com/studio/run/emulator#requirements>`__ section of the Android developer documentation."
-msgstr "L'emulatore Android è un software complesso che si basa su una serie di caratteristiche dell'hardware e del sistema operativo, caratteristiche che potrebbero non essere disponibili o abilitate su macchine più vecchie. In caso di difficoltà nell'avvio dell'emulatore Android, consultare la sezione `Requisiti e raccomandazioni <https://developer.android.com/studio/run/emulator#requirements>`__ della documentazione per sviluppatori Android."
+msgid "The Android emulator is a complex piece of software that relies on a number of hardware and operating system features - features that may not be available or enabled on older machines. If you experience any difficulties starting the Android emulator, consult the [Requirements and recommendations]{1} section of the Android developer documentation."
+msgstr "L'emulatore Android è un software complesso che si basa su una serie di caratteristiche dell'hardware e del sistema operativo, caratteristiche che potrebbero non essere disponibili o abilitate su macchine più vecchie. In caso di difficoltà nell'avvio dell'emulatore Android, consultare la sezione [Requisiti e raccomandazioni]{1} della documentazione per sviluppatori Android."
 
 #: ../../tutorial/tutorial-5/android.rst:275 5d36e4d7acf843e0a1ede03335fc349a
 #, fuzzy
@@ -179,8 +179,8 @@ msgstr "Applicazione demo completamente lanciata"
 
 #: ../../tutorial/tutorial-5/android.rst:286 f28e74d8ffa941958b055a9ef880c161
 #, fuzzy
-msgid "If you fail to see your app launching, you may need to check your terminal where you ran ``briefcase run`` and look for any error messages."
-msgstr "Se non si riesce a vedere l'avvio dell'applicazione, potrebbe essere necessario controllare il terminale in cui è stato eseguito ``briefcase run`` e cercare eventuali messaggi di errore."
+msgid "If you fail to see your app launching, you may need to check your terminal where you ran `briefcase run` and look for any error messages."
+msgstr "Se non si riesce a vedere l'avvio dell'applicazione, potrebbe essere necessario controllare il terminale in cui è stato eseguito `briefcase run` e cercare eventuali messaggi di errore."
 
 #: ../../tutorial/tutorial-5/android.rst:289 192cae1733114f41bd9ce02912165e8b
 msgid "While the app is running, you'll see a lot of messages being streamed in the console. This is a stream of the application's logs from the emulator. Typing Ctrl+C into the terminal will halt the streamed information in the console, but it will not close the emulator. This is so you can test new changes without restarting the emulator."
@@ -188,8 +188,8 @@ msgstr ""
 
 #: ../../tutorial/tutorial-5/android.rst:295 69b63d21aaf348c2a1e285d53972eb57
 #, fuzzy
-msgid "In future, if you want to run on this device without using the menu, you can provide the emulator's name to Briefcase, using ``briefcase run android -d \"@beePhone\"`` to run on the virtual device directly."
-msgstr "In futuro, se si vuole eseguire su questo dispositivo senza usare il menu, si può fornire il nome dell'emulatore a Briefcase, usando ``briefcase run android -d @beePhone`` per eseguire direttamente sul dispositivo virtuale."
+msgid "In future, if you want to run on this device without using the menu, you can provide the emulator's name to Briefcase, using `briefcase run android -d \"@beePhone\"` to run on the virtual device directly."
+msgstr "In futuro, se si vuole eseguire su questo dispositivo senza usare il menu, si può fornire il nome dell'emulatore a Briefcase, usando `briefcase run android -d @beePhone` per eseguire direttamente sul dispositivo virtuale."
 
 #: ../../tutorial/tutorial-5/android.rst:300 5c5a457bb81047049fb109c8cfc8bee0
 #, fuzzy
@@ -218,18 +218,18 @@ msgstr "Abilitare il debug USB"
 
 #: ../../tutorial/tutorial-5/android.rst:312 73dac95f562040609da6f576aff34fd4
 #, fuzzy
-msgid "Details on how to make these changes can be found `in the Android developer documentation <https://developer.android.com/studio/debug/dev-options#enable>`__."
-msgstr "I dettagli su come apportare queste modifiche sono disponibili nella documentazione per sviluppatori Android <https://developer.android.com/studio/debug/dev-options#enable>`__."
+msgid "Details on how to make these changes can be found [in the Android developer documentation]{1}."
+msgstr "I dettagli su come apportare queste modifiche sono disponibili [nella documentazione per sviluppatori Android]{1}."
 
 #: ../../tutorial/tutorial-5/android.rst:315 d93cb6681446446284d682c406eb6f40
 #, fuzzy
-msgid "Once these steps have been completed, your device should appear in the list of available devices when you run ``briefcase run android``."
-msgstr "Una volta completati questi passaggi, il dispositivo dovrebbe apparire nell'elenco dei dispositivi disponibili quando si esegue ``briefcase run android``."
+msgid "Once these steps have been completed, your device should appear in the list of available devices when you run `briefcase run android`."
+msgstr "Una volta completati questi passaggi, il dispositivo dovrebbe apparire nell'elenco dei dispositivi disponibili quando si esegue `briefcase run android`."
 
 #: ../../tutorial/tutorial-5/android.rst:362 d7f0e801ade940f598853d3a3017015a
 #, fuzzy
-msgid "Here we can see a new physical device with it's serial number on the deployment list - in this case, a Pixel 3a. In the future, if you want to run on this device without using the menu, you can provide the phone's serial number to Briefcase (in this case, ``briefcase run android -d 94ZZY0LNE8``). This will run on the device directly, without prompting."
-msgstr "Qui possiamo vedere un nuovo dispositivo fisico con il suo numero di serie nell'elenco di distribuzione - in questo caso, un Pixel 3a. In futuro, se si vuole eseguire su questo dispositivo senza usare il menu, si può fornire il numero di serie del telefono a Briefcase (in questo caso, ``briefcase run android -d 94ZZY0LNE8``). In questo modo si eseguirà direttamente sul dispositivo, senza richiedere nulla."
+msgid "Here we can see a new physical device with it's serial number on the deployment list - in this case, a Pixel 3a. In the future, if you want to run on this device without using the menu, you can provide the phone's serial number to Briefcase (in this case, `briefcase run android -d 94ZZY0LNE8`). This will run on the device directly, without prompting."
+msgstr "Qui possiamo vedere un nuovo dispositivo fisico con il suo numero di serie nell'elenco di distribuzione - in questo caso, un Pixel 3a. In futuro, se si vuole eseguire su questo dispositivo senza usare il menu, si può fornire il numero di serie del telefono a Briefcase (in questo caso, `briefcase run android -d 94ZZY0LNE8`). In questo modo si eseguirà direttamente sul dispositivo, senza richiedere nulla."
 
 #: ../../tutorial/tutorial-5/android.rst:368 02db0f9b89be4010b7a25e8d3fb8fbfd
 #, fuzzy
@@ -243,8 +243,8 @@ msgstr "Se il dispositivo non compare in questo elenco, significa che non è sta
 
 #: ../../tutorial/tutorial-5/android.rst:373 796c68ef89aa48529c28ab97a9f7da63
 #, fuzzy
-msgid "If your device appears, but is listed as \"Unknown device (not authorized for development)\", developer mode hasn't been correctly enabled. Re-run `the steps to enable developer options <https://developer.android.com/studio/debug/dev-options#enable>`__, and re-run ``briefcase run android``."
-msgstr "Se il dispositivo appare, ma è elencato come \"Dispositivo sconosciuto (non autorizzato per lo sviluppo)\", la modalità sviluppatore non è stata abilitata correttamente. Eseguire nuovamente \"i passaggi per abilitare le opzioni per gli sviluppatori <https://developer.android.com/studio/debug/dev-options#enable>`__ e rieseguire ``briefcase run android``."
+msgid "If your device appears, but is listed as \"Unknown device (not authorized for development)\", developer mode hasn't been correctly enabled. Re-run [the steps to enable developer options]{1}, and re-run `briefcase run android`."
+msgstr "Se il dispositivo appare, ma è elencato come \"Dispositivo sconosciuto (non autorizzato per lo sviluppo)\", la modalità sviluppatore non è stata abilitata correttamente. Eseguire nuovamente [i passaggi per abilitare le opzioni per gli sviluppatori]{1} e rieseguire `briefcase run android`."
 
 #: ../../tutorial/tutorial-5/android.rst:380 05e83c0989ac4ee5bebf56c757e5d2b3
 msgid "Next steps"
@@ -252,6 +252,6 @@ msgstr "Prossimi passi"
 
 #: ../../tutorial/tutorial-5/android.rst:382 9acc33318e1742ffbc17d613201926b7
 #, fuzzy
-msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
-msgstr "Ora abbiamo un'applicazione sul nostro telefono! C'è un altro posto dove possiamo distribuire un'applicazione BeeWare? Consultate :doc:`Tutorial 6 <../tutorial-6>` per scoprirlo..."
+msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to [Tutorial 6][../tutorial-6] to find out..."
+msgstr "Ora abbiamo un'applicazione sul nostro telefono! C'è un altro posto dove possiamo distribuire un'applicazione BeeWare? Consultate [Tutorial 6][../tutorial-6] per scoprirlo..."
 

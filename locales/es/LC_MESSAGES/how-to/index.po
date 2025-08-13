@@ -24,11 +24,11 @@ msgid "Contributing to this tutorial"
 msgstr ""
 
 #: ../../how-to/index.rst:5 c57e0b58b2cf41909ebc397709fca6f7
-msgid "This tutorial is written using `Sphinx and reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`__. This guide will help you contribute fixes or new content to this tutorial."
+msgid "This tutorial is written using [Sphinx and reStructuredText]{1}. This guide will help you contribute fixes or new content to this tutorial."
 msgstr ""
 
 #: ../../how-to/index.rst:9 8f1a8815ad344f608dc08368c78d67ad
-msgid "Translations of this tutorial are managed using `Weblate <https://hosted.weblate.org/engage/beeware/>`__. If you'd like to contribute to the translation effort, join the ``#translations`` channel on `Discord <https://beeware.org/bee/chat/>`__ and introduce yourself!"
+msgid "Translations of this tutorial are managed using [Weblate]{1}. If you'd like to contribute to the translation effort, join the `#translations` channel on [Discord]{1} and introduce yourself!"
 msgstr ""
 
 #: ../../how-to/index.rst:15 45782f56587c4c9aba683d3486e0a67a
@@ -36,7 +36,7 @@ msgid "Set up your development environment"
 msgstr ""
 
 #: ../../how-to/index.rst:19 76aaa393c911467595e6aefdcc0c05a0
-msgid "To build the BeeWare tutorial you **must** have a Python 3.12 interpreter installed and available on your path (i.e., ``python3`` must start a Python 3.12 interpreter)."
+msgid "To build the BeeWare tutorial you **must** have a Python 3.12 interpreter installed and available on your path (i.e., `python3` must start a Python 3.12 interpreter)."
 msgstr ""
 
 #: ../../how-to/index.rst:25 ../../how-to/index.rst:53
@@ -99,7 +99,7 @@ msgid "You'll also need to install the Enchant spell checking library."
 msgstr ""
 
 #: ../../how-to/index.rst:55 1977760275af4de4b5bd233232a4218b
-msgid "Enchant can be installed using `Homebrew <https://brew.sh>`__:"
+msgid "Enchant can be installed using [Homebrew]{1}:"
 msgstr ""
 
 #: ../../how-to/index.rst:61 496b7c8f89c04baab03d16b52a69499d
@@ -139,7 +139,7 @@ msgid "The recommended way of setting up your development environment for BeeWar
 msgstr ""
 
 #: ../../how-to/index.rst:132 6f5234382fc24571b045535b1f24df1c
-msgid "Your prompt should now have a ``(venv)`` prefix in front of it."
+msgid "Your prompt should now have a `(venv)` prefix in front of it."
 msgstr ""
 
 #: ../../how-to/index.rst:135 1e7e2ad8d9ce4cae956fa13fd7ab4680
@@ -151,12 +151,12 @@ msgid "For updates to BeeWare documentation:"
 msgstr ""
 
 #: ../../how-to/index.rst:139 82e9767a84b647e8934c4ba96640cd52
-msgid "Next, go to `the BeeWare page on GitHub <https://github.com/beeware/beeware>`__, fork the repository into your own account, and then clone a copy of that repository onto your computer by clicking on \"Clone or Download\". If you have the GitHub desktop application installed on your computer, you can select \"Open in Desktop\"; otherwise, copy the URL provided, and use it to clone using the command line:"
+msgid "Next, go to [the BeeWare page on GitHub]{1}, fork the repository into your own account, and then clone a copy of that repository onto your computer by clicking on \"Clone or Download\". If you have the GitHub desktop application installed on your computer, you can select \"Open in Desktop\"; otherwise, copy the URL provided, and use it to clone using the command line:"
 msgstr ""
 
 #: ../../how-to/index.rst:150 ../../how-to/index.rst:158
 #: 5f3671f17bd44d6db961264864b176d0 c71efc40cd6b4780922e355777a2c885
-msgid "Fork the BeeWare repository, and then::"
+msgid "Fork the BeeWare repository, and then:"
 msgstr ""
 
 #: ../../how-to/index.rst:154 ../../how-to/index.rst:162
@@ -182,7 +182,7 @@ msgid "Install pre-commit"
 msgstr ""
 
 #: ../../how-to/index.rst:208 6474fd91366d4c49bb6564b9fa8ff7d6
-msgid "BeeWare uses a tool called `Pre-Commit <https://pre-commit.com>`__ to identify simple issues and standardize code formatting. It does this by installing a git hook that automatically runs a series of code linters prior to finalizing any git commit. To enable pre-commit, run:"
+msgid "BeeWare uses a tool called [Pre-Commit]{1} to identify simple issues and standardize code formatting. It does this by installing a git hook that automatically runs a series of code linters prior to finalizing any git commit. To enable pre-commit, run:"
 msgstr ""
 
 #: ../../how-to/index.rst:236 45f58c51eba24cb9992c9ac91ca18336
@@ -210,7 +210,7 @@ msgid "Once your development environment is set up, run:"
 msgstr ""
 
 #: ../../how-to/index.rst:413 5118d034318c4067bf1c680761104315
-msgid "The output of the file should be in the ``docs/_build/html`` folder. If there are any markup problems, they'll raise an error."
+msgid "The output of the file should be in the `docs/_build/html` folder. If there are any markup problems, they'll raise an error."
 msgstr ""
 
 #: ../../how-to/index.rst:417 49f74da22ec3443fae2047c5eec0c1f3
@@ -226,11 +226,11 @@ msgid "This will build the documentation, start a web server to serve the build 
 msgstr ""
 
 #: ../../how-to/index.rst:446 dab845de6666411db9a1c36252f17029
-msgid "Live preview mode will only monitor the ``docs`` directory for changes. If you're updating the inline documentation associated with BeeWare source code, you'll need to use the ``docs-live-src`` target to build docs:"
+msgid "Live preview mode will only monitor the `docs` directory for changes. If you're updating the inline documentation associated with BeeWare source code, you'll need to use the `docs-live-src` target to build docs:"
 msgstr ""
 
 #: ../../how-to/index.rst:470 3f06646c5a21447483b528c29232023d
-msgid "This behaves the same as ``docs-live``, but will also monitor any changes to the ``core/src`` folder, reflecting any changes to inline documentation. However, the rebuild process takes much longer, so you may not want to use this target unless you're actively editing inline documentation."
+msgid "This behaves the same as `docs-live`, but will also monitor any changes to the `core/src` folder, reflecting any changes to inline documentation. However, the rebuild process takes much longer, so you may not want to use this target unless you're actively editing inline documentation."
 msgstr ""
 
 #: ../../how-to/index.rst:476 0cd57efe213945da8701d217568dbb1a
@@ -254,7 +254,7 @@ msgid "misspelled words"
 msgstr ""
 
 #: ../../how-to/index.rst:506 68600592fe4342d59405b16874732a65
-msgid "If a valid spelling of a word is identified as misspelled, then add the word to the list in ``docs/spelling_wordlist``. This will add the word to the spellchecker's dictionary. When adding to this list, remember:"
+msgid "If a valid spelling of a word is identified as misspelled, then add the word to the list in `docs/spelling_wordlist`. This will add the word to the spellchecker's dictionary. When adding to this list, remember:"
 msgstr ""
 
 #: ../../how-to/index.rst:510 a796ec6a070d4ce68b0aad5696187cdf
@@ -278,7 +278,7 @@ msgid "To force a rebuild for all of the documentation:"
 msgstr ""
 
 #: ../../how-to/index.rst:542 b491b6c602af47e29269a4f33268a05e
-msgid "The documentation should be fully rebuilt in the ``docs/_build/html`` folder. If there are any markup problems, they'll raise an error."
+msgid "The documentation should be fully rebuilt in the `docs/_build/html` folder. If there are any markup problems, they'll raise an error."
 msgstr ""
 
 #: ../../how-to/index.rst:546 98686edffc4840318cfcaacfafa03001
@@ -286,7 +286,7 @@ msgid "What to work on?"
 msgstr ""
 
 #: ../../how-to/index.rst:548 3c7559d0b6e440e5bb67de39b0cf52f1
-msgid "If you're looking for specific areas to improve, there are `tickets tagged \"documentation\" <https://github.com/beeware/BeeWare/issues?q=is%3Aopen+is%3Aissue+label%3Adocumentation>`__ in BeeWare's issue tracker."
+msgid "If you're looking for specific areas to improve, there are [tickets tagged \"documentation\"]{1} in BeeWare's issue tracker."
 msgstr ""
 
 #: ../../how-to/index.rst:553 7a472802bcb5439b8a6a63937040a571
@@ -302,15 +302,15 @@ msgid "Before you submit a pull request, there's a few bits of housekeeping to d
 msgstr ""
 
 #: ../../how-to/index.rst:563 1e36d324626b418eb1c072690afd79ed
-msgid "Submit from a feature branch, not your ``main`` branch"
+msgid "Submit from a feature branch, not your `main` branch"
 msgstr ""
 
 #: ../../how-to/index.rst:565 b71f5d0aff2c45c8863b2baacbbde16b
-msgid "Before you start working on your change, make sure you've created a branch. By default, when you clone your repository fork, you'll be checked out on your ``main`` branch. This is a direct copy of BeeWare's ``main`` branch. To contribute to BeeWare itself, not the docs, please review the repo README."
+msgid "Before you start working on your change, make sure you've created a branch. By default, when you clone your repository fork, you'll be checked out on your `main` branch. This is a direct copy of BeeWare's `main` branch. To contribute to BeeWare itself, not the docs, please review the repo README."
 msgstr ""
 
 #: ../../how-to/index.rst:570 b3898fafd69f46babeaebc23e7b808ba
-msgid "While you *can* submit a pull request from your ``main`` branch, it's preferable if you *don't* do this. If you submit a pull request that is *almost* right, the core team member who reviews your pull request may be able to make the necessary changes, rather than giving feedback asking for a minor change. However, if you submit your pull request from your ``main`` branch, reviewers are prevented from making modifications."
+msgid "While you *can* submit a pull request from your `main` branch, it's preferable if you *don't* do this. If you submit a pull request that is *almost* right, the core team member who reviews your pull request may be able to make the necessary changes, rather than giving feedback asking for a minor change. However, if you submit your pull request from your `main` branch, reviewers are prevented from making modifications."
 msgstr ""
 
 #: ../../how-to/index.rst:577 22030a2e92434f7980da1e3d767f4ff3

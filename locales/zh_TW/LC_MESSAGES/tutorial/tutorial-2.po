@@ -25,8 +25,8 @@ msgstr "教學 2 - 讓它變得有趣"
 
 #: ../../tutorial/tutorial-2.rst:5 2a7bd1732fe245ec99be0493cb4fd53c
 #, fuzzy
-msgid "In :doc:`Tutorial 1 <tutorial-1>`, we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
-msgstr "在 :doc:`教程 1 中<tutorial-1>`，我們產生了一個能夠運行的存根項目，但我們自己沒有寫任何程式碼。讓我們看看為我們產生了什麼。"
+msgid "In [Tutorial 1][tutorial-1], we generated a stub project that was able to run, but we didn't write any code ourselves. Let's take a look at what was generated for us."
+msgstr "在 [教程 1 中<tutorial-1>`，我們產生了一個能夠運行的存根項目，但我們自己沒有寫任何程式碼。讓我們看看為我們產生了什麼。"
 
 #: ../../tutorial/tutorial-2.rst:10 36c79c9915674ccfbc12bcc0734bcf35
 #, fuzzy
@@ -35,61 +35,61 @@ msgstr "生成了什麼"
 
 #: ../../tutorial/tutorial-2.rst:12 721f5201e79c44fdac204d63312a6f2e
 #, fuzzy
-msgid "In the ``src/helloworld`` directory, you should see 3 files: ``__init__.py``, ``__main__.py`` and ``app.py``."
+msgid "In the `src/helloworld` directory, you should see 3 files: `__init__.py`, `__main__.py` and `app.py`."
 msgstr "在 src/helloworld 目錄中，您應該會看到 3 個檔案：__init__.py、__main__.py 和 app.py。"
 
 #: ../../tutorial/tutorial-2.rst:15 de38dacd1a0d4c348d934fce208a6bd3
 #, fuzzy
-msgid "``__init__.py`` marks the ``helloworld`` directory as an importable Python module. It is an empty file; the very fact it exists tells the Python interpreter that the ``helloworld`` directory defines a module."
-msgstr "``__init__.py`` 將``helloworld`` 目錄標記為可匯入的Python 模組。這是一個空文件；它的存在告訴 Python 解釋器``helloworld``目錄定義了一個模組。"
+msgid "`__init__.py` marks the `helloworld` directory as an importable Python module. It is an empty file; the very fact it exists tells the Python interpreter that the `helloworld` directory defines a module."
+msgstr "`__init__.py` 將`helloworld` 目錄標記為可匯入的Python 模組。這是一個空文件；它的存在告訴 Python 解釋器`helloworld`目錄定義了一個模組。"
 
 #: ../../tutorial/tutorial-2.rst:19 26dab7a022e948289e9acf4e07b634fa
 #, fuzzy
-msgid "``__main__.py`` marks the ``helloworld`` module as a special kind of module - an executable module. If you try to run the ``helloworld`` module using ``python -m helloworld``, the ``__main__.py`` file is where Python will start executing. The contents of ``__main__.py`` is relatively simple::"
-msgstr "``__main__.py`` 將``helloworld`` 模組標記為一種特殊類型的模組 - 可執行模組。如果您嘗試使用``python -m helloworld``來執行``helloworld``模組，則``__main__.py``檔案是Python將開始執行的位置。 ``__main__.py`` 的內容比較簡單："
+msgid "`__main__.py` marks the `helloworld` module as a special kind of module - an executable module. If you try to run the `helloworld` module using `python -m helloworld`, the `__main__.py` file is where Python will start executing. The contents of `__main__.py` is relatively simple:"
+msgstr "`__main__.py` 將`helloworld` 模組標記為一種特殊類型的模組 - 可執行模組。如果您嘗試使用`python -m helloworld`來執行`helloworld`模組，則`__main__.py`檔案是Python將開始執行的位置。 `__main__.py` 的內容比較簡單："
 
 #: ../../tutorial/tutorial-2.rst:29 0d4ebd6dfe7c48fbb51894c045ff24fc
 msgid "This file does two things:"
 msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:31 6d23aa2404fc48ba96da528ccc1f2940
-msgid "It imports the ``main`` method from from the ``helloworld`` app."
+msgid "It imports the `main` method from from the `helloworld` app."
 msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:32 0b48d24bc644417e829bacd14d0f3cdc
 #, fuzzy
 msgid "Then, it starts the application’s main loop. The main loop is the way a GUI application listens for user input (like mouse clicks and keyboard presses)."
-msgstr "也就是說 - 它從``helloworld``應用程式導入``main``方法；如果它是作為入口點執行，則呼叫 main() 方法，並啟動應用程式的主循環。主循環是 GUI 應用程式偵聽使用者輸入（如滑鼠點擊和鍵盤按下）的方式。"
+msgstr "也就是說 - 它從`helloworld`應用程式導入`main`方法；如果它是作為入口點執行，則呼叫 main() 方法，並啟動應用程式的主循環。主循環是 GUI 應用程式偵聽使用者輸入（如滑鼠點擊和鍵盤按下）的方式。"
 
 #: ../../tutorial/tutorial-2.rst:35 09fd77cade1b42b4a8b88e37bb0da6e3
 #, fuzzy
-msgid "The more interesting file is ``app.py`` - this contains the logic that creates our application window::"
-msgstr "更有趣的檔案是``app.py``——它包含創建我們的應用程式視窗的邏輯::"
+msgid "The more interesting file is `app.py` - this contains the logic that creates our application window:"
+msgstr "更有趣的檔案是`app.py`——它包含創建我們的應用程式視窗的邏輯:"
 
 #: ../../tutorial/tutorial-2.rst:52 df7ece5eaff04ed19ab39cdb23b6ac77
 #, fuzzy
-msgid "Let's go through this line by line::"
+msgid "Let's go through this line by line:"
 msgstr "讓我們逐行瀏覽一下："
 
 #: ../../tutorial/tutorial-2.rst:57 f5ddb2b7e7b844a69c517fd33d19a19d
 #, fuzzy
-msgid "First, we import the ``toga`` widget toolkit, as well as some style-related utility constants. Our code doesn't use these yet - but we'll make use of them shortly."
-msgstr "首先，我們匯入``toga``小工具工具包，以及一些與樣式相關的實用程式類別和常數。我們的程式碼尚未使用它們 - 但我們很快就會使用它們。"
+msgid "First, we import the `toga` widget toolkit, as well as some style-related utility constants. Our code doesn't use these yet - but we'll make use of them shortly."
+msgstr "首先，我們匯入`toga`小工具工具包，以及一些與樣式相關的實用程式類別和常數。我們的程式碼尚未使用它們 - 但我們很快就會使用它們。"
 
 #: ../../tutorial/tutorial-2.rst:61 a3f7bf04b0ac4a81951a5ed777d42987
 #, fuzzy
-msgid "Then, we define a class::"
+msgid "Then, we define a class:"
 msgstr "然後，我們定義一個類別：："
 
 #: ../../tutorial/tutorial-2.rst:65 9f8637c8b8674d85a500d98d1a8c8d3a
 #, fuzzy
-msgid "Each Toga application has a single ``toga.App`` instance, representing the running entity that is the application. The app may end up managing multiple windows; but for simple applications, there will be a single main window."
-msgstr "每個 Toga 應用程式都有一個``toga.App``實例，代表應用程式的運作實體。該應用程式最終可能會管理多個視窗；但對於簡單的應用程序，將有一個主視窗。"
+msgid "Each Toga application has a single `toga.App` instance, representing the running entity that is the application. The app may end up managing multiple windows; but for simple applications, there will be a single main window."
+msgstr "每個 Toga 應用程式都有一個`toga.App`實例，代表應用程式的運作實體。該應用程式最終可能會管理多個視窗；但對於簡單的應用程序，將有一個主視窗。"
 
 #: ../../tutorial/tutorial-2.rst:69 32d1c270af7245718f91161251d34f81
 #, fuzzy
-msgid "Next, we define a ``startup()`` method::"
-msgstr "接下來，我們定義一個``startup()``方法："
+msgid "Next, we define a `startup()` method:"
+msgstr "接下來，我們定義一個`startup()`方法："
 
 #: ../../tutorial/tutorial-2.rst:74 43ade04c31ae40fda6b416406baab307
 #, fuzzy
@@ -103,13 +103,13 @@ msgstr "在此應用程式中，我們定義了一個框，但沒有在其中放
 
 #: ../../tutorial/tutorial-2.rst:82 1f7f4fa8a2244ceea804514e62a22344
 #, fuzzy
-msgid "Next, we define a window into which we can put this empty box::"
+msgid "Next, we define a window into which we can put this empty box:"
 msgstr "接下來，我們定義一個窗口，可以將這個空框放入其中："
 
 #: ../../tutorial/tutorial-2.rst:86 2ef76961458944b6a2d73dd38e60d4a1
 #, fuzzy
-msgid "This creates an instance of a ``toga.MainWindow``, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window)."
-msgstr "這將建立一個``toga.MainWindow``實例，它將具有與應用程式名稱相符的標題。主視窗是 Toga 中的一種特殊視窗 - 它是與應用程式的生命週期密切相關的視窗。當主視窗關閉時，應用程式退出。主視窗也是具有應用程式選單的視窗（如果您使用的是 Windows 等平台，其中功能表列是視窗的一部分）"
+msgid "This creates an instance of a `toga.MainWindow`, which will have a title matching the application's name. A Main Window is a special kind of window in Toga - it's a window that is closely bound to the life cycle of the app. When the Main Window is closed, the application exits. The Main Window is also the window that has the application's menu (if you're on a platform like Windows where menu bars are part of the window)."
+msgstr "這將建立一個`toga.MainWindow`實例，它將具有與應用程式名稱相符的標題。主視窗是 Toga 中的一種特殊視窗 - 它是與應用程式的生命週期密切相關的視窗。當主視窗關閉時，應用程式退出。主視窗也是具有應用程式選單的視窗（如果您使用的是 Windows 等平台，其中功能表列是視窗的一部分）"
 
 #: ../../tutorial/tutorial-2.rst:93 83ddcb8dc2f54f7482e37d1144f29626
 msgid "Where is my window?"
@@ -121,17 +121,17 @@ msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:99 e612fb6b63b14bdcb39b5626b021c777
 #, fuzzy
-msgid "We then add our empty box as the content of the main window, and instruct the application to show our window::"
-msgstr "然後，我們添加空框作為主視窗的內容，並指示應用程式顯示我們的視窗::"
+msgid "We then add our empty box as the content of the main window, and instruct the application to show our window:"
+msgstr "然後，我們添加空框作為主視窗的內容，並指示應用程式顯示我們的視窗:"
 
 #: ../../tutorial/tutorial-2.rst:105 1ce27dec55a74047bf2e8539c8efbc73
-msgid "Last of all, we define a ``main()`` function. This is what creates the instance of our application::"
-msgstr "最後，我們定義一個``main()``方法。這就是創建我們的應用程式實例的原因::"
+msgid "Last of all, we define a `main()` function. This is what creates the instance of our application:"
+msgstr "最後，我們定義一個`main()`方法。這就是創建我們的應用程式實例的原因:"
 
 #: ../../tutorial/tutorial-2.rst:111 bc7b7fdf8a5c43ffb2fdf01859bd16aa
 #, fuzzy
-msgid "This ``main()`` method is the one that is imported and invoked by ``__main__.py``. It creates and returns an instance of our ``HelloWorld`` application."
-msgstr "這個``main()``方法是由``__main__.py``導入和呼叫的方法。它創建並傳回我們的``HelloWorld``應用程式的實例。"
+msgid "This `main()` method is the one that is imported and invoked by `__main__.py`. It creates and returns an instance of our `HelloWorld` application."
+msgstr "這個`main()`方法是由`__main__.py`導入和呼叫的方法。它創建並傳回我們的`HelloWorld`應用程式的實例。"
 
 #: ../../tutorial/tutorial-2.rst:115 f3f8cdad383346459a1c835fa92f112c
 #, fuzzy
@@ -144,18 +144,18 @@ msgid "Adding some content of our own"
 msgstr "添加一些我們自己的內容"
 
 #: ../../tutorial/tutorial-2.rst:121 3a5a7f2ca0e2483f93fef97babc01fc7
-msgid "Let's do something more interesting with our ``HelloWorld`` app."
+msgid "Let's do something more interesting with our `HelloWorld` app."
 msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:125 e44cc783a890402085f37580f482fac8
 #, fuzzy
-msgid "When you make these changes, make sure you keep the imports at the top of the file, and the ``main()`` at the bottom of the file. You only need to update the ``HelloWorld`` class."
-msgstr "不要刪除文件頂部的導入或底部的``main()``。您只需要更新``HelloWorld``類別。"
+msgid "When you make these changes, make sure you keep the imports at the top of the file, and the `main()` at the bottom of the file. You only need to update the `HelloWorld` class."
+msgstr "不要刪除文件頂部的導入或底部的`main()`。您只需要更新`HelloWorld`類別。"
 
 #: ../../tutorial/tutorial-2.rst:129 8436dd50e42c4b5e9bbbb7a5a82add25
 #, fuzzy
-msgid "Modify your ``HelloWorld`` class inside ``src/helloworld/app.py`` so that it looks like this::"
-msgstr "修改``src/helloworld/app.py``中的``HelloWorld``類，使其看起來像這樣::"
+msgid "Modify your `HelloWorld` class inside `src/helloworld/app.py` so that it looks like this:"
+msgstr "修改`src/helloworld/app.py`中的`HelloWorld`類，使其看起來像這樣:"
 
 #: ../../tutorial/tutorial-2.rst:163 ebf3b206e6364dafa694bb0a5d745911
 #, fuzzy
@@ -164,21 +164,21 @@ msgstr "讓我們詳細看看發生了什麼變化。"
 
 #: ../../tutorial/tutorial-2.rst:165 0bcd8b52741747f9a21641e9f4d5ab74
 #, fuzzy
-msgid "We're still creating a main box; however, we are now applying a style::"
-msgstr "我們仍在創建一個主盒子；然而，我們現在正在應用一種風格::"
+msgid "We're still creating a main box; however, we are now applying a style:"
+msgstr "我們仍在創建一個主盒子；然而，我們現在正在應用一種風格:"
 
 #: ../../tutorial/tutorial-2.rst:169 69a49e9c77ee4dc29cbbab0929842838
 #, fuzzy
-msgid "Toga's built-in layout system is called \"Pack\". It behaves a lot like CSS. You define objects in a hierarchy - in HTML, the objects are ``<div>``, ``<span>``, and other DOM elements; in Toga, they're widgets and boxes. You can then assign styles to the individual elements. In this case, we're indicating that this is a ``COLUMN`` box - that is, it is a box that will consume all the available width, and will expand its height as content is added, but it will try to be as short as possible."
-msgstr "Toga 的內建佈局系統稱為``Pack``。它的行為很像 CSS。您可以在層次結構中定義物件 - 在 HTML 中，物件是``<div>``、`` <span>`` 和其他 DOM 元素；在 Toga 中，它們是小部件和盒子。然後，您可以為各個元素指定樣式。在這種情況下，我們表明這是一個``COLUMN``框 - 也就是說，它是一個將消耗所有可用寬度的框，並且會在添加內容時擴展其高度，但它會嘗試盡可能短。</span>"
+msgid "Toga's built-in layout system is called \"Pack\". It behaves a lot like CSS. You define objects in a hierarchy - in HTML, the objects are `<div>`, `<span>`, and other DOM elements; in Toga, they're widgets and boxes. You can then assign styles to the individual elements. In this case, we're indicating that this is a `COLUMN` box - that is, it is a box that will consume all the available width, and will expand its height as content is added, but it will try to be as short as possible."
+msgstr "Toga 的內建佈局系統稱為`Pack`。它的行為很像 CSS。您可以在層次結構中定義物件 - 在 HTML 中，物件是`<div>`、`][span]` 和其他 DOM 元素；在 Toga 中，它們是小部件和盒子。然後，您可以為各個元素指定樣式。在這種情況下，我們表明這是一個`COLUMN`框 - 也就是說，它是一個將消耗所有可用寬度的框，並且會在添加內容時擴展其高度，但它會嘗試盡可能短。</span>"
 
 #: ../../tutorial/tutorial-2.rst:178 e4c4909f5fc74238b79131c26ff237e1
-msgid "For more advanced uses, Toga also supports a separate style object, which is used like this::"
+msgid "For more advanced uses, Toga also supports a separate style object, which is used like this:"
 msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:184 e23e0c1845b74ae7a43b340944dd39d7
-msgid "Next, we define a couple of widgets::"
-msgstr "接下來，我們定義幾個小工具::"
+msgid "Next, we define a couple of widgets:"
+msgstr "接下來，我們定義幾個小工具:"
 
 #: ../../tutorial/tutorial-2.rst:192 c3ba79ba67d5456b874ec417701b6d56
 #, fuzzy
@@ -192,18 +192,18 @@ msgstr "TextInput 被指定為該類別的實例變數。這使我們可以輕�
 
 #: ../../tutorial/tutorial-2.rst:200 6e70c51a7f9f497eb6a5a81880b6fc3c
 #, fuzzy
-msgid "Next, we define a box to hold these two widgets::"
+msgid "Next, we define a box to hold these two widgets:"
 msgstr "接下來，我們定義一個盒子來容納這兩個小工具："
 
 #: ../../tutorial/tutorial-2.rst:206 1e0ddb95c1864299a5d8162142d91775
 #, fuzzy
-msgid "The ``name_box`` is a box just like the main box; however, this time, it's a ``ROW`` box. That means content will be added horizontally, and it will try to make its width as narrow as possible. The box also has some margin - 5px on all sides."
-msgstr "``name_box`` 是一個像主盒子一樣的盒子；然而，這一次，它是一個``ROW``盒子。這意味著內容將水平添加，並且它將嘗試使其寬度盡可能窄。盒子還有一些內邊距 - 所有邊都是 5px。"
+msgid "The `name_box` is a box just like the main box; however, this time, it's a `ROW` box. That means content will be added horizontally, and it will try to make its width as narrow as possible. The box also has some margin - 5px on all sides."
+msgstr "`name_box` 是一個像主盒子一樣的盒子；然而，這一次，它是一個`ROW`盒子。這意味著內容將水平添加，並且它將嘗試使其寬度盡可能窄。盒子還有一些內邊距 - 所有邊都是 5px。"
 
 #: ../../tutorial/tutorial-2.rst:211 15b359aa12554ee5b2829b96d0296dd9
 #, fuzzy
-msgid "Now we define a button::"
-msgstr "現在我們定義一個按鈕::"
+msgid "Now we define a button:"
+msgstr "現在我們定義一個按鈕:"
 
 #: ../../tutorial/tutorial-2.rst:219 fc2b856ffed4497384a8b62d1d1ef874
 #, fuzzy
@@ -212,18 +212,18 @@ msgstr "此按鈕的所有邊都有 5 像素的內邊距。我們也定義了一
 
 #: ../../tutorial/tutorial-2.rst:222 b4c687ebde8c49b7a8d7a2d4e5251585
 #, fuzzy
-msgid "Then, we add the name box and the button to the main box::"
+msgid "Then, we add the name box and the button to the main box:"
 msgstr "然後，我們將名稱框和按鈕新增到主框："
 
 #: ../../tutorial/tutorial-2.rst:227 f332b09cbad54558a04eefcac365757a
 #, fuzzy
-msgid "This completes our layout; the rest of the startup method is as it was previously - defining a ``MainWindow``, and assigning the main box as the window's content::"
-msgstr "這樣就完成了我們的佈局；啟動方法的其餘部分與之前一樣 - 定義一個 MainWindow，並將主框指定為視窗的內容::"
+msgid "This completes our layout; the rest of the startup method is as it was previously - defining a `MainWindow`, and assigning the main box as the window's content:"
+msgstr "這樣就完成了我們的佈局；啟動方法的其餘部分與之前一樣 - 定義一個 MainWindow，並將主框指定為視窗的內容:"
 
 #: ../../tutorial/tutorial-2.rst:235 8c1a144159f04ec19a19723dbb6bd3b1
 #, fuzzy
-msgid "The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous coroutine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed::"
-msgstr "我們需要做的最後一件事是定義按鈕的處理程序。處理程序可以是任何方法、生成器或非同步協程；它接受生成事件的小部件作為參數，並且每當按下按鈕時就會調用::"
+msgid "The last thing we need to do is define the handler for the button. A handler can be any method, generator, or asynchronous coroutine; it accepts the widget that generated the event as an argument, and will be invoked whenever the button is pressed:"
+msgstr "我們需要做的最後一件事是定義按鈕的處理程序。處理程序可以是任何方法、生成器或非同步協程；它接受生成事件的小部件作為參數，並且每當按下按鈕時就會調用:"
 
 #: ../../tutorial/tutorial-2.rst:243 a1fd82f2333b49d59252dd01f4a74dba
 #, fuzzy
@@ -252,8 +252,8 @@ msgstr "Windows"
 
 #: ../../tutorial/tutorial-2.rst:279 3413d1d3f70f4a768bdf3f7f8784a2ec
 #, fuzzy
-msgid "You'll notice that this time, it *doesn't* install dependencies. Briefcase can detect that the application has been run before, and to save time, will only run the application. If you add new dependencies to your app, you need to make sure that they're installed by passing in a ``-r`` option when you run ``briefcase dev``."
-msgstr "您會注意到，這一次，它``不``安裝依賴項。公文包可以檢測到該應用程式之前已經運行過，為了節省時間，只會運行該應用程式。如果您為應用程式新增的依賴項，則可以在執行``briefcase dev``時傳入``-r``選項來確保它們已安裝。"
+msgid "You'll notice that this time, it *doesn't* install dependencies. Briefcase can detect that the application has been run before, and to save time, will only run the application. If you add new dependencies to your app, you need to make sure that they're installed by passing in a `-r` option when you run `briefcase dev`."
+msgstr "您會注意到，這一次，它`不`安裝依賴項。公文包可以檢測到該應用程式之前已經運行過，為了節省時間，只會運行該應用程式。如果您為應用程式新增的依賴項，則可以在執行`briefcase dev`時傳入`-r`選項來確保它們已安裝。"
 
 #: ../../tutorial/tutorial-2.rst:285 231cf3fd1a9c4660b2044d792a50d8de
 msgid "This should open a GUI window:"
@@ -280,7 +280,7 @@ msgid "If you enter a name in the text box, and press the GUI button, you should
 msgstr "如果您在文字方塊中輸入名稱，然後按 GUI 按鈕，您應該會看到啟動應用程式的控制台中出現輸出。"
 
 #: ../../tutorial/tutorial-2.rst:310 aee9f2a8601c49b79f8c4b63b9eb57ee
-msgid "Before continuing, close the app. As with Tutorial 1, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran ``briefcase dev``."
+msgid "Before continuing, close the app. As with Tutorial 1, you can do this by pressing the close button on the application window, by selecting Quit/Exit from the application's menu, or by typing **Ctrl+C** in the terminal where you ran `briefcase dev`."
 msgstr ""
 
 #: ../../tutorial/tutorial-2.rst:316 d9d95d995cad48a782fc1461330d67cc
@@ -289,9 +289,9 @@ msgstr "下一步"
 
 #: ../../tutorial/tutorial-2.rst:318 ba0ec44e64454c669fcc71b8c65c9cf0
 #, fuzzy
-msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In :doc:`Tutorial 3 <tutorial-3>`, we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
+msgid "We've now got an application that does something a little more interesting. But it only runs on our own computer. Let's package this application for distribution. In [Tutorial 3][tutorial-3], we'll wrap our application up as a standalone installer that we could send to a friend, a customer, or upload to an App Store."
 msgstr "我們現在有了一個可以做一些更有趣的事情的應用程式。但它只能在我們自己的計算機上運行。讓我們打包這個應用程式以進行分發。在 :doc:`教程 3 中<tutorial-3>`，我們將把我們的應用程式打包為一個獨立的安裝程序，我們可以將其發送給朋友、客戶，或上傳到應用程式商店。"
 
-#~ msgid "Lets do something more interesting with our ``HelloWorld`` app."
+#~ msgid "Lets do something more interesting with our `HelloWorld`` app."
 #~ msgstr ""
 

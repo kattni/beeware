@@ -32,7 +32,6 @@ some of the system requirements haven't been installed. Make sure you
 have `installed all the platform pre-requisites
 <install-dependencies>`{.interpreted-text role="ref"}.
 
-
 ///
 
 ///
@@ -51,11 +50,9 @@ Briefcase needs to ensure that it has an up-to-date version of `pip` and
 want to know more, [Brett Cannon has a detailed blog post about the
 issue](https://snarky.ca/why-you-should-use-python-m-pip/).
 
-
 ///
 
 ///
-
 
 ## Bootstrap a new project
 
@@ -86,7 +83,6 @@ following from your command prompt:
 ```
 
 ///
-
 
 Briefcase will ask us for some details of our new application. For the
 purposes of this tutorial, use the following:
@@ -245,11 +241,9 @@ Confirm that you are running a
 If your version of python is *not* a supported version, you will have to
 restart the tutorial.
 
-
 ///
 
 ///
-
 
 Close the application - either by pressing the close button on the
 application window, by selecting Quit/Exit from the application's menu,
@@ -261,5 +255,5 @@ native application in Python!
 
 We now have a working application, running in developer mode. Now we can
 add some logic of our own to make our application do something a little
-more interesting. In [Tutorial 2][tutorial-2], we'll put a more useful user interface onto our
-application.
+more interesting. In [Tutorial 2][tutorial-2], we'll put a more useful
+user interface onto our application.

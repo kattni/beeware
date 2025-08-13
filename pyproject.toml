@@ -53,10 +53,11 @@ dev = [
 ]
 # Docs are always built on a specific Python version; see RTD and tox config files.
 docs = [
+    # "beeware-docs-tools @ /Users/kattni/BeeWare/beeware-docs-tools",
     "black",
     "codespell",
     "markdown-checker",
-    "mkdocs",  # Is this needed?
+    "mkdocs",
     "mkdocs-autorefs",
     "mkdocs-include-markdown-plugin",
     "mkdocs-literate-nav",

@@ -1,4 +1,4 @@
-# Using the camera
+# Using the camera { id="using-camera" }
 
 Almost every modern computing device has a camera of some sort. In this
 tutorial, we'll write new application that is able to request access to
@@ -20,7 +20,6 @@ raise an error when you try to take a photograph.
 
 The code will work if it is run on an actual iOS device, but will fail
 to take a photograph if deployed to the iOS simulator.
-
 
 ///
 
@@ -54,7 +53,7 @@ The wizard has generated a new empty Toga project. We can now add the
 code to take and display a photograph. Edit the `app.py` for the new
 application so that it has the following content:
 
-```{.python emphasize-lines="9-18, 23-44"}
+```python {hl_lines="9-18 23-44"}
 import toga
 from toga.style.pack import COLUMN, ROW
 

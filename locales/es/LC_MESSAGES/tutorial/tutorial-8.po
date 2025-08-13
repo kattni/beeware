@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:24 acb20408415546809557dfd20d2d8170
 #, python-brace-format
-msgid "This is a toy app, so we don't have a *real* API to work with, so we'll use the `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ as a source of data. The {JSON} Placeholder API has a number of \"fake\" API endpoints you can use as test data. One of those APIs is the ``/posts/`` endpoint, which returns fake blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in your browser, you'll get a JSON payload describing a single post - some `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post with ID 42."
+msgid "This is a toy app, so we don't have a *real* API to work with, so we'll use the [{JSON} Placeholder API]{1} as a source of data. The {JSON} Placeholder API has a number of \"fake\" API endpoints you can use as test data. One of those APIs is the `/posts/` endpoint, which returns fake blog posts. If you open `https://jsonplaceholder.typicode.com/posts/42` in your browser, you'll get a JSON payload describing a single post - some [Lorum ipsum]{2} content for a blog post with ID 42."
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:33 07fb48b1c1634b7fb3632c18296abdd0
@@ -46,24 +46,24 @@ msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:40 dbfddab06194490daaaa0ad1436de616
 #, python-brace-format
-msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called `httpx <https://www.python-httpx.org>`__. Briefcase uses ``httpx`` internally, so it's already in your local environment - you don't need to install it separately to use it here."
+msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called [httpx]{1}. Briefcase uses `httpx` internally, so it's already in your local environment - you don't need to install it separately to use it here."
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:47 25c51cbce676490cb25c4bda2089e742
-msgid "Let's add a ``httpx`` API call to our app. Modify the ``requires`` setting in our ``pyproject.toml`` to include the new requirement::"
+msgid "Let's add a `httpx` API call to our app. Modify the `requires` setting in our `pyproject.toml` to include the new requirement:"
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:55 306ea0473ef7497383041187fff0746f
-msgid "Add an import to the top of the ``app.py`` to import ``httpx``::"
+msgid "Add an import to the top of the `app.py` to import `httpx`:"
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:59 bd9eb23b362140ad980523b5320086b4
 #, fuzzy
-msgid "Then modify the ``say_hello()`` callback so it looks like this::"
-msgstr "Para hacer que nuestro tutorial sea asíncrono, modifica el manejador de eventos ``say_hello()`` para que se vea así::"
+msgid "Then modify the `say_hello()` callback so it looks like this:"
+msgstr "Para hacer que nuestro tutorial sea asíncrono, modifica el manejador de eventos `say_hello()` para que se vea así:"
 
 #: ../../tutorial/tutorial-8.rst:75 675e0aac0a6745559e106be7c4622700
-msgid "This will change the ``say_hello()`` callback so that when it is invoked, it will:"
+msgid "This will change the `say_hello()` callback so that when it is invoked, it will:"
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:78 2107978ba74849eb9389462a501f068c
@@ -83,7 +83,7 @@ msgid "include the body of that post as the text of the \"message\" dialog, in p
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:87 9255123df77543aa90f0abd0425b7f49
-msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked. As we've added a new requirement, we need to tell developer mode to reinstall requirements, by using the ``-r`` argument:"
+msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked. As we've added a new requirement, we need to tell developer mode to reinstall requirements, by using the `-r` argument:"
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:93 ../../tutorial/tutorial-8.rst:310
@@ -159,8 +159,8 @@ msgstr "Para entender por qué ocurre esto, tenemos que profundizar en los detal
 
 #: ../../tutorial/tutorial-8.rst:175 649d74f3ab094b148c545acc45ce2ad0
 #, fuzzy
-msgid "A GUI app is, fundamentally, a single loop that looks something like::"
-msgstr "Una aplicación GUI es, fundamentalmente, un único bucle parecido a::"
+msgid "A GUI app is, fundamentally, a single loop that looks something like:"
+msgstr "Una aplicación GUI es, fundamentalmente, un único bucle parecido a:"
 
 #: ../../tutorial/tutorial-8.rst:181 a26526f3f9084ed1a78ccf47800fd9a6
 #, fuzzy
@@ -169,13 +169,13 @@ msgstr "Este bucle se llama *Bucle de Evento*. (Estos no son nombres de métodos
 
 #: ../../tutorial/tutorial-8.rst:184 5eb87c1e833e47d0922daf24845fbcc0
 #, fuzzy
-msgid "When you click on a button, or drag a scroll bar, or type a key, you are generating an \"event\". That \"event\" is put onto a queue, and the app will process the queue of events when it next has the opportunity to do so. The user code that is triggered in response to the event is called an *event handler*. These event handlers are invoked as part of the ``process_events()`` call."
-msgstr "Cuando haces clic en un botón, arrastras una barra de desplazamiento o tecleas una tecla, estás generando un \"evento\". Ese \"evento\" se coloca en una cola, y la aplicación procesará la cola de eventos la próxima vez que tenga la oportunidad de hacerlo. El código de usuario que se activa en respuesta al evento se denomina *manejador de eventos*. Estos manejadores de eventos son invocados como parte de la llamada ``process_events()``."
+msgid "When you click on a button, or drag a scroll bar, or type a key, you are generating an \"event\". That \"event\" is put onto a queue, and the app will process the queue of events when it next has the opportunity to do so. The user code that is triggered in response to the event is called an *event handler*. These event handlers are invoked as part of the `process_events()` call."
+msgstr "Cuando haces clic en un botón, arrastras una barra de desplazamiento o tecleas una tecla, estás generando un \"evento\". Ese \"evento\" se coloca en una cola, y la aplicación procesará la cola de eventos la próxima vez que tenga la oportunidad de hacerlo. El código de usuario que se activa en respuesta al evento se denomina *manejador de eventos*. Estos manejadores de eventos son invocados como parte de la llamada `process_events()`."
 
 #: ../../tutorial/tutorial-8.rst:190 0598acbc43aa430baa2be0bca1f07478
 #, fuzzy
-msgid "Once an app has processed all the available events, it will ``redraw()`` the GUI. This takes into account any changes that the events have caused to the display of the app, as well as anything else that is going on in the operating system - for example, the windows of another app may obscure or reveal part of our app's window, and our app's redraw will need to reflect the portion of the window that is currently visible."
-msgstr "Una vez que una aplicación ha procesado todos los eventos disponibles, ``redibujará()`` la GUI. Esto tiene en cuenta cualquier cambio que los eventos hayan causado en la pantalla de la aplicación, así como cualquier otra cosa que esté ocurriendo en el sistema operativo - por ejemplo, las ventanas de otra aplicación pueden oscurecer o revelar parte de la ventana de nuestra aplicación, y el redibujado de nuestra aplicación tendrá que reflejar la parte de la ventana que es visible en ese momento."
+msgid "Once an app has processed all the available events, it will `redraw()` the GUI. This takes into account any changes that the events have caused to the display of the app, as well as anything else that is going on in the operating system - for example, the windows of another app may obscure or reveal part of our app's window, and our app's redraw will need to reflect the portion of the window that is currently visible."
+msgstr "Una vez que una aplicación ha procesado todos los eventos disponibles, `redibujará()` la GUI. Esto tiene en cuenta cualquier cambio que los eventos hayan causado en la pantalla de la aplicación, así como cualquier otra cosa que esté ocurriendo en el sistema operativo - por ejemplo, las ventanas de otra aplicación pueden oscurecer o revelar parte de la ventana de nuestra aplicación, y el redibujado de nuestra aplicación tendrá que reflejar la parte de la ventana que es visible en ese momento."
 
 #: ../../tutorial/tutorial-8.rst:197 d5e43398c67e47ca95973dcf31635b89
 #, fuzzy
@@ -219,8 +219,8 @@ msgstr "Las funciones asíncronas (conocidas como *corrutinas*) deben declararse
 
 #: ../../tutorial/tutorial-8.rst:233 9192c46ab94f4b09835fe97882b28b39
 #, fuzzy
-msgid "In Python, asynchronous programming is implemented using the ``async`` and ``await`` keywords, and the `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module in the standard library. The ``async`` keyword allows us to declare that a function is an asynchronous coroutine. The ``await`` keyword provides a way to declare when an opportunity exists to change context to another coroutine. The `asyncio <https://docs.python.org/3/library/asyncio.html>`__ module provides some other useful tools and primitives for asynchronous coding."
-msgstr "En Python, la programación asíncrona se implementa utilizando las palabras clave ``async`` y ``await``, y el módulo `asyncio <https://docs.python.org/3/library/asyncio.html>`__ de la biblioteca estándar. La palabra clave ``async`` nos permite declarar que una función es una co-rutina asíncrona. La palabra clave ``await`` proporciona una forma de declarar cuando existe la oportunidad de cambiar el contexto a otra co-rutina. El módulo `asyncio <https://docs.python.org/3/library/asyncio.html>`__ proporciona algunas otras herramientas útiles y primitivas para la codificación asíncrona."
+msgid "In Python, asynchronous programming is implemented using the `async` and `await` keywords, and the [asyncio]{1} module in the standard library. The `async` keyword allows us to declare that a function is an asynchronous coroutine. The `await` keyword provides a way to declare when an opportunity exists to change context to another coroutine. The [asyncio]{2} module provides some other useful tools and primitives for asynchronous coding."
+msgstr "En Python, la programación asíncrona se implementa utilizando las palabras clave `async` y `await`, y el módulo [asyncio]{1} de la biblioteca estándar. La palabra clave `async` nos permite declarar que una función es una co-rutina asíncrona. La palabra clave `await` proporciona una forma de declarar cuando existe la oportunidad de cambiar el contexto a otra co-rutina. El módulo [asyncio]{2} proporciona algunas otras herramientas útiles y primitivas para la codificación asíncrona."
 
 #: ../../tutorial/tutorial-8.rst:243 09cc348938124a0495127c9540e0d92d
 #, fuzzy
@@ -229,8 +229,8 @@ msgstr "Hacer que el tutorial sea asíncrono"
 
 #: ../../tutorial/tutorial-8.rst:245 820912ce71fc4acab1ee42d147106be2
 #, fuzzy
-msgid "To make our tutorial asynchronous, modify the ``say_hello()`` event handler so it looks like this::"
-msgstr "Para hacer que nuestro tutorial sea asíncrono, modifica el manejador de eventos ``say_hello()`` para que se vea así::"
+msgid "To make our tutorial asynchronous, modify the `say_hello()` event handler so it looks like this:"
+msgstr "Para hacer que nuestro tutorial sea asíncrono, modifica el manejador de eventos `say_hello()` para que se vea así:"
 
 #: ../../tutorial/tutorial-8.rst:261 561314bc6ca04a7ba8f86033a11d8245
 #, fuzzy
@@ -239,20 +239,20 @@ msgstr "Sólo hay 4 cambios en este código con respecto a la versión anterior:
 
 #: ../../tutorial/tutorial-8.rst:263 2048ec089260457290faa7c806994e9d
 #, fuzzy
-msgid "The client that is created is an asynchronous ``AsyncClient()``, rather than a synchronous ``Client()``. This tells ``httpx`` that it should operate in asynchronous mode, rather than synchronous mode."
-msgstr "El cliente que se crea es un ``AsyncClient()`` asíncrono, en lugar de un ``Client()`` síncrono. Esto indica a ``httpx`` que debe operar en modo asíncrono, en lugar de síncrono."
+msgid "The client that is created is an asynchronous `AsyncClient()`, rather than a synchronous `Client()`. This tells `httpx` that it should operate in asynchronous mode, rather than synchronous mode."
+msgstr "El cliente que se crea es un `AsyncClient()` asíncrono, en lugar de un `Client()` síncrono. Esto indica a `httpx` que debe operar en modo asíncrono, en lugar de síncrono."
 
 #: ../../tutorial/tutorial-8.rst:267 da621a721afb4a989c530282c33fe74d
 #, fuzzy
-msgid "The context manager used to create the client is marked as ``async``. This tells Python that there is an opportunity to release control as the context manager is entered and exited."
-msgstr "El gestor de contexto utilizado para crear el cliente está marcado como ``async``. Esto le indica a Python que existe la oportunidad de liberar el control a medida que se entra y se sale del gestor de contexto."
+msgid "The context manager used to create the client is marked as `async`. This tells Python that there is an opportunity to release control as the context manager is entered and exited."
+msgstr "El gestor de contexto utilizado para crear el cliente está marcado como `async`. Esto le indica a Python que existe la oportunidad de liberar el control a medida que se entra y se sale del gestor de contexto."
 
 #: ../../tutorial/tutorial-8.rst:271 f0ba3407525041a58f14c1fc6a97d338
-msgid "The ``get`` call is made with an ``await`` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop. We've seen this keyword before - we also use ``await`` when displaying the dialog box. The reason for that usage is the same as it is for the HTTP request - we need to tell the app that while the dialog is displayed, and we're waiting for the user to push a button, it's OK to release control back to the event loop."
+msgid "The `get` call is made with an `await` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop. We've seen this keyword before - we also use `await` when displaying the dialog box. The reason for that usage is the same as it is for the HTTP request - we need to tell the app that while the dialog is displayed, and we're waiting for the user to push a button, it's OK to release control back to the event loop."
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:279 d930d079b1ff4bdb82f3adc20ccab7c7
-msgid "It's also important to note that the handler itself is defined as ``async def``, rather than just ``def``. This tells Python that the method is an asynchronous coroutine. We made this change back in Tutorial 3 when we added the dialog box. You can only use ``await`` statements inside a method that is declared as ``async def``."
+msgid "It's also important to note that the handler itself is defined as `async def`, rather than just `def`. This tells Python that the method is an asynchronous coroutine. We made this change back in Tutorial 3 when we added the dialog box. You can only use `await` statements inside a method that is declared as `async def`."
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:285 24853d0b034649bdbaa43fd92f431b32
@@ -263,7 +263,7 @@ msgstr "Toga te permite utilizar métodos regulares o co-rutinas asíncronas com
 #: ../../tutorial/tutorial-8.rst:289 16e2a6d52bb8463c900fd48bf7f19c28
 #, fuzzy
 msgid "If you save these changes and re-run the app in development mode, there won't be any obvious changes to the app. However, when you click on the button to trigger the dialog, you may notice a number of subtle improvements:"
-msgstr "Si guardas estos cambios y vuelves a ejecutar la aplicación (ya sea con ``briefcase dev`` en modo desarrollo, o actualizando y volviendo a ejecutar la aplicación empaquetada), no habrá ningún cambio obvio en la aplicación. Sin embargo, al hacer clic en el botón para activar el cuadro de diálogo, puede notar una serie de mejoras sutiles:"
+msgstr "Si guardas estos cambios y vuelves a ejecutar la aplicación (ya sea con `briefcase dev` en modo desarrollo, o actualizando y volviendo a ejecutar la aplicación empaquetada), no habrá ningún cambio obvio en la aplicación. Sin embargo, al hacer clic en el botón para activar el cuadro de diálogo, puede notar una serie de mejoras sutiles:"
 
 #: ../../tutorial/tutorial-8.rst:293 ad1412e1f2cd4451a03a25d6c4a71118
 #, fuzzy
@@ -286,7 +286,7 @@ msgid "If you try to open an app menu, the menu will appear immediately."
 msgstr "Si intentas abrir el menú de una aplicación, el menú aparecerá inmediatamente."
 
 #: ../../tutorial/tutorial-8.rst:303 abe7fda6d34e4d3eb60766ba9f909f45
-msgid "We can now run the full app. However, as we've added an extra requirement (``httpx``) we also need to update our app's requirements; we can do this by passing ``-r`` to ``briefcase run``. This will update our app's requirements, then re-build the app, then launch the app:"
+msgid "We can now run the full app. However, as we've added an extra requirement (`httpx`) we also need to update our app's requirements; we can do this by passing `-r` to `briefcase run`. This will update our app's requirements, then re-build the app, then launch the app:"
 msgstr ""
 
 #: ../../tutorial/tutorial-8.rst:340 489bc950ebb14e93bec85657f85e4f0a
@@ -338,29 +338,29 @@ msgid "So - where to from here?"
 msgstr "Entonces - ¿ahora qué?"
 
 #: ../../tutorial/tutorial-8.rst:360 5793fdd42f594711beafffb07db23baa
-msgid "If you'd like to go further, there are some additional :doc:`topic tutorials </tutorial/topics/index>` that go into detail on specific aspects of application development."
-msgstr "Si quieres ir más allá, hay algunos tutoriales :doc:`Tutoriales adicionales </tutorial/topics/index>` que entran en detalle sobre aspectos específicos del desarrollo de aplicaciones."
+msgid "If you'd like to go further, there are some additional [topic tutorials][/tutorial/topics/index] that go into detail on specific aspects of application development."
+msgstr "Si quieres ir más allá, hay algunos tutoriales [Tutoriales adicionales][/tutorial/topics/index] que entran en detalle sobre aspectos específicos del desarrollo de aplicaciones."
 
 #: ../../tutorial/tutorial-8.rst:363 0700509e2747465dadaba91feb39538a
 #, fuzzy
-msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into `Toga's documentation <https://toga.beeware.org>`__. Toga also has it's own tutorial `demonstrating how to use various features of the widget toolkit <https://toga.beeware.org/en/latest/tutorial/index.html>`__."
-msgstr "Si quieres saber más sobre cómo construir interfaces de usuario complejas con Toga, puedes sumergirte en `la documentación de Toga <https://toga.readthedocs.io>`__. Toga también tiene su propio tutorial `demostrando cómo usar varias características del widget toolkit <https://toga.readthedocs.io/en/latest/tutorial/index.html>`__."
+msgid "If you'd like to know more about how to build complex user interfaces with Toga, you can dive into [Toga's documentation]{1}. Toga also has it's own tutorial [demonstrating how to use various features of the widget toolkit]{2}."
+msgstr "Si quieres saber más sobre cómo construir interfaces de usuario complejas con Toga, puedes sumergirte en [la documentación de Toga]{1}. Toga también tiene su propio tutorial [demostrando cómo usar varias características del widget toolkit]{2}."
 
 #: ../../tutorial/tutorial-8.rst:368 ac90a0317f4745ca8d501a5e80ebf04d
 #, fuzzy
-msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into `Briefcase's documentation <https://briefcase.beeware.org>`__."
-msgstr "Si desea saber más sobre las capacidades de Briefcase, puede sumergirse en `la documentación de Briefcase <https://briefcase.readthedocs.io>`__."
+msgid "If you'd like to know more about the capabilities of Briefcase, you can dive into [Briefcase's documentation]{1}."
+msgstr "Si desea saber más sobre las capacidades de Briefcase, puede sumergirse en [la documentación de Briefcase]{1}."
 
-#~ msgid "We've now got an application that is slick and responsive, even when it's waiting on a slow API. But how can we make sure that the app keeps working as we continue to develop it further? How do we test our app? Turn to :doc:`Tutorial 9 <tutorial-9>` to find out..."
-#~ msgstr "Ahora tenemos una aplicación que es ágil y sensible, incluso cuando está esperando en una API lenta. Pero, ¿cómo podemos asegurarnos de que la aplicación sigue funcionando a medida que continuamos desarrollándola? ¿Cómo probamos nuestra aplicación? Visita :doc:`Tutorial 9 <tutorial-9>` para descubrirlo..."
+#~ msgid "We've now got an application that is slick and responsive, even when it's waiting on a slow API. But how can we make sure that the app keeps working as we continue to develop it further? How do we test our app? Turn to [Tutorial 9][tutorial-9] to find out..."
+#~ msgstr "Ahora tenemos una aplicación que es ágil y sensible, incluso cuando está esperando en una API lenta. Pero, ¿cómo podemos asegurarnos de que la aplicación sigue funcionando a medida que continuamos desarrollándola? ¿Cómo probamos nuestra aplicación? Visita [Tutorial 9][tutorial-9] para descubrirlo..."
 
-#~ msgid "The method is defined as ``async def``, rather than just ``def``. This tells Python that the method is an asynchronous coroutine."
-#~ msgstr "El método se define como ``async def``, en lugar de sólo ``def``. Esto indica a Python que el método es una co-rutina asíncrona."
+#~ msgid "The method is defined as `async def`, rather than just `def`. This tells Python that the method is an asynchronous coroutine."
+#~ msgstr "El método se define como `async def`, en lugar de sólo `def`. Esto indica a Python que el método es una co-rutina asíncrona."
 
-#~ msgid "The ``get`` call is made with an ``await`` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop."
-#~ msgstr "La llamada ``get`` se hace con una palabra clave ``await``. Esto indica a la aplicación que, mientras esperamos la respuesta de la red, puede ceder el control al bucle de eventos."
+#~ msgid "The `get` call is made with an `await` keyword. This instructs the app that while we are waiting for the response from the network, the app can release control to the event loop."
+#~ msgstr "La llamada `get` se hace con una palabra clave `await`. Esto indica a la aplicación que, mientras esperamos la respuesta de la red, puede ceder el control al bucle de eventos."
 
-#~ msgid "Let's add a ``httpx`` API call to our app. Add an import to the top of the ``app.py`` to import ``httpx``::"
+#~ msgid "Let's add a `httpx` API call to our app. Add an import to the top of the `app.py` to import `httpx`:"
 #~ msgstr ""
 
 #~ msgid "Lets run our updated app in Briefcase developer mode to check that our change has worked."

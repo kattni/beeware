@@ -64,8 +64,8 @@ msgstr "Windows"
 
 #: ../../tutorial/tutorial-6.rst:148 df579c00750d4c189854c8435ee2a6d9
 #, fuzzy
-msgid "This will open a web browser, pointing at `http://127.0.0.1:8080 <http://127.0.0.1:8080>`__:"
-msgstr "Cela ouvrira un navigateur web, pointant sur `http://127.0.0.1:8080 <http://127.0.0.1:8080>`__ :"
+msgid "This will open a web browser, pointing at [http://127.0.0.1:8080](http://127.0.0.1:8080):"
+msgstr "Cela ouvrira un navigateur web, pointant sur [http://127.0.0.1:8080](http://127.0.0.1:8080) :"
 
 #: ../../tutorial/tutorial-6.rst:-1 44ec2c4a17eb4a0fb34dd63c7b25c7c9
 #, fuzzy
@@ -84,13 +84,13 @@ msgstr "Comment ça marche ?"
 
 #: ../../tutorial/tutorial-6.rst:159 23efa1eac513406b9b5cce6dc5b18625
 #, fuzzy
-msgid "This web app is a static website - a single HTML source page, with some CSS and other resources. Briefcase has started a local web server to serve this page so your browser can view the page. If you wanted to put this web page into production, you could copy the contents of the ``www`` folder onto any web server that can serve static content."
-msgstr "Cette application web est un site web statique - une seule page source HTML, avec quelques feuilles de style CSS et d'autres ressources. Briefcase a démarré un serveur web local pour servir cette page afin que votre navigateur puisse la voir. Si vous voulez mettre cette page web en production, vous pouvez copier le contenu du dossier ``www`` sur n'importe quel serveur web qui peut servir du contenu statique."
+msgid "This web app is a static website - a single HTML source page, with some CSS and other resources. Briefcase has started a local web server to serve this page so your browser can view the page. If you wanted to put this web page into production, you could copy the contents of the `www` folder onto any web server that can serve static content."
+msgstr "Cette application web est un site web statique - une seule page source HTML, avec quelques feuilles de style CSS et d'autres ressources. Briefcase a démarré un serveur web local pour servir cette page afin que votre navigateur puisse la voir. Si vous voulez mettre cette page web en production, vous pouvez copier le contenu du dossier `www` sur n'importe quel serveur web qui peut servir du contenu statique."
 
 #: ../../tutorial/tutorial-6.rst:165 402bb2a720f24a18823421539fae8de7
 #, fuzzy
-msgid "But when you press the button, you're running Python code... how does that work? Toga uses `PyScript <https://pyscript.net>`__ to provide a Python interpreter in the browser. Briefcase packages your app's code as wheels that PyScript can load in the browser. When the page is loaded, the application code runs in the browser, building the UI using the browser DOM. When you click a button, that button runs the event handling code in the browser."
-msgstr "Mais lorsque vous appuyez sur le bouton, vous exécutez du code Python... Comment cela fonctionne-t-il ? Toga utilise `PyScript <https://pyscript.net>`__ pour fournir un interprète Python dans le navigateur. Briefcase présente le code de votre application sous forme de roues que PyScript peut charger dans le navigateur. Lorsque la page est chargée, le code de l'application s'exécute dans le navigateur, construisant l'interface utilisateur en utilisant le DOM du navigateur. Lorsque vous cliquez sur un bouton, ce bouton exécute le code de gestion des événements dans le navigateur."
+msgid "But when you press the button, you're running Python code... how does that work? Toga uses [PyScript]{1} to provide a Python interpreter in the browser. Briefcase packages your app's code as wheels that PyScript can load in the browser. When the page is loaded, the application code runs in the browser, building the UI using the browser DOM. When you click a button, that button runs the event handling code in the browser."
+msgstr "Mais lorsque vous appuyez sur le bouton, vous exécutez du code Python... Comment cela fonctionne-t-il ? Toga utilise [PyScript]{1} pour fournir un interprète Python dans le navigateur. Briefcase présente le code de votre application sous forme de roues que PyScript peut charger dans le navigateur. Lorsque la page est chargée, le code de l'application s'exécute dans le navigateur, construisant l'interface utilisateur en utilisant le DOM du navigateur. Lorsque vous cliquez sur un bouton, ce bouton exécute le code de gestion des événements dans le navigateur."
 
 #: ../../tutorial/tutorial-6.rst:173 c0712cbbdbb5474fae8a3b7ea9e1f165
 msgid "Next steps"
@@ -98,5 +98,5 @@ msgstr "Étapes suivantes"
 
 #: ../../tutorial/tutorial-6.rst:175 b6d10fd98437433fa32e02fb94803bde
 #, fuzzy
-msgid "Although we've now deployed this app on desktop, mobile and the web, the app is fairly simple, and doesn't involve any third-party libraries. Can we include libraries from the Python Package Index (PyPI) in our app? Turn to :doc:`Tutorial 7 <tutorial-7>` to find out..."
-msgstr "Bien que nous ayons maintenant déployé cette application sur les ordinateurs de bureau, les téléphones portables et le web, l'application est assez simple et n'implique pas de bibliothèques tierces. Pouvons-nous inclure des bibliothèques du Python Package Index (PyPI) dans notre application ? Consultez :doc:`Tutoriel 7 <tutorial-7>` pour le savoir..."
+msgid "Although we've now deployed this app on desktop, mobile and the web, the app is fairly simple, and doesn't involve any third-party libraries. Can we include libraries from the Python Package Index (PyPI) in our app? Turn to [Tutorial 7][tutorial-7] to find out..."
+msgstr "Bien que nous ayons maintenant déployé cette application sur les ordinateurs de bureau, les téléphones portables et le web, l'application est assez simple et n'implique pas de bibliothèques tierces. Pouvons-nous inclure des bibliothèques du Python Package Index (PyPI) dans notre application ? Consultez [Tutoriel 7][tutorial-7] pour le savoir..."

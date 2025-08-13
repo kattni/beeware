@@ -32,8 +32,8 @@ msgid "Create an Android app and compile it"
 msgstr "创建并编译 Android 应用程序"
 
 #: ../../tutorial/tutorial-5/android.rst:16 3b361eb258b54e2487da137a5dbcabc6
-msgid "First, run the ``create`` command. This downloads an Android app template and adds your Python code to it."
-msgstr "首先，运行 ``create`` 命令。这会下载一个 Android 应用程序模板，并在其中添加您的 Python 代码。"
+msgid "First, run the `create` command. This downloads an Android app template and adds your Python code to it."
+msgstr "首先，运行 `create` 命令。这会下载一个 Android 应用程序模板，并在其中添加您的 Python 代码。"
 
 #: ../../tutorial/tutorial-5/android.rst:21
 #: ../../tutorial/tutorial-5/android.rst:120
@@ -63,56 +63,56 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../tutorial/tutorial-5/android.rst:102 72d65e3da98248cd8b14009fd6db873f
-msgid "When you run ``briefcase create android`` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license. There's a number of licenses you'll need to agree too - keep entering ``y`` at the prompt to review and accept each of the necessary the license agreements."
+msgid "When you run `briefcase create android` for the first time, Briefcase downloads a Java JDK, and the Android SDK. File sizes and download times can be considerable; this may take a while (10 minutes or longer, depending on the speed of your Internet connection). When the download has completed, you will be prompted to accept Google's Android SDK license. There's a number of licenses you'll need to agree too - keep entering `y` at the prompt to review and accept each of the necessary the license agreements."
 msgstr ""
-"首次运行 ``briefcase create android`` 时，Briefcase 会下载 Java JDK 和 "
+"首次运行 `briefcase create android` 时，Briefcase 会下载 Java JDK 和 "
 "Android SDK。文件大小较大，且下载时间可能会较长（10 "
 "分钟或更长，取决于您的互联网连接速度）。下载完成后，您将会被提示接受 Google "
-"的 Android SDK 许可证。还有一些需要同意的许可证 -- 在提示符不停的按 ``y`` "
+"的 Android SDK 许可证。还有一些需要同意的许可证 -- 在提示符不停的按 `y` "
 "以查看与接受所有所需的许可证协议。"
 
 #: ../../tutorial/tutorial-5/android.rst:110 08d75338c70c4293b3fc7e4756341837
-msgid "Once this completes, we'll have a ``build\\helloworld\\android\\gradle`` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
-msgstr "完成后，我们的项目中就会有一个\\ ``build/helloworld/android/gradle``\\ 目录，其中包含一个带有 Gradle 构建配置的 Android 项目。这个项目将包含您的应用代码，以及一个包含 Python 解释器的支持包。"
+msgid "Once this completes, we'll have a `build\\helloworld\\android\\gradle` directory in our project, which will contain an Android project with a Gradle build configuration. This project will contain your application code, and a support package containing the Python interpreter."
+msgstr "完成后，我们的项目中就会有一个\\ `build/helloworld/android/gradle`\\ 目录，其中包含一个带有 Gradle 构建配置的 Android 项目。这个项目将包含您的应用代码，以及一个包含 Python 解释器的支持包。"
 
 #: ../../tutorial/tutorial-5/android.rst:115 5dd50cc6120848178154812570387bd6
-msgid "We can then use Briefcase's ``build`` command to compile this into an Android APK app file."
-msgstr "然后我们可以使用 Briefcase 的 ``build`` 命令将其编译为 Android APK 应用程序文件。"
+msgid "We can then use Briefcase's `build` command to compile this into an Android APK app file."
+msgstr "然后我们可以使用 Briefcase 的 `build` 命令将其编译为 Android APK 应用程序文件。"
 
 #: ../../tutorial/tutorial-5/android.rst:174 23e97dda834d4e96a5262d182cdc8ce1
 msgid "Gradle may look stuck"
 msgstr "Gradle 看起来卡住了"
 
 #: ../../tutorial/tutorial-5/android.rst:176 9448604dd38b47418cda6119877c8af4
-msgid "During the ``briefcase build android`` step, Gradle (the Android platform build tool) will print ``CONFIGURING: 100%``, and appear to be doing nothing. Don't worry, it's not stuck - it's downloading more Android SDK components. Depending on your Internet connection speed, this may take another 10 minutes (or longer). This lag should only happen the very first time you run ``build``; the tools are cached, and on your next build, the cached versions will be used."
-msgstr "在 ``briefcase build android`` 步骤中，Gradle（Android 平台构建工具）会打印 \\ ``CONFIGURING: 100%``，似乎什么也没做。别担心，这不是卡住了，而是在下载更多的 Android SDK 组件。根据您的网络连接速度，这可能还需要 10 分钟（或更长时间）。只有在第一次运行 ``build`` 时才会出现这种滞后现象；这些工具将会被缓存，下次构建时将使用缓存版本。"
+msgid "During the `briefcase build android` step, Gradle (the Android platform build tool) will print `CONFIGURING: 100%`, and appear to be doing nothing. Don't worry, it's not stuck - it's downloading more Android SDK components. Depending on your Internet connection speed, this may take another 10 minutes (or longer). This lag should only happen the very first time you run `build`; the tools are cached, and on your next build, the cached versions will be used."
+msgstr "在 `briefcase build android` 步骤中，Gradle（Android 平台构建工具）会打印 \\ `CONFIGURING: 100%`，似乎什么也没做。别担心，这不是卡住了，而是在下载更多的 Android SDK 组件。根据您的网络连接速度，这可能还需要 10 分钟（或更长时间）。只有在第一次运行 `build` 时才会出现这种滞后现象；这些工具将会被缓存，下次构建时将使用缓存版本。"
 
 #: ../../tutorial/tutorial-5/android.rst:185 29f00fe3304f4645b241034444799d92
 msgid "Run the app on a virtual device"
 msgstr "在虚拟设备上运行应用程序"
 
 #: ../../tutorial/tutorial-5/android.rst:187 2a682a7b3d354745b8f65a9b1dc614e8
-msgid "We're now ready to run our application. You can use Briefcase's ``run`` command to run the app on an Android device. Let's start by running on an Android emulator."
+msgid "We're now ready to run our application. You can use Briefcase's `run` command to run the app on an Android device. Let's start by running on an Android emulator."
 msgstr ""
-"现在我们可以运行应用程序了。您可以使用 Briefcase 的 ``run`` 命令在 Android "
+"现在我们可以运行应用程序了。您可以使用 Briefcase 的 `run` 命令在 Android "
 "设备上运行应用程序。让我们从在 Android 模拟器上运行开始。"
 
 #: ../../tutorial/tutorial-5/android.rst:191 4e3a8649a4014bf7a54a9616d94d242d
-msgid "To run your application, run ``briefcase run android``. When you do this, you'll be prompted with a list of devices that you could run the app on. The last item will always be an option to create a new Android emulator."
+msgid "To run your application, run `briefcase run android`. When you do this, you'll be prompted with a list of devices that you could run the app on. The last item will always be an option to create a new Android emulator."
 msgstr ""
-"要运行应用程序，请运行 ``briefcase run "
-"android``。运行时，系统会提示你可以在哪些设备上运行应用程序。最后一项总会是创"
+"要运行应用程序，请运行 `briefcase run "
+"android`。运行时，系统会提示你可以在哪些设备上运行应用程序。最后一项总会是创"
 "建新安卓模拟器的选项。"
 
 #: ../../tutorial/tutorial-5/android.rst:233 02a98c7bbb8944a18b88b85db3201d45
-msgid "We can now choose our desired device. Select the \"Create a new Android emulator\" option, and accept the default choice for the device name (``beePhone``)."
+msgid "We can now choose our desired device. Select the \"Create a new Android emulator\" option, and accept the default choice for the device name (`beePhone`)."
 msgstr ""
 "现在我们可以选择想要的设备。选择 \"Create a new Android emulator\" "
-"选项，并接受默认的设备名称（``beePhone``）。"
+"选项，并接受默认的设备名称（`beePhone`）。"
 
 #: ../../tutorial/tutorial-5/android.rst:237 570897b7d0bc4f79a56cf3934f9610dc
-msgid "Briefcase ``run`` will automatically boot the virtual device. When the device is booting, you will see the Android logo:"
-msgstr "Briefcase ``run`` 将自动启动虚拟设备。设备启动时，您将看到 Android 徽标："
+msgid "Briefcase `run` will automatically boot the virtual device. When the device is booting, you will see the Android logo:"
+msgstr "Briefcase `run` 将自动启动虚拟设备。设备启动时，您将看到 Android 徽标："
 
 #: ../../tutorial/tutorial-5/android.rst:240
 #: ../../tutorial/tutorial-5/android.rst:245 54e365a9e9324329986e9634378da2d7
@@ -146,12 +146,11 @@ msgid "The emulator didn't start!"
 msgstr "模拟器没有启动！"
 
 #: ../../tutorial/tutorial-5/android.rst:268 152e105a148541e2b3cf630b83ef839f
-msgid "The Android emulator is a complex piece of software that relies on a number of hardware and operating system features - features that may not be available or enabled on older machines. If you experience any difficulties starting the Android emulator, consult the `Requirements and recommendations <https://developer.android.com/studio/run/emulator#requirements>`__ section of the Android developer documentation."
+msgid "The Android emulator is a complex piece of software that relies on a number of hardware and operating system features - features that may not be available or enabled on older machines. If you experience any difficulties starting the Android emulator, consult the [Requirements and recommendations]{1} section of the Android developer documentation."
 msgstr ""
 "安卓模拟器是一个复杂的软件，依赖于许多硬件和操作系统功能，这些功能在旧机器上"
 "可能无法使用或启用。如果在启动 Android 模拟器时遇到任何困难，请查阅 Android "
-"开发人员文档中的\\ `要求和建议 <https://developer.android.com/studio/run/"
-"emulator#requirements>`__\\ 部分。"
+"开发人员文档中的\\ [要求和建议]{1} 部分。"
 
 #: ../../tutorial/tutorial-5/android.rst:275 5d36e4d7acf843e0a1ede03335fc349a
 msgid "The first time the app starts, it needs to unpack itself onto the device. This may take a few seconds. Once it's unpacked, you'll see the Android version of our desktop app:"
@@ -168,8 +167,8 @@ msgstr "完全启动后的演示应用程序"
 
 #: ../../tutorial/tutorial-5/android.rst:286 f28e74d8ffa941958b055a9ef880c161
 #, fuzzy
-msgid "If you fail to see your app launching, you may need to check your terminal where you ran ``briefcase run`` and look for any error messages."
-msgstr "如果看不到应用程序启动，可能需要检查运行 ``briefcase run`` 的终端，查看是否有错误信息。"
+msgid "If you fail to see your app launching, you may need to check your terminal where you ran `briefcase run` and look for any error messages."
+msgstr "如果看不到应用程序启动，可能需要检查运行 `briefcase run` 的终端，查看是否有错误信息。"
 
 #: ../../tutorial/tutorial-5/android.rst:289 192cae1733114f41bd9ce02912165e8b
 msgid "While the app is running, you'll see a lot of messages being streamed in the console. This is a stream of the application's logs from the emulator. Typing Ctrl+C into the terminal will halt the streamed information in the console, but it will not close the emulator. This is so you can test new changes without restarting the emulator."
@@ -177,8 +176,8 @@ msgstr ""
 
 #: ../../tutorial/tutorial-5/android.rst:295 69b63d21aaf348c2a1e285d53972eb57
 #, fuzzy
-msgid "In future, if you want to run on this device without using the menu, you can provide the emulator's name to Briefcase, using ``briefcase run android -d \"@beePhone\"`` to run on the virtual device directly."
-msgstr "今后，如果想在该设备上运行而不使用菜单，可以向 Briefcase 提供模拟器名称，使用 ``briefcase run android -d @beePhone`` 直接在虚拟设备上运行。"
+msgid "In future, if you want to run on this device without using the menu, you can provide the emulator's name to Briefcase, using `briefcase run android -d \"@beePhone\"` to run on the virtual device directly."
+msgstr "今后，如果想在该设备上运行而不使用菜单，可以向 Briefcase 提供模拟器名称，使用 `briefcase run android -d @beePhone` 直接在虚拟设备上运行。"
 
 #: ../../tutorial/tutorial-5/android.rst:300 5c5a457bb81047049fb109c8cfc8bee0
 #, fuzzy
@@ -207,18 +206,18 @@ msgstr "启用 USB 调试"
 
 #: ../../tutorial/tutorial-5/android.rst:312 73dac95f562040609da6f576aff34fd4
 #, fuzzy
-msgid "Details on how to make these changes can be found `in the Android developer documentation <https://developer.android.com/studio/debug/dev-options#enable>`__."
-msgstr "有关如何进行这些更改的详细信息，请参阅 Android 开发人员文档 <https://developer.android.com/studio/debug/dev-options#enable>`__。"
+msgid "Details on how to make these changes can be found `in the Android developer documentation]{1}."
+msgstr "有关如何进行这些更改的详细信息，[请参阅 Android 开发人员文档]{1}。"
 
 #: ../../tutorial/tutorial-5/android.rst:315 d93cb6681446446284d682c406eb6f40
 #, fuzzy
-msgid "Once these steps have been completed, your device should appear in the list of available devices when you run ``briefcase run android``."
-msgstr "完成这些步骤后，在运行 ``briefcase run android`` 时，您的设备应出现在可用设备列表中。"
+msgid "Once these steps have been completed, your device should appear in the list of available devices when you run `briefcase run android`."
+msgstr "完成这些步骤后，在运行 `briefcase run android` 时，您的设备应出现在可用设备列表中。"
 
 #: ../../tutorial/tutorial-5/android.rst:362 d7f0e801ade940f598853d3a3017015a
 #, fuzzy
-msgid "Here we can see a new physical device with it's serial number on the deployment list - in this case, a Pixel 3a. In the future, if you want to run on this device without using the menu, you can provide the phone's serial number to Briefcase (in this case, ``briefcase run android -d 94ZZY0LNE8``). This will run on the device directly, without prompting."
-msgstr "在这里，我们可以在部署列表中看到一个带有序列号的新物理设备--在本例中是 Pixel 3a。将来，如果你想不使用菜单而在该设备上运行，可以向 Briefcase 提供手机序列号（本例中为 ``briefcase run android -d 94ZZY0LNE8``）。这将直接在设备上运行，无需提示。"
+msgid "Here we can see a new physical device with it's serial number on the deployment list - in this case, a Pixel 3a. In the future, if you want to run on this device without using the menu, you can provide the phone's serial number to Briefcase (in this case, `briefcase run android -d 94ZZY0LNE8`). This will run on the device directly, without prompting."
+msgstr "在这里，我们可以在部署列表中看到一个带有序列号的新物理设备--在本例中是 Pixel 3a。将来，如果你想不使用菜单而在该设备上运行，可以向 Briefcase 提供手机序列号（本例中为 `briefcase run android -d 94ZZY0LNE8`）。这将直接在设备上运行，无需提示。"
 
 #: ../../tutorial/tutorial-5/android.rst:368 02db0f9b89be4010b7a25e8d3fb8fbfd
 #, fuzzy
@@ -232,13 +231,13 @@ msgstr "如果你的设备根本没有出现在这个列表中，要么是你没
 
 #: ../../tutorial/tutorial-5/android.rst:373 796c68ef89aa48529c28ab97a9f7da63
 #, fuzzy
-msgid "If your device appears, but is listed as \"Unknown device (not authorized for development)\", developer mode hasn't been correctly enabled. Re-run `the steps to enable developer options <https://developer.android.com/studio/debug/dev-options#enable>`__, and re-run ``briefcase run android``."
-msgstr "如果你的设备出现了，但却被列为 \"未知设备（未授权开发）\"，那么开发者模式尚未正确启用。重新运行 \"启用开发者选项的步骤 <https://developer.android.com/studio/debug/dev-options#enable>`__\"，并重新运行 \"briefcase run android\"。"
+msgid "If your device appears, but is listed as \"Unknown device (not authorized for development)\", developer mode hasn't been correctly enabled. Re-run [the steps to enable developer options]{1}, and re-run `briefcase run android`."
+msgstr "如果你的设备出现了，但却被列为 \"未知设备（未授权开发）\"，那么开发者模式尚未正确启用。重新运行 [启用开发者选项的步骤]{1}，并重新运行 \"briefcase run android\"。"
 
 #: ../../tutorial/tutorial-5/android.rst:380 05e83c0989ac4ee5bebf56c757e5d2b3
 msgid "Next steps"
 msgstr "下一步"
 
 #: ../../tutorial/tutorial-5/android.rst:382 9acc33318e1742ffbc17d613201926b7
-msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to :doc:`Tutorial 6 <../tutorial-6>` to find out..."
-msgstr "我们现在已经在手机上安装了应用程序！还有其他地方可以部署 BeeWare 应用程序吗？请参考\\ :doc:`教程 6 <../tutorial-6>`\\ 了解更多..."
+msgid "We've now got an application on our phone! Is there anywhere else we can deploy a BeeWare app? Turn to [Tutorial 6][../tutorial-6] to find out..."
+msgstr "我们现在已经在手机上安装了应用程序！还有其他地方可以部署 BeeWare 应用程序吗？请参考\\ [教程 6][../tutorial-6]\\ 了解更多..."

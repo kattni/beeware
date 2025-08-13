@@ -1,4 +1,4 @@
-# Tutorial 5 - Taking it mobile: iOS
+# Tutorial 5 - Taking it mobile: iOS { id="mobile-ios" }
 
 To compile iOS applications we'll need Xcode, which is available for
 free from [the macOS App
@@ -117,7 +117,7 @@ This will start the iOS simulator, install your app, and start it. You
 should see the simulator start, and eventually open your iOS
 application:
 
-![Hello World Tutorial 5 window, on iOS](/tutorial/images/iOS/tutorial-5.png)
+![Hello World Tutorial 5 window, on iOS](../../tutorial/images/iOS/tutorial-5.png)
 
 While the app is running, you'll see a series of Simulator log output
 messages in the console. Typing Ctrl+C into the terminal will halt the
@@ -150,6 +150,4 @@ $ briefcase run iOS -d 2614A2DD-574F-4C1F-9F1E-478F32DE282E
 ## Next steps
 
 We've now got an application on our phone! Is there anywhere else we can
-deploy a BeeWare app? Turn to
-[Tutorial 6][tutorial-6] to find
-out...
+deploy a BeeWare app? Turn to [Tutorial 6][tutorial-6] to find out...

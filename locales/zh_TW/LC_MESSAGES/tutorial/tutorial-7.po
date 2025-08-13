@@ -42,18 +42,18 @@ msgid "Let's modify our application to say a little bit more than just \"Hi, the
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:16 6c43b52826de46dc8283b99f1ffd7cb8
-msgid "To generate some more interesting text for the dialog, we're going to use a library called `Faker <https://faker.readthedocs.io/en/stable/>`__ . Faker is a Python package that generates fake content, including names and text blocks. The names and words in the text block are generated from an arbitrary list of words provided by Faker. We're going to use Faker to construct a fake message, as if someone is responding to the user."
+msgid "To generate some more interesting text for the dialog, we're going to use a library called [Faker]{1} . Faker is a Python package that generates fake content, including names and text blocks. The names and words in the text block are generated from an arbitrary list of words provided by Faker. We're going to use Faker to construct a fake message, as if someone is responding to the user."
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:23 fe30468785e14c48ba8d0fdd9bb9fe8e
 #, fuzzy
-msgid "We start by adding ``faker`` to our app. Add an import to the top of the ``app.py`` to import ``faker``::"
-msgstr "讓我們為我們的應用程式新增一個``httpx`` API 呼叫。將導入新增至``app.py``頂部以導入``httpx``::"
+msgid "We start by adding `faker` to our app. Add an import to the top of the `app.py` to import `faker`:"
+msgstr "讓我們為我們的應用程式新增一個`httpx` API 呼叫。將導入新增至`app.py`頂部以導入`httpx`:"
 
 #: ../../tutorial/tutorial-7.rst:28 3ddb8bd6cb7144f39b0121d254a09073
 #, fuzzy
-msgid "Then modify the ``say_hello()`` callback so it looks like this::"
-msgstr "然後修改``say_hello()``回調，使其看起來像這樣::"
+msgid "Then modify the `say_hello()` callback so it looks like this:"
+msgstr "然後修改`say_hello()`回調，使其看起來像這樣:"
 
 #: ../../tutorial/tutorial-7.rst:39 2034a7fd1eeb48a8bea715e0983b5523
 #, fuzzy
@@ -108,8 +108,8 @@ msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:114 f6db1525c17d42f2a7543c60bbfd757f
 #, fuzzy
-msgid "What happened? We've added ``faker`` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing ``faker`` with ``pip``, and then re-running ``briefcase dev``:"
-msgstr "發生了什麼事？我們已將``httpx``新增至我們的*程式碼*中，但我們尚未將其新增至我們的開發虛擬環境。我們可以透過用``pip``安裝``httpx``來解決這個問題，然後重新執行``briefcase dev``："
+msgid "What happened? We've added `faker` to our *code*, but we haven't added it to our development virtual environment. We can fix this by installing `faker` with `pip`, and then re-running `briefcase dev`:"
+msgstr "發生了什麼事？我們已將`httpx`新增至我們的*程式碼*中，但我們尚未將其新增至我們的開發虛擬環境。我們可以透過用`pip`安裝`httpx`來解決這個問題，然後重新執行`briefcase dev`："
 
 #: ../../tutorial/tutorial-7.rst:127 ../../tutorial/tutorial-7.rst:141
 #: ../../tutorial/tutorial-7.rst:155 3ff689a4fa554cbe8132f4985f26d3eb
@@ -145,8 +145,8 @@ msgstr "運行更新的應用程式"
 
 #: ../../tutorial/tutorial-7.rst:177 db706f24f3f14acea55776d300538c14
 #, fuzzy
-msgid "Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in :doc:`Tutorial 4 <tutorial-4>`:"
-msgstr "讓我們將此更新的應用程式程式碼打包為獨立應用程式。由於我們已經更改了程式碼，因此我們需要遵循 :doc:`教程 4 <tutorial-4>` 中的相同步驟："
+msgid "Let's get this updated application code packaged as a standalone app. Since we've made code changes, we need to follow the same steps as in [Tutorial 4][tutorial-4]:"
+msgstr "讓我們將此更新的應用程式程式碼打包為獨立應用程式。由於我們已經更改了程式碼，因此我們需要遵循 [教程 4][tutorial-4] 中的相同步驟："
 
 #: ../../tutorial/tutorial-7.rst:184 ../../tutorial/tutorial-7.rst:222
 #: ../../tutorial/tutorial-7.rst:275 ../../tutorial/tutorial-7.rst:313
@@ -207,8 +207,8 @@ msgstr "但是，當應用程式運行時，您會在控制台中看到錯誤：
 
 #: ../../tutorial/tutorial-7.rst:430 2f324c4a01894ed0b721c0c412a9cb4a
 #, fuzzy
-msgid "Once again, the app has failed to start because ``faker`` has not been installed - but why? Haven't we already installed ``faker``?"
-msgstr "再一次，應用程式無法啟動，因為``httpx``已安裝 - 但為什麼呢？我們不是已經安裝了``httpx``了嗎？"
+msgid "Once again, the app has failed to start because `faker` has not been installed - but why? Haven't we already installed `faker`?"
+msgstr "再一次，應用程式無法啟動，因為`httpx`已安裝 - 但為什麼呢？我們不是已經安裝了`httpx`了嗎？"
 
 #: ../../tutorial/tutorial-7.rst:433 fb87efada5cd49ef845fd4a5ab1e8db7
 #, fuzzy
@@ -217,8 +217,8 @@ msgstr "我們有 - 但僅限於開發環境。您的開發環境完全位於您
 
 #: ../../tutorial/tutorial-7.rst:438 5172e39e75df4448a4e86bc10c850ae4
 #, fuzzy
-msgid "The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. This means there's a completely isolated Python install, and a completely isolated set of dependencies. This is what Briefcase is building when you run ``briefcase build`` - an isolated Python environment. This also explains why ``faker`` isn't installed - it has been installed in your *development* environment, but not in the packaged app."
-msgstr "確保其他人擁有一個包含其所需一切的Python環境的唯一方法是建立一個完全隔離的Python環境。這意味著有一個完全隔離的 Python 安裝和一組完全隔離的依賴項。這就是當您執行``briefcase build``時，Briefcase 正在建置的內容—一個獨立的 Python 環境。這也解釋了為什麼未安裝``httpx`` - 它已安裝在您的*開發*環境中，但未安裝在打包的應用程式中。"
+msgid "The only way to guarantee that someone else will have a Python environment that contains everything it needs is to build a completely isolated Python environment. This means there's a completely isolated Python install, and a completely isolated set of dependencies. This is what Briefcase is building when you run `briefcase build` - an isolated Python environment. This also explains why `faker` isn't installed - it has been installed in your *development* environment, but not in the packaged app."
+msgstr "確保其他人擁有一個包含其所需一切的Python環境的唯一方法是建立一個完全隔離的Python環境。這意味著有一個完全隔離的 Python 安裝和一組完全隔離的依賴項。這就是當您執行`briefcase build`時，Briefcase 正在建置的內容—一個獨立的 Python 環境。這也解釋了為什麼未安裝`httpx` - 它已安裝在您的*開發*環境中，但未安裝在打包的應用程式中。"
 
 #: ../../tutorial/tutorial-7.rst:446 4b700f94f1714359932076ce06ba3687
 #, fuzzy
@@ -232,43 +232,43 @@ msgstr "更新依賴項"
 
 #: ../../tutorial/tutorial-7.rst:451 6239de13291746109c96df501f58da60
 #, fuzzy
-msgid "In the root directory of your app, there is a file named ``pyproject.toml``. This file contains all the app configuration details that you provided when you originally ran ``briefcase new``."
-msgstr "在應用程式的根目錄中，有一個名為``pyproject.toml``的檔案。該檔案包含您最初執行``briefcase new``時提供的所有應用程式設定詳細資訊。"
+msgid "In the root directory of your app, there is a file named `pyproject.toml`. This file contains all the app configuration details that you provided when you originally ran `briefcase new`."
+msgstr "在應用程式的根目錄中，有一個名為`pyproject.toml`的檔案。該檔案包含您最初執行`briefcase new`時提供的所有應用程式設定詳細資訊。"
 
 #: ../../tutorial/tutorial-7.rst:455 47d6b648eb164a31b547218623300f6d
 #, fuzzy
-msgid "``pyproject.toml`` is broken up into sections; one of the sections describes the settings for your app::"
-msgstr "``pyproject.toml`` 被分成幾個部分；其中一節描述了您的應用程式的設定：："
+msgid "`pyproject.toml` is broken up into sections; one of the sections describes the settings for your app:"
+msgstr "`pyproject.toml` 被分成幾個部分；其中一節描述了您的應用程式的設定：："
 
 #: ../../tutorial/tutorial-7.rst:466 a252902c2f9a4d9fb8f3f3374c0170d4
 #, fuzzy
-msgid "The ``requires`` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app."
-msgstr "``requires`` 選項描述了我們應用程式的依賴關係。它是一個字串列表，指定您想要包含在應用程式中的庫（以及可選的版本）。"
+msgid "The `requires` option describes the dependencies of our application. It is a list of strings, specifying libraries (and, optionally, versions) of libraries that you want to be included with your app."
+msgstr "`requires` 選項描述了我們應用程式的依賴關係。它是一個字串列表，指定您想要包含在應用程式中的庫（以及可選的版本）。"
 
 #: ../../tutorial/tutorial-7.rst:470 5e27f6177930468a8446e66b7f1b929f
 #, fuzzy
-msgid "Modify the ``requires`` setting so that it reads::"
-msgstr "修改``requires``設置，使其顯示為："
+msgid "Modify the `requires` setting so that it reads:"
+msgstr "修改`requires`設置，使其顯示為："
 
 #: ../../tutorial/tutorial-7.rst:476 df60ab672c2945b68fb40a3a348e1fdb
 #, fuzzy
-msgid "By adding this setting, we're telling Briefcase \"when you build my app, run ``pip install faker`` into the application bundle\". Anything that would be legal input to ``pip install`` can be used here - so, you could specify:"
-msgstr "透過添加此設置，我們告訴 Briefcase``當您建立我的應用程式時，在應用程式包中執行``pip install httpx````。任何可以作為``pip install``合法輸入的內容都可以在這裡使用 - 因此，您可以指定："
+msgid "By adding this setting, we're telling Briefcase \"when you build my app, run `pip install faker` into the application bundle\". Anything that would be legal input to `pip install` can be used here - so, you could specify:"
+msgstr "透過添加此設置，我們告訴 Briefcase`當您建立我的應用程式時，在應用程式包中執行`pip install httpx``。任何可以作為`pip install`合法輸入的內容都可以在這裡使用 - 因此，您可以指定："
 
 #: ../../tutorial/tutorial-7.rst:480 d905b501f787437eacde6644361c0728
 #, fuzzy
-msgid "A specific library version (e.g., ``\"faker==37.3.0\"``);"
-msgstr "特定的庫版本（例如``httpx==0.19.0``）；"
+msgid "A specific library version (e.g., `\"faker==37.3.0\"`);"
+msgstr "特定的庫版本（例如`httpx==0.19.0`）；"
 
 #: ../../tutorial/tutorial-7.rst:481 22ce0f530606436f9f42e7f9b09380ba
 #, fuzzy
-msgid "A range of library versions (e.g., ``\"faker>=37\"``);"
-msgstr "一系列庫版本（例如``httpx>=0.19``）；"
+msgid "A range of library versions (e.g., `\"faker>=37\"`);"
+msgstr "一系列庫版本（例如`httpx>=0.19`）；"
 
 #: ../../tutorial/tutorial-7.rst:482 d6a1f10d8d634ece9f6ea69e91bdc335
 #, fuzzy
-msgid "A path to a git repository (e.g., ``\"git+https://github.com/joke2k/faker/\"``); or"
-msgstr "git 儲存庫的路徑（例如，``\"git+https://github.com/encode/httpx\"``）；或者"
+msgid "A path to a git repository (e.g., `\"git+https://github.com/joke2k/faker/\"`); or"
+msgstr "git 儲存庫的路徑（例如，`\"git+https://github.com/encode/httpx\"`）；或者"
 
 #: ../../tutorial/tutorial-7.rst:484 6cecaaecf99e42308c77b334abca2429
 #, fuzzy
@@ -277,84 +277,84 @@ msgstr "本機檔案路徑（但是 - 請注意：如果您將程式碼提供給
 
 #: ../../tutorial/tutorial-7.rst:487 16fa028aec224fdeae417206060732c3
 #, fuzzy
-msgid "Further down in ``pyproject.toml``, you'll notice other sections that are operating system dependent, like ``[tool.briefcase.app.helloworld.macOS]`` and ``[tool.briefcase.app.helloworld.windows]``. These sections *also* have a ``requires`` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific ``requires`` section, and that setting will only be used for that platform. You will notice that the ``toga`` libraries are all specified in the platform-specific ``requires`` section - this is because the libraries needed to display a user interface are platform specific."
-msgstr "在``pyproject.toml``中，您會注意到與作業系統相關的其他部分，例如``[tool.briefcase.app.helloworld.macOS]``和``[tool.briefcase.app.helloworld``.windows]`` 。這些部分*也*有一個``requires``設定。這些設定允許您定義其他特定於平台的依賴項 - 因此，例如，如果您需要特定於平台的庫來處理應用程式的某些方面，您可以在特定於平台的``requires``部分中指定該庫，並且該設定將僅用於該平台。您會注意到``toga``庫都是在特定於平台的``requires``部分中指定的 - 這是因為顯示使用者介面所需的庫是特定於平台的。"
+msgid "Further down in `pyproject.toml`, you'll notice other sections that are operating system dependent, like `[tool.briefcase.app.helloworld.macOS]` and `[tool.briefcase.app.helloworld.windows]`. These sections *also* have a `requires` setting. These settings allow you to define additional platform-specific dependencies - so, for example, if you need a platform-specific library to handle some aspect of your app, you can specify that library in the platform-specific `requires` section, and that setting will only be used for that platform. You will notice that the `toga` libraries are all specified in the platform-specific `requires` section - this is because the libraries needed to display a user interface are platform specific."
+msgstr "在`pyproject.toml`中，您會注意到與作業系統相關的其他部分，例如`[tool.briefcase.app.helloworld.macOS]`和`[tool.briefcase.app.helloworld`.windows]` 。這些部分*也*有一個`requires`設定。這些設定允許您定義其他特定於平台的依賴項 - 因此，例如，如果您需要特定於平台的庫來處理應用程式的某些方面，您可以在特定於平台的`requires`部分中指定該庫，並且該設定將僅用於該平台。您會注意到`toga`庫都是在特定於平台的`requires`部分中指定的 - 這是因為顯示使用者介面所需的庫是特定於平台的。"
 
 #: ../../tutorial/tutorial-7.rst:498 72c98c1bd8c94d9282fff5c2f44dc0a8
 #, fuzzy
-msgid "In our case, we want ``faker`` to be installed on all platforms, so we use the app-level ``requires`` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones."
-msgstr "在我們的例子中，我們希望在所有平台上安裝``httpx``，因此我們使用應用程式層級``requires``設定。應用程式級相依性將始終被安裝；除了*應用程式層級的依賴項之外，還會安裝特定於平台的依賴項。"
+msgid "In our case, we want `faker` to be installed on all platforms, so we use the app-level `requires` setting. The app-level dependencies will always be installed; the platform-specific dependencies are installed *in addition* to the app-level ones."
+msgstr "在我們的例子中，我們希望在所有平台上安裝`httpx`，因此我們使用應用程式層級`requires`設定。應用程式級相依性將始終被安裝；除了*應用程式層級的依賴項之外，還會安裝特定於平台的依賴項。"
 
 #: ../../tutorial/tutorial-7.rst:503 a8e67eb88ee04c0aaf84bb4211b60001
 #, fuzzy
-msgid "Now that we've told Briefcase about our additional requirements, we can try packaging our app again. Ensure that you've saved your changes to ``pyproject.toml``, and then update your app again - this time, passing in the ``-r`` flag. This tells Briefcase to update requirements in the packaged app:"
-msgstr "現在我們已經告訴 Briefcase 我們的附加要求，我們可以嘗試再次打包我們的應用程式。確保您已將變更儲存到``pyproject.toml``，然後再次更新您的應用程式 - 這次傳入``-r``標誌。這告訴 Briefcase 更新打包應用程式中的要求："
+msgid "Now that we've told Briefcase about our additional requirements, we can try packaging our app again. Ensure that you've saved your changes to `pyproject.toml`, and then update your app again - this time, passing in the `-r` flag. This tells Briefcase to update requirements in the packaged app:"
+msgstr "現在我們已經告訴 Briefcase 我們的附加要求，我們可以嘗試再次打包我們的應用程式。確保您已將變更儲存到`pyproject.toml`，然後再次更新您的應用程式 - 這次傳入`-r`標誌。這告訴 Briefcase 更新打包應用程式中的要求："
 
 #: ../../tutorial/tutorial-7.rst:618 53dd1d14388a4b14aabb32571881b24e
 #, fuzzy
-msgid "Once you've updated, you can run ``briefcase build`` and ``briefcase run`` - and you should see your packaged app, with the new dialog behavior."
-msgstr "更新後，您可以運行``briefcase build``和``briefcase run`` - 您應該會看到打包的應用程序，具有新的對話框行為。"
+msgid "Once you've updated, you can run `briefcase build` and `briefcase run` - and you should see your packaged app, with the new dialog behavior."
+msgstr "更新後，您可以運行`briefcase build`和`briefcase run` - 您應該會看到打包的應用程序，具有新的對話框行為。"
 
 #: ../../tutorial/tutorial-7.rst:623 212ecdb25e7f44bfafcccfad3278b595
 #, fuzzy
-msgid "The ``-r`` option for updating requirements is also honored by the ``build`` and ``run`` command, so if you want to update, build, and run in one step, you could use ``briefcase run -u -r``."
-msgstr "用於更新需求的``-r``選項也受到``build``和``run``命令的支持，因此如果您想一步更新、構建和運行，您可以使用``briefcase``運行-u -r``。"
+msgid "The `-r` option for updating requirements is also honored by the `build` and `run` command, so if you want to update, build, and run in one step, you could use `briefcase run -u -r`."
+msgstr "用於更新需求的`-r`選項也受到`build`和`run`命令的支持，因此如果您想一步更新、構建和運行，您可以使用`briefcase`運行-u -r`。"
 
 #: ../../tutorial/tutorial-7.rst:628 82cc25257ce64cdca51f7004bca9ad26
 msgid "Third-Party Python Packages for Mobile and Web"
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:630 d5316114365040f186e92d31241ce51d
-msgid "Faker is just one example of a third-party Python package - a collection of code that isn't part what Python provides out of the box. These third-party packages are most commonly distributed using the `Python Package Index (PyPI) <https://pypi.org>`__, and installed into your local virtual environment. We've been using ``pip`` in this tutorial, but there are other options."
+msgid "Faker is just one example of a third-party Python package - a collection of code that isn't part what Python provides out of the box. These third-party packages are most commonly distributed using the [Python Package Index (PyPI)]{1}, and installed into your local virtual environment. We've been using `pip` in this tutorial, but there are other options."
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:636 c7390312cc7e4283b3c4fdd7c0fd2b1e
 #, fuzzy
-msgid "On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI package can be installed into your virtual environment, or added to your app's requirements. However, when building an app for mobile or web platforms, `your options are slightly limited <https://briefcase.beeware.org/en/latest/about/faq.html#can-i-use-third-party-python-packages-in-my-app>`__."
-msgstr "在桌面平台（macOS、Windows、Linux）上，任何可安裝的``pip``都可以加入您的需求。在行動和網路平台上，`您的選擇略有限制 <https://briefcase.readthedocs.io/en/latest/background/faq.html#can-i-use-third-party-python-packages-in-my-app>`__。"
+msgid "On desktop platforms (macOS, Windows, Linux), essentially any package on PyPI package can be installed into your virtual environment, or added to your app's requirements. However, when building an app for mobile or web platforms, [your options are slightly limited]{1}."
+msgstr "在桌面平台（macOS、Windows、Linux）上，任何可安裝的`pip`都可以加入您的需求。在行動和網路平台上，[您的選擇略有限制]{1}。"
 
 #: ../../tutorial/tutorial-7.rst:642 664dfce986f0485ca7eca4f9faf582a6
 msgid "In short; any *pure Python* package (i.e. any package created from a project written *only* in Python) can be used without difficulty. Some packages, though, are created from projects that contain both Python and other languages (e.g. C, C++, Rust, etc). Code written in those languages needs to be compiled to platform-specific binary modules before it can be used, and those pre-compiled binary modules are only available on specific platforms. Mobile and web platforms have very different requirements than \"standard\" desktop platforms. At this time, most Python packages don't provide pre-compiled binaries for mobile and web platforms."
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:652 354416bc40b2413db2c9a8eaf1631a1a
-msgid "On PyPI, packages are often provided in a pre-built distribution format called *wheels*. To check whether a package is pure Python, look at the PyPI downloads page for the project. If the wheels provided have a ``-py3-none-any.whl`` suffix (e.g., `Faker <https://pypi.org/project/Faker/37.3.0/#files>`__), then they are pure Python wheels. However, if the wheels have version and platform-specific extensions (e.g., `Pillow <https://pypi.org/project/pillow/11.2.1/#files>`__, which has wheels with suffixes like ``-cp313-cp313-macosx_11_0_arm64.whl`` and ``-cp39-cp39-win_amd64.whl``), then the wheel *contains a binary component*. That package cannot be installed on mobile or web platforms unless a wheel compatible with those platforms has been provided."
+msgid "On PyPI, packages are often provided in a pre-built distribution format called *wheels*. To check whether a package is pure Python, look at the PyPI downloads page for the project. If the wheels provided have a `-py3-none-any.whl` suffix (e.g., [Faker]{1}), then they are pure Python wheels. However, if the wheels have version and platform-specific extensions (e.g., [Pillow]{2}, which has wheels with suffixes like `-cp313-cp313-macosx_11_0_arm64.whl` and `-cp39-cp39-win_amd64.whl`), then the wheel *contains a binary component*. That package cannot be installed on mobile or web platforms unless a wheel compatible with those platforms has been provided."
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:663 c5f2d43782ff42209897812761170c9d
-msgid "At this time, *most* binary packages on PyPI don't provide mobile- or web-compatible wheels. To fill this gap, BeeWare provides binaries for some popular binary modules (including ``numpy``, ``pandas``, and ``cryptography``). These wheels are *not* distributed on PyPI, but Briefcase will install those wheels if they're available."
+msgid "At this time, *most* binary packages on PyPI don't provide mobile- or web-compatible wheels. To fill this gap, BeeWare provides binaries for some popular binary modules (including `numpy`, `pandas`, and `cryptography`). These wheels are *not* distributed on PyPI, but Briefcase will install those wheels if they're available."
 msgstr ""
 
 #: ../../tutorial/tutorial-7.rst:669 e7bb35e7d20f4070b8ab1240b0eb5bb7
 #, fuzzy
 msgid "It's *usually* possible to compile binary packages for mobile platforms, but it's not easy to set up -- well outside the scope of an introductory tutorial like this one."
-msgstr "BeeWare 可以為一些流行的二進位模組（包括``numpy``、``pandas``和``cryptography``）提供二進位檔案。 *通常* 可以為行動平台編譯軟體包，但設定起來並不容易——這遠遠超出了像本教程這樣的介紹性教程的範圍。"
+msgstr "BeeWare 可以為一些流行的二進位模組（包括`numpy`、`pandas`和`cryptography`）提供二進位檔案。 *通常* 可以為行動平台編譯軟體包，但設定起來並不容易——這遠遠超出了像本教程這樣的介紹性教程的範圍。"
 
 #: ../../tutorial/tutorial-7.rst:674 8a7f7a9286f24bd885b5bd817922e866
 msgid "Next steps"
 msgstr "下一步"
 
 #: ../../tutorial/tutorial-7.rst:676 86a6c33a637747cba0140da79aa603cf
-msgid "We've now got an app that uses a third-party library! In :doc:`Tutorial 8 <tutorial-8>` we'll learn how to ensure our app remains responsive as we add more complex application logic."
+msgid "We've now got an app that uses a third-party library! In [Tutorial 8][tutorial-8] we'll learn how to ensure our app remains responsive as we add more complex application logic."
 msgstr ""
 
 #~ msgid "Accessing an API"
 #~ msgstr "存取 API"
 
-#~ msgid "A common task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. This is a toy app, so we don't have a *real* API to work with, so we'll use the `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ as a source of data."
-#~ msgstr "應用程式需要執行的常見任務是在 Web API 上發出請求以檢索數據，並向使用者顯示該數據。這是一個玩具應用程序，因此我們沒有*真正的* API 可供使用，因此我們將使用 `{JSON} Placeholder API <https://jsonplaceholder.typicode.com>`__ 作為來源資料。"
+#~ msgid "A common task an app will need to perform is to make a request on a web API to retrieve data, and display that data to the user. This is a toy app, so we don't have a *real* API to work with, so we'll use the [{JSON} Placeholder API]{1} as a source of data."
+#~ msgstr "應用程式需要執行的常見任務是在 Web API 上發出請求以檢索數據，並向使用者顯示該數據。這是一個玩具應用程序，因此我們沒有*真正的* API 可供使用，因此我們將使用 [{JSON} Placeholder API]{1} 作為來源資料。"
 
-#~ msgid "The {JSON} Placeholder API has a number of \"fake\" API endpoints you can use as test data. One of those APIs is the ``/posts/`` endpoint, which returns fake blog posts. If you open ``https://jsonplaceholder.typicode.com/posts/42`` in your browser, you'll get a JSON payload describing a single post - some `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ content for a blog post with ID 42."
-#~ msgstr "{JSON} Placeholder API 有許多``假``API 端點，您可以將其用作測試資料。這些 API 之一是``/posts/``端點，它會傳回虛假的部落格文章。如果您在瀏覽器中開啟 ``https://jsonplaceholder.typicode.com/posts/42``，您將獲得一個描述單一貼文的 JSON 有效負載 - 一些 `Lorum ipsum <https://en.wikipedia.org/wiki/Lorem_ipsum>`__ ID 為42 的部落格文章的內容。"
+#~ msgid "The {JSON} Placeholder API has a number of \"fake\" API endpoints you can use as test data. One of those APIs is the `/posts/` endpoint, which returns fake blog posts. If you open `https://jsonplaceholder.typicode.com/posts/42` in your browser, you'll get a JSON payload describing a single post - some [Lorum ipsum]{1} content for a blog post with ID 42."
+#~ msgstr "{JSON} Placeholder API 有許多`假`API 端點，您可以將其用作測試資料。這些 API 之一是`/posts/`端點，它會傳回虛假的部落格文章。如果您在瀏覽器中開啟 `https://jsonplaceholder.typicode.com/posts/42`，您將獲得一個描述單一貼文的 JSON 有效負載 - 一些 [Lorum ipsum]{1} ID 為42 的部落格文章的內容。"
 
 #~ msgid "The Python standard library contains all the tools you'd need to access an API. However, the built-in APIs are very low level. They are good implementations of the HTTP protocol - but they require the user to manage lots of low-level details, like URL redirection, sessions, authentication, and payload encoding. As a \"normal browser user\" you're probably used to taking these details for granted, as a browser manages these details for you."
-#~ msgstr "Python 標準函式庫包含存取 API 所需的所有工具。然而，內建的 API 等級非常低。它們是 HTTP 協定的良好實作 - 但它們要求使用者管理大量低階細節，例如 URL 重新導向、會話、驗證和有效負載編碼。作為``普通瀏覽器用戶``，您可能習慣於將這些詳細資訊視為理所當然，因為瀏覽器會為您管理這些詳細資訊。"
+#~ msgstr "Python 標準函式庫包含存取 API 所需的所有工具。然而，內建的 API 等級非常低。它們是 HTTP 協定的良好實作 - 但它們要求使用者管理大量低階細節，例如 URL 重新導向、會話、驗證和有效負載編碼。作為`普通瀏覽器用戶`，您可能習慣於將這些詳細資訊視為理所當然，因為瀏覽器會為您管理這些詳細資訊。"
 
-#~ msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called `httpx <https://www.python-httpx.org>`__."
-#~ msgstr "因此，人們開發了第三方函式庫來包裝內建 API，並提供更簡單的 API，更適合日常瀏覽器體驗。我們將使用其中一個函式庫來存取 {JSON} Placeholder API - 一個名為 `httpx <https://www.python-httpx.org>`__ 的函式庫。"
+#~ msgid "As a result, people have developed third-party libraries that wrap the built-in APIs and provide a simpler API that is a closer match for the everyday browser experience. We're going to use one of those libraries to access the {JSON} Placeholder API - a library called [httpx]{1}."
+#~ msgstr "因此，人們開發了第三方函式庫來包裝內建 API，並提供更簡單的 API，更適合日常瀏覽器體驗。我們將使用其中一個函式庫來存取 {JSON} Placeholder API - 一個名為 [httpx]{1} 的函式庫。"
 
-#~ msgid "This will change the ``say_hello()`` callback so that when it is invoked, it will:"
-#~ msgstr "這將更改``say_hello()``回調，以便在調用它時，它將："
+#~ msgid "This will change the `say_hello()` callback so that when it is invoked, it will:"
+#~ msgstr "這將更改`say_hello()`回調，以便在調用它時，它將："
 
 #~ msgid "make a GET request on the JSON placeholder API to obtain post 42;"
 #~ msgstr "對 JSON 佔位符 API 發出 GET 請求以取得 post 42；"
@@ -374,6 +374,6 @@ msgstr ""
 #~ msgid "In short; any *pure Python* package (i.e., packages that do *not* contain a binary module) can be used without difficulty. However, if your dependency contains a binary component, it must be compiled; at this time, most Python packages don't provide compilation support for non-desktop platforms."
 #~ msgstr "簡而言之;任何 *純Python* 套件（即，*不* 包含二進位模組的套件）都可以毫無困難地使用。但是，如果您的依賴項包含二進位元件，則必須對其進行編譯；目前，大多數Python套件不提供非桌面平台的編譯支援。"
 
-#~ msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to :doc:`Tutorial 8 <tutorial-8>` to find out..."
-#~ msgstr "我們現在有了一個使用第三方函式庫的應用程式！但是，您可能已經注意到，當您按下按鈕時，應用程式變得有點無響應。我們能做些什麼來解決這個問題嗎？前往 :doc:`教學 8 <tutorial-8>` 找出..."
+#~ msgid "We've now got an app that uses a third-party library! However, you may have noticed that when you press the button, the app becomes a little unresponsive. Can we do anything to fix this? Turn to [Tutorial 8][tutorial-8] to find out..."
+#~ msgstr "我們現在有了一個使用第三方函式庫的應用程式！但是，您可能已經注意到，當您按下按鈕時，應用程式變得有點無響應。我們能做些什麼來解決這個問題嗎？前往 [教學 8][tutorial-8] 找出..."
 

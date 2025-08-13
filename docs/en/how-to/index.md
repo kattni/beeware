@@ -1,7 +1,6 @@
 # Contributing to this tutorial
 
-This tutorial is written using [Sphinx and
-reStructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html).
+This tutorial is written using [MkDocs and Markdown](https://www.mkdocs.org/).
 This guide will help you contribute fixes or new content to this
 tutorial.
 
@@ -43,67 +42,6 @@ C:\...>pip3 --version
 
 ///
 
-
-### Install Enchant
-
-You'll also need to install the Enchant spell checking library.
-
-/// tab | macOS
-
-Enchant can be installed using [Homebrew](https://brew.sh):
-
-```console
-(venv) $ brew install enchant
-```
-
-If you're on an Apple Silicon machine (M-series), you'll also need to
-manually set the location of the Enchant library:
-
-```console
-(venv) $ export PYENCHANT_LIBRARY_PATH=/opt/homebrew/lib/libenchant-2.2.dylib
-```
-
-///
-
-/// tab | Linux
-
-Enchant can be installed as a system package:
-
-**Ubuntu / Debian**
-
-```console
-$ sudo apt update
-$ sudo apt install enchant-2
-```
-
-**Fedora**
-
-```console
-$ sudo dnf install enchant
-```
-
-**Arch / Manjaro**
-
-```console
-$ sudo pacman -Syu enchant
-```
-
-**OpenSUSE Tumbleweed**
-
-```console
-$ sudo zypper install enchant
-```
-
-///
-
-/// tab | Windows
-
-Enchant is installed automatically when you set up your development
-environment.
-
-///
-
-
 ### Create a virtual environment
 
 The recommended way of setting up your development environment for
@@ -137,7 +75,6 @@ C:\...>venv\Scripts\activate
 
 ///
 
-
 Your prompt should now have a `(venv)` prefix in front of it.
 
 ### Clone the BeeWare repository
@@ -156,7 +93,9 @@ the command line:
 
 Fork the BeeWare repository, and then:
 
-    (venv) $ git clone https://github.com/<your username>/beeware.git
+```console
+(venv) $ git clone https://github.com/<your username>/beeware.git
+```
 
 (substituting your GitHub username)
 
@@ -166,7 +105,9 @@ Fork the BeeWare repository, and then:
 
 Fork the BeeWare repository, and then:
 
-    (venv) $ git clone https://github.com/<your username>/beeware.git
+```console
+(venv) $ git clone https://github.com/<your username>/beeware.git
+```
 
 (substituting your GitHub username)
 
@@ -183,7 +124,6 @@ Fork the BeeWare repository, and then:
 (substituting your GitHub username)
 
 ///
-
 
 ### Install BeeWare tutorial docs dependencies
 
@@ -219,7 +159,6 @@ packages, so we have to manually install each package:
 
 ///
 
-
 ### Install pre-commit
 
 BeeWare uses a tool called [Pre-Commit](https://pre-commit.com) to
@@ -253,7 +192,6 @@ pre-commit installed at .git/hooks/pre-commit
 ```
 
 ///
-
 
 When you commit any change, pre-commit will run automatically. If there
 are any issues found with the commit, this will cause your commit to
@@ -344,7 +282,6 @@ docformatter.............................................................Passed
 
 ///
 
-
 You can then re-add any files that were modified as a result of the
 pre-commit checks, and re-commit the change.
 
@@ -412,7 +349,6 @@ docformatter.............................................................Passed
 
 ///
 
-
 Now you are ready to start hacking on BeeWare docs!
 
 ## Building BeeWare's documentation
@@ -444,7 +380,6 @@ Once your development environment is set up, run:
 ```
 
 ///
-
 
 The output of the file should be in the `docs/_build/html` folder. If
 there are any markup problems, they'll raise an error.
@@ -478,47 +413,11 @@ preview" mode:
 
 ///
 
-
 This will build the documentation, start a web server to serve the build
 documentation, and watch the file system for any changes to the
 documentation source. If a change is detected, the documentation will be
 rebuilt, and any browser viewing the modified page will be automatically
 refreshed.
-
-Live preview mode will only monitor the `docs` directory for changes. If
-you're updating the inline documentation associated with BeeWare source
-code, you'll need to use the `docs-live-src` target to build docs:
-
-/// tab | macOS
-
-```console
-(venv) $ tox -e docs-live-src
-```
-
-///
-
-/// tab | Linux
-
-```console
-(venv) $ tox -e docs-live-src
-```
-
-///
-
-/// tab | Windows
-
-```doscon
-(venv) C:\...>tox -e docs-live-src
-```
-
-///
-
-
-This behaves the same as `docs-live`, but will also monitor any changes
-to the `core/src` folder, reflecting any changes to inline
-documentation. However, the rebuild process takes much longer, so you
-may not want to use this target unless you're actively editing inline
-documentation.
 
 ### Documentation linting
 
@@ -549,7 +448,6 @@ performs some additional "lint" checks. To run the lint checks:
 
 ///
 
-
 This will validate the documentation does not contain:
 
 - dead hyperlinks
@@ -560,16 +458,16 @@ word to the list in `docs/spelling_wordlist`. This will add the word to
 the spellchecker's dictionary. When adding to this list, remember:
 
 - We prefer US spelling, with some liberties for programming-specific
-  colloquialism (e.g., "apps") and verbing of nouns (e.g., "scrollable")
+  colloquialisms (e.g., "apps") and verbing of nouns (e.g., "scrollable")
 - Any reference to a product name should use the product's preferred
   capitalization. (e.g., "macOS", "GTK", "pytest", "Pygame",
   "PyScript").
-- If a term is being used "as code", then it should be quoted as a
-  literal rather than being added to the dictionary.
+- If a term is being used "as code", then it should be quoted as inline
+  code rather than being added to the dictionary.
 
 ### Rebuilding all documentation
 
-To force a rebuild for all of the documentation:
+To force a rebuild for all the documentation:
 
 /// tab | macOS
 
@@ -595,14 +493,12 @@ To force a rebuild for all of the documentation:
 
 ///
 
-
 The documentation should be fully rebuilt in the `docs/_build/html`
 folder. If there are any markup problems, they'll raise an error.
 
 ## What to work on?
 
-If you're looking for specific areas to improve, there are [tickets
-tagged
+If you're looking for specific areas to improve, there are [tickets tagged
 "documentation"](https://github.com/beeware/BeeWare/issues?q=is%3Aopen+is%3Aissue+label%3Adocumentation)
 in BeeWare's issue tracker.
 
@@ -659,7 +555,6 @@ To create a feature branch, run:
 ```
 
 ///
-
 
 Commit your changes to this branch, then push to GitHub and create a
 pull request.

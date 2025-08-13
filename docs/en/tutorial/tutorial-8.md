@@ -167,7 +167,6 @@ your chosen desktop platform.
 
 ///
 
-
 Unless you've got a *really* fast internet connection, you may notice
 that when you press the button, the GUI for your app locks up for a
 little bit. The operating system may even manifest this with a
@@ -314,7 +313,7 @@ improvements:
 
 - The button returns to an "unclicked" state, rather than being stuck in
   a "clicked" state.
-- The "beachball"/"spinner" icon won't appear
+- The "beachball"/"spinner" icon won't appear.
 - If you move/resize the app window while waiting for the dialog to
   appear, the window will redraw.
 - If you try to open an app menu, the menu will appear immediately.
@@ -364,7 +363,6 @@ app's requirements, then re-build the app, then launch the app:
 
 ///
 
-
 You should see you app running, and remaining responsive when you press
 the button and network content is retrieved.
 
@@ -389,7 +387,7 @@ So - where to from here?
   detail on specific aspects of application development.
 - If you'd like to know more about how to build complex user interfaces
   with Toga, you can dive into [Toga's
-  documentation](https://toga.beeware.org). Toga also has it's own
+documentation](https://toga.beeware.org). Toga also has its own
   tutorial [demonstrating how to use various features of the widget
   toolkit](https://toga.beeware.org/en/latest/tutorial/index.html).
 - If you'd like to know more about the capabilities of Briefcase, you

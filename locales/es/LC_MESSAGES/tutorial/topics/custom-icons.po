@@ -32,7 +32,7 @@ msgid "Every platform uses a different format for application icons - and some p
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:18 2e22724576fa40658356df542c042208
-msgid "Edit your ``pyproject.toml``, adding a new ``icon`` configuration item in the ``[tool.briefcase.app.helloworld]`` configuration section, just above the ``sources`` definition::"
+msgid "Edit your `pyproject.toml`, adding a new `icon` configuration item in the `[tool.briefcase.app.helloworld]` configuration section, just above the `sources` definition:"
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:24 aa6015f5a4c642808f44a94873ba7f84
@@ -40,7 +40,7 @@ msgid "This icon definition doesn't specify any file extension. The value will b
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:30 db2586affb344ffdb33e21f2e645e828
-msgid "We can now run ``briefcase update`` again - but this time, we pass in the ``--update-resources`` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
+msgid "We can now run `briefcase update` again - but this time, we pass in the `--update-resources` flag, telling Briefcase that we want to install new application resources (i.e., the icons):"
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:36
@@ -83,7 +83,7 @@ msgid "This reports the specific icon file (or files) that Briefcase is expectin
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:164 59a75ae48ca9456e81d444a01000d571
-msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <../resources/icons.zip>`, and unzip it into the root of your project directory. After unzipping, your project directory should look something like::"
+msgid "Let's provide some actual icons. Download [this icons.zip bundle](../resources/icons.zip) (TODO: Verify path.), and unzip it into the root of your project directory. After unzipping, your project directory should look something like:"
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:183 e91e96b4625c4a519138e249ee6dfd35
@@ -95,11 +95,11 @@ msgid "Icon of green snake with a light blue background"
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:190 c9ebe4a9ad3a4de290e45e966b69b5d6
-msgid "The only exception will be the icons with ``-adaptive-`` in their name; these will have a transparent background. This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports."
+msgid "The only exception will be the icons with `-adaptive-` in their name; these will have a transparent background. This represents all the different icon sizes and shapes you need to support an app on every platform that Briefcase supports."
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:194 65f87761e9004b9386e7dbefd2aa394c
-msgid "Now that we have icons, we can update the application again. However, ``briefcase update`` will only copy the updated resources into the build directory; we also want to rebuild the app to make sure the new icon is included, then start the app. We can shortcut this process by passing ``--update-resources`` to our call to ``run`` - this will update the app, update the app's resources, and then start the app:"
+msgid "Now that we have icons, we can update the application again. However, `briefcase update` will only copy the updated resources into the build directory; we also want to rebuild the app to make sure the new icon is included, then start the app. We can shortcut this process by passing `--update-resources` to our call to `run` - this will update the app, update the app's resources, and then start the app:"
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:322 e9cdf877c0e5423bae9dd933abdecf9f
@@ -107,30 +107,30 @@ msgid "If you're using a recent version of Android, you may notice that the app 
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:363 2b3d902e7e1a4d44aaad92e4ff207770
-msgid "If you get a stack trace referencing ``faker`` or ``httpx`` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the ``-r`` argument to update the app requirements."
+msgid "If you get a stack trace referencing `faker` or `httpx` when you run the app, it's possible you missed running your app during step 7 or 8 of the tutorial. Re-run the app, adding the `-r` argument to update the app requirements."
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:368 6738123561854e59a85e5e713b335706
-msgid "When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your ``pyproject.toml``, just after the ``icon`` definition::"
+msgid "When you run the app on iOS or Android, in addition to the icon change, you should also notice that the splash screen incorporates the new icon. However, the light blue background of the icon looks a little out of place against the white background of the splash screen. We can fix this by customizing the background color of the splash screen. Add the following definition to your `pyproject.toml`, just after the `icon` definition:"
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:377 789aeb1ef195404b9739aa8458b8526a
-msgid "Unfortunately, Briefcase isn't able to apply this change to an already generated project, as it requires making modifications to one of the files that was generated during the original call to ``briefcase create``. To apply this change, we have to re-create the app by re-running ``briefcase create``. When we do this, we'll be prompted to confirm that we want to overwrite the existing project:"
+msgid "Unfortunately, Briefcase isn't able to apply this change to an already generated project, as it requires making modifications to one of the files that was generated during the original call to `briefcase create`. To apply this change, we have to re-create the app by re-running `briefcase create`. When we do this, we'll be prompted to confirm that we want to overwrite the existing project:"
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:459 720972604dec4271a2325ea2ace89510
-msgid "You can then re-build and re-run the app using ``briefcase run``. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background."
+msgid "You can then re-build and re-run the app using `briefcase run`. You won't notice any changes to the desktop app; but the Android or iOS apps should now have a light blue splash screen background."
 msgstr ""
 
 #: ../../tutorial/topics/custom-icons.rst:463 1555fe480813416281ff14cf946d9920
-msgid "You'll need to re-create the app like this whenever you make a change to your ``pyproject.toml`` that doesn't relate to source code or dependencies. Any change to descriptions, version numbers, colors, or permissions will require a re-create step. Because of this, while you are developing your project, you shouldn't make any manual changes to the contents of the ``build`` folder, and you shouldn't add the ``build`` folder to your version control system. The ``build`` folder should be considered entirely ephemeral - an output of the build system that can be recreated as needed to reflect the current configuration of your project."
+msgid "You'll need to re-create the app like this whenever you make a change to your `pyproject.toml` that doesn't relate to source code or dependencies. Any change to descriptions, version numbers, colors, or permissions will require a re-create step. Because of this, while you are developing your project, you shouldn't make any manual changes to the contents of the `build` folder, and you shouldn't add the `build` folder to your version control system. The `build` folder should be considered entirely ephemeral - an output of the build system that can be recreated as needed to reflect the current configuration of your project."
 msgstr ""
 
 #~ msgid "**Coming soon**"
 #~ msgstr "**Próximamente**"
 
-#~ msgid "We've now got an application with a custom icon on our desktop and phone! How do we share this application with everyone else? Turn to :doc:`Tutorial 11 <tutorial-11>` to find out..."
-#~ msgstr "¡Ya tenemos una aplicación con un icono personalizado en nuestro escritorio y teléfono! ¿Cómo compartimos esta aplicación con los demás? Visita :doc:`Tutorial 11 <tutorial-11>` para descubrirlo..."
+#~ msgid "We've now got an application with a custom icon on our desktop and phone! How do we share this application with everyone else? Turn to [Tutorial 11][tutorial-11] to find out..."
+#~ msgstr "¡Ya tenemos una aplicación con un icono personalizado en nuestro escritorio y teléfono! ¿Cómo compartimos esta aplicación con los demás? Visita [Tutorial 11][tutorial-11] para descubrirlo..."
 
 #~ msgid "Tutorial 10 - Make this app your own"
 #~ msgstr "Tutorial 10 – Crea tu propia aplicación"
@@ -138,6 +138,6 @@ msgstr ""
 #~ msgid "Next steps"
 #~ msgstr "Siguientes pasos"
 
-#~ msgid "Let's provide some actual icons. Download :download:`this icons.zip bundle <../resources/icons.zip>`, and unpack it into the root of your project directory. After unpacking, your project directory should look something like::"
+#~ msgid "Let's provide some actual icons. Download [this icons.zip bundle](../resources/icons.zip) (TODO: Verify path.), and unpack it into the root of your project directory. After unpacking, your project directory should look something like:"
 #~ msgstr ""
 

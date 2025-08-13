@@ -35,8 +35,8 @@ msgid "Translations are available"
 msgstr "本頁中文翻譯基於英文文檔翻譯，已由人工審核"
 
 #: ../../index.rst:16 021f4393db314ba7903a7f0228aa26c4
-msgid "If you're not comfortable with English, translations of this tutorial are available in `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `中文(简体) <https://docs.beeware.org/zh-cn>`__, and `中文(繁體) <https://docs.beeware.org/zh-tw>`__."
-msgstr "如果您不熟悉中文，可以使用本教學的翻譯版本 `English <https://docs.beeware.org/en>`__ `Deutsch <https://docs.beeware.org/de>`__, `Español <https://docs.beeware.org/es>`__, `Français <https://docs.beeware.org/fr>`__, `Italiano <https://docs.beeware.org/it>`__, `Português <https://docs.beeware.org/pt>`__, `简体中文 <https://docs.beeware.org/zh-cn>`__ 。"
+msgid "If you're not comfortable with English, translations of this tutorial are available in [Deutsch]{1}, [Español]{2}, [Français]{3}, [Italiano]{4}, [Português]{5}, [中文(简体)]{6}, and [中文(繁體)]{7}."
+msgstr "如果您不熟悉中文，可以使用本教學的翻譯版本 [English]{1} [Deutsch]{2}, [Español]{3}, [Français]{4}, [Italiano]{5}, [Português]{6}, [简体中文]{7} 。"
 
 #: ../../index.rst:29 b437aa3f82534cfab531b0a8809dfd51
 msgid "This is a machine translation!"
@@ -48,8 +48,8 @@ msgstr "此版本的教學是透過機器翻譯產生的。我們知道這並不
 
 #: ../../index.rst:35 ../../index.rst:47 46d4c2eb8938487b92b3141ea8c5aa4f
 #: b5a5d118b9c44330acf43ccd710b25bb
-msgid "If you'd like the help improve the translation, get in touch! We have a ``#translations`` channel in `Discord <https://beeware.org/bee/chat/>`__. Introduce yourself there and we will add you to the translation team."
-msgstr "如果您想要協助改進翻譯，請聯絡我們！我們在 `Discord <https://beeware.org/bee/chat/>`__ 中有一個 ``#translations`` 頻道。在那裡進行自我介紹，我們會將您加入翻譯團隊。"
+msgid "If you'd like the help improve the translation, get in touch! We have a `#translations` channel in [Discord]{1}. Introduce yourself there and we will add you to the translation team."
+msgstr "如果您想要協助改進翻譯，請聯絡我們！我們在 [Discord]{1} 中有一個 `#translations` 頻道。在那裡進行自我介紹，我們會將您加入翻譯團隊。"
 
 #: ../../index.rst:41 44cad816a6e04508928ef8940ac60ce4
 msgid "This is a translation!"
@@ -69,18 +69,18 @@ msgstr "BeeWare 不是一個單一的產品、工具或函式庫 - 它是工具�
 
 #: ../../index.rst:58 d1b0c56da7bc4a5d8b8a068847f2ef8e
 #, fuzzy
-msgid "`Toga <https://toga.beeware.org>`__, a cross platform widget toolkit;"
-msgstr "`Toga <https://toga.readthedocs.io>`__ ，跨平台小工具包;"
+msgid "[Toga]{1}, a cross platform widget toolkit;"
+msgstr "[Toga]{1} ，跨平台小工具包;"
 
 #: ../../index.rst:59 c96c333e7d4f4d2e8f8d659ce706820e
 #, fuzzy
-msgid "`Briefcase <https://briefcase.beeware.org>`__, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
-msgstr "`Briefcase <https://briefcase.readthedocs.io>`__ ，一種將 Python 專案打包為可分發形式(apk、exe等)並可傳送給最終使用者的工具;"
+msgid "[Briefcase]{1}, a tool for packaging Python projects as distributable artefacts that can be shipped to end users;"
+msgstr "[Briefcase]{1} ，一種將 Python 專案打包為可分發形式(apk、exe等)並可傳送給最終使用者的工具;"
 
 #: ../../index.rst:61 15d3549e5d5e4aee8cb668e50dcc6fdc
 #, fuzzy
-msgid "Libraries (such as `Rubicon ObjC <https://rubicon-objc.beeware.org>`__) for accessing platform-native libraries;"
-msgstr "用於存取各個平臺的原生庫的庫（例如 `Rubicon ObjC <https://rubicon-objc.readthedocs.io>`__ ）;"
+msgid "Libraries (such as [Rubicon ObjC]{1}) for accessing platform-native libraries;"
+msgstr "用於存取各個平臺的原生庫的庫（例如 [Rubicon ObjC]{1} ）;"
 
 #: ../../index.rst:63 e714fc5aa5fe4a6ab721d6bbcedeb640
 msgid "Pre-compiled builds of Python that can be used on platforms where official Python installers aren't available."
@@ -100,6 +100,6 @@ msgid "Let's go!"
 msgstr "讓我們開始吧！"
 
 #: ../../index.rst:77 f8400df8b4a54de281b05034bff2389f
-msgid "Ready to try BeeWare for yourself? :doc:`Let's build a cross platform application in Python! <tutorial/tutorial-0>`"
-msgstr "準備好親自嘗試 BeeWare 了嗎？ :doc:`讓我們用 Python 建立一個跨平台應用程式！ <tutorial/tutorial-0>`"
+msgid "Ready to try BeeWare for yourself? [Let's build a cross platform application in Python!][tutorial/tutorial-0]"
+msgstr "準備好親自嘗試 BeeWare 了嗎？ [讓我們用 Python 建立一個跨平台應用程式！][tutorial/tutorial-0]"
 

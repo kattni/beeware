@@ -1,4 +1,4 @@
-# Tutorial 5 - Taking it mobile: Android
+# Tutorial 5 - Taking it mobile: Android { id="mobile-android" }
 
 Now, we're going to take our application, and deploy it as an Android
 application.
@@ -189,7 +189,6 @@ another 10 minutes (or longer). This lag should only happen the very
 first time you run `build`; the tools are cached, and on your next
 build, the cached versions will be used.
 
-
 ///
 
 ## Run the app on a virtual device
@@ -244,7 +243,6 @@ Select device:
 
 ///
 
-
 We can now choose our desired device. Select the "Create a new Android
 emulator" option, and accept the default choice for the device name
 (`beePhone`).
@@ -287,7 +285,6 @@ and
 recommendations](https://developer.android.com/studio/run/emulator#requirements)
 section of the Android developer documentation.
 
-
 ///
 
 The first time the app starts, it needs to unpack itself onto the
@@ -328,8 +325,7 @@ device:
  - Enable USB debugging
 
 Details on how to make these changes can be found [in the Android
-developer
-documentation](https://developer.android.com/studio/debug/dev-options#enable).
+developer documentation](https://developer.android.com/studio/debug/dev-options#enable).
 
 Once these steps have been completed, your device should appear in the
 list of available devices when you run `briefcase run android`.
@@ -382,7 +378,6 @@ Select device:
 
 ///
 
-
 Here we can see a new physical device with it's serial number on the
 deployment list - in this case, a Pixel 3a. In the future, if you want
 to run on this device without using the menu, you can provide the
@@ -401,12 +396,9 @@ for development)", developer mode hasn't been correctly enabled. Re-run
 options](https://developer.android.com/studio/debug/dev-options#enable),
 and re-run `briefcase run android`.
 
-
 ///
 
 ## Next steps
 
 We've now got an application on our phone! Is there anywhere else we can
-deploy a BeeWare app? Turn to
-[Tutorial 6][tutorial-6] to find
-out...
+deploy a BeeWare app? Turn to [Tutorial 6][tutorial-6] to find out...

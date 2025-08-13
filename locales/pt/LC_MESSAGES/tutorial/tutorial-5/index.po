@@ -42,9 +42,9 @@ msgstr "Android"
 msgid "Android applications can be compiled on macOS, Windows or Linux."
 msgstr "Os aplicativos Android podem ser compilados no macOS, Windows ou Linux."
 
-#~ msgid ":doc:`Let's build our app for iOS! <iOS>`"
-#~ msgstr ":doc:`Vamos criar nosso aplicativo para iOS! <iOS>`"
+#~ msgid "[Let's build our app for iOS!][iOS]"
+#~ msgstr "[Vamos criar nosso aplicativo para iOS!][iOS]"
 
-#~ msgid ":doc:`Let's build our app for Android! <android>`"
-#~ msgstr ":doc:`Vamos criar nosso aplicativo para Android! <android>`"
+#~ msgid "[Let's build our app for Android!][android]"
+#~ msgstr "[Vamos criar nosso aplicativo para Android!][android]"
 
